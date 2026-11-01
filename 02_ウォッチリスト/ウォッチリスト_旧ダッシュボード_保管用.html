@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AI投資チーム | 銘柄ウォッチリスト</title>
+  <style>
+    :root {
+      --bg-primary: #0b0f19;
+      --bg-secondary: #131b2e;
+      --bg-card: #1a233a;
+      --bg-input: #101726;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      /* 判定カラー */
+      --priority-bg: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(217, 119, 6, 0.35));
+      --priority-border: #f59e0b;
+      --priority-text: #fbbf24;
+      --priority-badge-bg: #d97706;
+      
+      --watch-bg: rgba(51, 65, 85, 0.4);
+      --watch-border: #475569;
+      --watch-text: #94a3b8;
+      --watch-badge-bg: #334155;
+      
+      /* 損益カラー */
+      --profit-color: #10b981;
+      --profit-bg: rgba(16, 185, 129, 0.12);
+      --loss-color: #f43f5e;
+      --loss-bg: rgba(244, 63, 94, 0.12);
+      
+      --accent-blue: #3b82f6;
+      --accent-hover: #2563eb;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* ヘッダー */
+    header {
+      background: linear-gradient(180deg, #131c31 0%, var(--bg-primary) 100%);
+      border-bottom: 1px solid var(--border-color);
+      padding: 24px 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(148, 163, 184, 0.12);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .header-title-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-subtitle {
+      color: var(--text-secondary);
+      font-size: 13px;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    .subtitle-note {
+      display: inline-block;
+      color: #cbd5e1;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-top: 3px;
+    }
+
+    /* 価格取得日時バー */
+    .price-timestamp-bar {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: var(--radius-md);
+      padding: 7px 14px;
+      margin-top: 10px;
+    }
+
+    .timestamp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(59, 130, 246, 0.2);
+      color: #93c5fd;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .timestamp-time {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: 0.3px;
+    }
+
+    .timestamp-detail {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+    }
+
+    .price-sub-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* ボタン共通 */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 9px 16px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      outline: none;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-primary);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-sm {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+
+    /* メインコンテナ */
+    main {
+      max-width: 1200px;
+      margin: 20px auto 0;
+      padding: 0 16px;
+    }
+
+    /* サマリーバー・統計カード */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .stat-value {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text-primary);
+    }
+
+    .stat-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 12px;
+      width: fit-content;
+      margin-top: 2px;
+    }
+
+    /* コントロールバー（検索・フィルタ） */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      background: var(--bg-secondary);
+      padding: 12px 16px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-btn.active {
+      background: rgba(59, 130, 246, 0.2);
+      border-color: rgba(59, 130, 246, 0.4);
+      color: #60a5fa;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      max-width: 320px;
+      min-width: 180px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 8px 12px 8px 34px;
+      color: var(--text-primary);
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      width: 14px;
+      height: 14px;
+      pointer-events: none;
+    }
+
+    /* 銘柄カードグリッド */
+    .stock-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 18px;
+    }
+
+    /* 銘柄カード */
+    .stock-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      overflow: hidden;
+    }
+
+    .stock-card:hover {
+      border-color: rgba(255, 255, 255, 0.16);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 最優先銘柄の強調デザイン */
+    .stock-card.priority {
+      border-color: rgba(245, 158, 11, 0.45);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.05) 0%, var(--bg-card) 60px);
+    }
+
+    .stock-card.priority::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #f59e0b, #fbbf24, #d97706);
+    }
+
+    /* 監視銘柄のデザイン */
+    .stock-card.watch {
+      border-color: rgba(148, 163, 184, 0.25);
+    }
+
+    .stock-card.watch::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #475569;
+    }
+
+    /* カードヘッダー */
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .stock-title-area {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .code-and-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stock-code {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.5px;
+    }
+
+    .judgment-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 12px;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* 判定バッジスタイル */
+    .badge-priority {
+      background: linear-gradient(135deg, #f59e0b, #b45309);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+    }
+
+    .badge-priority::before {
+      content: "★";
+      font-size: 10px;
+    }
+
+    .badge-watch {
+      background: var(--watch-badge-bg);
+      color: var(--watch-text);
+      border: 1px solid var(--watch-border);
+    }
+
+    .badge-manual {
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+    }
+
+    .stock-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .delete-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 6px;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .delete-btn:hover {
+      color: #f43f5e;
+      background: rgba(244, 63, 94, 0.12);
+    }
+
+    /* 価格・損益エリア */
+    .price-metrics-box {
+      background: var(--bg-input);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .current-price-val {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* 取得価格入力と損益率 */
+    .purchase-input-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    }
+
+    .input-wrapper {
+      position: relative;
+      flex: 1;
+      max-width: 150px;
+    }
+
+    .yen-prefix {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 13px;
+      pointer-events: none;
+    }
+
+    .purchase-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      padding: 6px 8px 6px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .purchase-input:focus {
+      border-color: var(--border-focus);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .purchase-input::placeholder {
+      color: var(--text-muted);
+      font-weight: normal;
+      font-size: 11px;
+    }
+
+    /* 損益表示バッジ */
+    .return-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1px;
+      min-width: 90px;
+    }
+
+    .return-percent {
+      font-size: 14px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-variant-numeric: tabular-nums;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .return-diff {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .return-profit {
+      background: var(--profit-bg);
+      color: var(--profit-color);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .return-loss {
+      background: var(--loss-bg);
+      color: var(--loss-color);
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .return-empty {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 2px 6px;
+    }
+
+    /* 総合コメント */
+    .comment-box {
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 3px solid #3b82f6;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 10px 12px;
+      font-size: 12.5px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .priority .comment-box {
+      border-left-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.04);
+    }
+
+    .comment-header {
+      font-size: 10.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* カードフッター */
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .yahoo-link {
+      color: #60a5fa;
+      font-size: 11.5px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+
+    .yahoo-link:hover {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+
+    /* モーダルダイアログ */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+      padding: 16px;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      transform: scale(0.95);
+      transition: transform 0.25s ease;
+      overflow: hidden;
+    }
+
+    .modal-overlay.active .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-secondary);
+    }
+
+    .modal-header h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .modal-close {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+    }
+
+    .modal-close:hover {
+      color: var(--text-primary);
+    }
+
+    .modal-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-label .req {
+      color: #f43f5e;
+      font-size: 10px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      color: var(--text-primary);
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--border-focus);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    .modal-footer {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    /* 空状態表示 */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border: 1px dashed var(--border-color);
+      border-radius: var(--radius-lg);
+      color: var(--text-secondary);
+    }
+
+    .empty-state p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    /* トースト通知 */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #f8fafc;
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      font-size: 13px;
+      font-weight: 500;
+      animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    /* レスポンシブ調整（スマートフォン対応） */
+    @media (max-width: 640px) {
+      header {
+        padding: 16px 14px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .header-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .header-actions .btn {
+        flex: 1;
+      }
+      main {
+        padding: 0 12px;
+      }
+      .stock-grid {
+        grid-template-columns: 1fr;
+      }
+      .controls-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .search-box {
+        max-width: 100%;
+      }
+      .purchase-input-row {
+        flex-wrap: wrap;
+      }
+      .input-wrapper {
+        max-width: 100%;
+        flex: 1 1 120px;
+      }
+      .toast-container {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="header-container">
+      <div class="top-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+        </svg>
+        AI投資チーム | 02_ウォッチリスト（スクリーニング抽出版）
+      </div>
+      <div class="header-title-row">
+        <div>
+          <h1>銘柄ウォッチリスト</h1>
+          <p class="header-subtitle">
+            朝のブリーフィング（統合スクリーニング結果）に基づく注目銘柄一覧
+            <br>
+            <span class="subtitle-note">※各銘柄の価格はデータ取得時点の確定値であり、リアルタイムで自動更新は行われません</span>
+          </p>
+          <!-- 価格取得日時（見やすい場所に明記） -->
+          <div class="price-timestamp-bar">
+            <div class="timestamp-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>価格取得日時</span>
+            </div>
+            <span class="timestamp-time">2026年10月18日 16:53</span>
+            <span class="timestamp-detail">（直近取引日 2026年10月16日 大引け終値ベース）</span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-primary" onclick="openAddModal()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            銘柄を手動追加
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="confirmReset()" title="初期のスクリーニング結果にリセットします">
+            初期データ復元
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 統計サマリー -->
+    <section class="stats-bar">
+      <div class="stat-card">
+        <span class="stat-label">ウォッチリスト登録数</span>
+        <span class="stat-value" id="stat-total-count">0</span>
+        <span class="stat-badge" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa;">全監視対象</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">最優先銘柄</span>
+        <span class="stat-value" id="stat-priority-count" style="color: #fbbf24;">0</span>
+        <span class="stat-badge" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">買いタイミング良好</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">監視銘柄</span>
+        <span class="stat-value" id="stat-watch-count" style="color: #94a3b8;">0</span>
+        <span class="stat-badge" style="background: rgba(148, 163, 184, 0.15); color: #94a3b8;">反発・過熱解消待ち</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">取得価格 入力済み</span>
+        <span class="stat-value" id="stat-purchased-count">0</span>
+        <span class="stat-badge" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">保有・シミュレーション中</span>
+      </div>
+    </section>
+
+    <!-- コントロールバー（フィルタ・検索） -->
+    <section class="controls-bar">
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all" onclick="setFilter('all')">すべて (<span id="count-all">0</span>)</button>
+        <button class="tab-btn" data-filter="最優先" onclick="setFilter('最優先')">最優先 (<span id="count-priority">0</span>)</button>
+        <button class="tab-btn" data-filter="監視" onclick="setFilter('監視')">監視 (<span id="count-watch">0</span>)</button>
+      </div>
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="銘柄コードや企業名で検索..." oninput="handleSearch()">
+      </div>
+    </section>
+
+    <!-- 銘柄カードグリッド -->
+    <div id="stockGrid" class="stock-grid">
+      <!-- JavaScriptで動的生成 -->
+    </div>
+  </main>
+
+  <!-- 銘柄手動追加モーダル -->
+  <div id="addModal" class="modal-overlay" onclick="closeModalOnBg(event)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>銘柄の手動追加</h3>
+        <button class="modal-close" onclick="closeAddModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">銘柄コード <span class="req">※必須</span></label>
+          <input type="text" id="newCode" class="form-input" placeholder="例: 6758" maxlength="10">
+        </div>
+        <div class="form-group">
+          <label class="form-label">現在価格 (円) <span class="req">※必須</span></label>
+          <input type="number" id="newPrice" class="form-input" placeholder="例: 14500" step="any">
+        </div>
+        <div class="form-group">
+          <label class="form-label">企業名 (任意)</label>
+          <input type="text" id="newName" class="form-input" placeholder="例: ソニーグループ">
+        </div>
+        <div class="form-group">
+          <label class="form-label">統合判定</label>
+          <select id="newJudgment" class="form-select">
+            <option value="最優先">最優先（買いタイミング良好・目立つ色）</option>
+            <option value="監視" selected>監視（押し目・出来高待ち・控えめな色）</option>
+            <option value="手動追加">その他（手動追加）</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">取得価格 (円) (任意)</label>
+          <input type="number" id="newPurchasePrice" class="form-input" placeholder="入力すると自動で損益計算します" step="any">
+        </div>
+        <div class="form-group">
+          <label class="form-label">総合コメント (任意)</label>
+          <textarea id="newComment" class="form-textarea" placeholder="投資メモや選定理由などを入力"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeAddModal()">キャンセル</button>
+        <button class="btn btn-primary" onclick="submitAddStock()">追加する</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- トースト表示用コンテナ -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script>
+    /**
+     * 朝のブリーフィング「統合スクリーニング結果.txt」より
+     * 最優先・監視の銘柄（保留は除外）および実勢価格データ
+     */
+    const INITIAL_DATA = [
+      {
+        id: "7269",
+        code: "7269",
+        name: "スズキ",
+        judgment: "最優先",
+        currentPrice: 2118,
+        purchasePrice: "",
+        comment: "インド好調で割安、移動平均線上で出来高も堅調な絶好の買い好機。"
+      },
+      {
+        id: "8113",
+        code: "8113",
+        name: "ユニ・チャーム",
+        judgment: "最優先",
+        currentPrice: 1007,
+        purchasePrice: "",
+        comment: "アジア成長と連続増配が魅力、移動平均線突破と出来高急増で買い優勢。"
+      },
+      {
+        id: "2670",
+        code: "2670",
+        name: "エービーシー・マート",
+        judgment: "最優先",
+        currentPrice: 2930.5,
+        purchasePrice: "",
+        comment: "超優良財務で高収益かつ割安、過熱感はあるが出来高増で買い優勢。"
+      },
+      {
+        id: "7735",
+        code: "7735",
+        name: "SCREENホールディングス",
+        judgment: "監視",
+        currentPrice: 13815,
+        purchasePrice: "",
+        comment: "半導体洗浄で高成長高収益、出来高伴い反発窺うも底固めの確認待ち。"
+      },
+      {
+        id: "6806",
+        code: "6806",
+        name: "ヒロセ電機",
+        judgment: "監視",
+        currentPrice: 24530,
+        purchasePrice: "",
+        comment: "強固な財務体質で車載向け急伸、移動平均線を下回り反発確認待ち。"
+      },
+      {
+        id: "4684",
+        code: "4684",
+        name: "オービック",
+        judgment: "監視",
+        currentPrice: 5706,
+        purchasePrice: "",
+        comment: "無借金で卓越した高収益性も、RSI過熱感が強く押し目形成待ち。"
+      },
+      {
+        id: "9759",
+        code: "9759",
+        name: "NSD",
+        judgment: "監視",
+        currentPrice: 3110,
+        purchasePrice: "",
+        comment: "高ROEと好配当が魅力だが、出来高減少と過熱感で追撃買いは慎重に。"
+      },
+      {
+        id: "9697",
+        code: "9697",
+        name: "カプコン",
+        judgment: "監視",
+        currentPrice: 4581,
+        purchasePrice: "",
+        comment: "新作控え高収益・無借金経営も、出来高が細っており商いの増加待ち。"
+      }
+    ];
+
+    const STORAGE_KEY = "ai_investment_watchlist_data_v1";
+
+    let stockList = [];
+    let currentFilter = "all";
+    let searchQuery = "";
+
+    // 初期化ロード
+    function loadStocks() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+          stockList = JSON.parse(stored);
+        } else {
+          // 初期データをコピーして保存
+          stockList = JSON.parse(JSON.stringify(INITIAL_DATA));
+          saveStocks();
+        }
+      } catch (e) {
+        console.error("ローカルストレージの読み込みエラー:", e);
+        stockList = JSON.parse(JSON.stringify(INITIAL_DATA));
+      }
+      render();
+    }
+
+    // ローカルストレージに保存
+    function saveStocks() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(stockList));
+      } catch (e) {
+        console.error("ローカルストレージの保存エラー:", e);
+      }
+    }
+
+    // トースト表示
+    function showToast(message) {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        <span>${escapeHtml(message)}</span>
+      `;
+      container.appendChild(toast);
+      setTimeout(() => {
+        if (toast.parentNode) {
+          toast.parentNode.removeChild(toast);
+        }
+      }, 3000);
+    }
+
+    // HTMLエスケープヘルパー
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // 金額フォーマット
+    function formatMoney(num) {
+      if (num === null || num === undefined || isNaN(num)) return "-";
+      return Number(num).toLocaleString(undefined, {
+        minimumFractionDigits: Number.isInteger(Number(num)) ? 0 : 1,
+        maximumFractionDigits: 2
+      });
+    }
+
+    // 損益率計算
+    function calculateReturn(currentPrice, purchasePrice) {
+      const curr = parseFloat(currentPrice);
+      const purch = parseFloat(purchasePrice);
+
+      if (isNaN(purch) || purch <= 0 || isNaN(curr)) {
+        return {
+          hasValue: false,
+          percentStr: "-",
+          diffStr: "",
+          isProfit: false,
+          isLoss: false
+        };
+      }
+
+      const diff = curr - purch;
+      const percent = (diff / purch) * 100;
+      const sign = percent > 0 ? "+" : "";
+      
+      return {
+        hasValue: true,
+        percentStr: `${sign}${percent.toFixed(2)}%`,
+        diffStr: `${sign}${formatMoney(diff)} 円`,
+        isProfit: percent > 0,
+        isLoss: percent < 0
+      };
+    }
+
+    // 描画処理
+    function render() {
+      const grid = document.getElementById("stockGrid");
+      grid.innerHTML = "";
+
+      // 統計更新
+      updateStats();
+
+      // フィルタと検索の適用
+      const filtered = stockList.filter(item => {
+        // 判定フィルタ
+        if (currentFilter !== "all" && item.judgment !== currentFilter) {
+          return false;
+        }
+        // 検索クエリ
+        if (searchQuery.trim() !== "") {
+          const q = searchQuery.toLowerCase();
+          const matchCode = (item.code || "").toLowerCase().includes(q);
+          const matchName = (item.name || "").toLowerCase().includes(q);
+          const matchComment = (item.comment || "").toLowerCase().includes(q);
+          if (!matchCode && !matchName && !matchComment) return false;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5" style="margin: 0 auto 10px;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <h3>該当する銘柄が見つかりませんでした</h3>
+            <p>検索条件やフィルターを変更するか、上部の「銘柄を手動追加」から登録してください。</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(item => {
+        const isPriority = item.judgment === "最優先";
+        const isWatch = item.judgment === "監視";
+        
+        let cardClass = "stock-card";
+        let badgeClass = "badge-manual";
+        if (isPriority) {
+          cardClass += " priority";
+          badgeClass = "badge-priority";
+        } else if (isWatch) {
+          cardClass += " watch";
+          badgeClass = "badge-watch";
+        }
+
+        const returnData = calculateReturn(item.currentPrice, item.purchasePrice);
+        let returnBadgeHtml = `<div class="return-badge"><span class="return-percent return-empty">未入力</span></div>`;
+
+        if (returnData.hasValue) {
+          const statusClass = returnData.isProfit ? "return-profit" : (returnData.isLoss ? "return-loss" : "return-empty");
+          const icon = returnData.isProfit ? "▲ " : (returnData.isLoss ? "▼ " : "");
+          returnBadgeHtml = `
+            <div class="return-badge">
+              <span class="return-percent ${statusClass}">${icon}${returnData.percentStr}</span>
+              <span class="return-diff">${returnData.diffStr}</span>
+            </div>
+          `;
+        }
+
+        const card = document.createElement("div");
+        card.className = cardClass;
+        card.id = `stock-card-${item.id}`;
+        
+        card.innerHTML = `
+          <!-- カード上部ヘッダー -->
+          <div class="card-header">
+            <div class="stock-title-area">
+              <div class="code-and-badge">
+                <span class="stock-code">${escapeHtml(item.code)}</span>
+                <span class="judgment-badge ${badgeClass}">${escapeHtml(item.judgment)}</span>
+              </div>
+              <h2 class="stock-name">${escapeHtml(item.name || item.code)}</h2>
+            </div>
+            <button class="delete-btn" onclick="deleteStock('${item.id}')" title="この銘柄をウォッチリストから削除">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- 価格・損益ボックス -->
+          <div class="price-metrics-box">
+            <div class="price-row">
+              <div>
+                <span class="price-label">現在価格（取得値）</span>
+                <div class="price-sub-label">${item.id && String(item.id).startsWith('custom_') ? '手動設定価格' : '2026/10/18 16:53時点'}</div>
+              </div>
+              <span class="current-price-val">¥${formatMoney(item.currentPrice)}</span>
+            </div>
+            
+            <div class="purchase-input-row">
+              <div style="display:flex; flex-direction:column; gap:2px;">
+                <span class="price-label">あなたの取得価格</span>
+                <div class="input-wrapper">
+                  <span class="yen-prefix">¥</span>
+                  <input 
+                    type="number" 
+                    class="purchase-input" 
+                    placeholder="取得価格を入力" 
+                    value="${item.purchasePrice !== undefined && item.purchasePrice !== null ? item.purchasePrice : ''}"
+                    step="any"
+                    oninput="handlePurchasePriceChange('${item.id}', this.value)"
+                  >
+                </div>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:flex-end; gap:2px;">
+                <span class="price-label">損益率 (自動計算)</span>
+                <div id="return-container-${item.id}">
+                  ${returnBadgeHtml}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 総合コメント -->
+          ${item.comment ? `
+            <div class="comment-box">
+              <div class="comment-header">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                スクリーニング総合コメント
+              </div>
+              <div>${escapeHtml(item.comment)}</div>
+            </div>
+          ` : ''}
+
+          <!-- カードフッター -->
+          <div class="card-footer">
+            <a href="https://finance.yahoo.co.jp/quote/${encodeURIComponent(item.code)}.T" target="_blank" rel="noopener noreferrer" class="yahoo-link">
+              <span>Yahoo!ファイナンスで詳細</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <span style="font-size: 11px; color: var(--text-muted);">
+              ${isPriority ? '高スコア選定' : '条件到達待ち'}
+            </span>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    // 統計サマリーの更新
+    function updateStats() {
+      const total = stockList.length;
+      const priorityCount = stockList.filter(s => s.judgment === "最優先").length;
+      const watchCount = stockList.filter(s => s.judgment === "監視").length;
+      const purchasedCount = stockList.filter(s => s.purchasePrice && !isNaN(parseFloat(s.purchasePrice)) && parseFloat(s.purchasePrice) > 0).length;
+
+      document.getElementById("stat-total-count").textContent = total;
+      document.getElementById("stat-priority-count").textContent = priorityCount;
+      document.getElementById("stat-watch-count").textContent = watchCount;
+      document.getElementById("stat-purchased-count").textContent = purchasedCount;
+
+      document.getElementById("count-all").textContent = total;
+      document.getElementById("count-priority").textContent = priorityCount;
+      document.getElementById("count-watch").textContent = watchCount;
+    }
+
+    // 取得価格変更のリアルタイム処理
+    function handlePurchasePriceChange(id, value) {
+      const item = stockList.find(s => s.id === id);
+      if (!item) return;
+
+      item.purchasePrice = value.trim();
+      saveStocks();
+
+      // カード内の損益バッジだけを即時再描画してスムーズな操作感を保つ
+      const container = document.getElementById(`return-container-${id}`);
+      if (container) {
+        const returnData = calculateReturn(item.currentPrice, item.purchasePrice);
+        if (!returnData.hasValue) {
+          container.innerHTML = `<div class="return-badge"><span class="return-percent return-empty">未入力</span></div>`;
+        } else {
+          const statusClass = returnData.isProfit ? "return-profit" : (returnData.isLoss ? "return-loss" : "return-empty");
+          const icon = returnData.isProfit ? "▲ " : (returnData.isLoss ? "▼ " : "");
+          container.innerHTML = `
+            <div class="return-badge">
+              <span class="return-percent ${statusClass}">${icon}${returnData.percentStr}</span>
+              <span class="return-diff">${returnData.diffStr}</span>
+            </div>
+          `;
+        }
+      }
+
+      updateStats();
+    }
+
+    // 銘柄の削除
+    function deleteStock(id) {
+      const item = stockList.find(s => s.id === id);
+      if (!item) return;
+
+      const name = item.name || item.code;
+      if (confirm(`「${name} (${item.code})」をウォッチリストから削除しますか？`)) {
+        stockList = stockList.filter(s => s.id !== id);
+        saveStocks();
+        render();
+        showToast(`「${name}」を削除しました`);
+      }
+    }
+
+    // 銘柄手動追加モーダル関連
+    function openAddModal() {
+      document.getElementById("newCode").value = "";
+      document.getElementById("newName").value = "";
+      document.getElementById("newPrice").value = "";
+      document.getElementById("newJudgment").value = "監視";
+      document.getElementById("newPurchasePrice").value = "";
+      document.getElementById("newComment").value = "";
+      
+      document.getElementById("addModal").classList.add("active");
+      document.getElementById("newCode").focus();
+    }
+
+    function closeAddModal() {
+      document.getElementById("addModal").classList.remove("active");
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === "addModal") {
+        closeAddModal();
+      }
+    }
+
+    // 銘柄追加の送信処理
+    function submitAddStock() {
+      const code = document.getElementById("newCode").value.trim();
+      const priceStr = document.getElementById("newPrice").value.trim();
+      const name = document.getElementById("newName").value.trim() || `銘柄 ${code}`;
+      const judgment = document.getElementById("newJudgment").value;
+      const purchasePrice = document.getElementById("newPurchasePrice").value.trim();
+      const comment = document.getElementById("newComment").value.trim();
+
+      if (!code) {
+        alert("銘柄コードを入力してください。");
+        document.getElementById("newCode").focus();
+        return;
+      }
+
+      if (!priceStr || isNaN(parseFloat(priceStr))) {
+        alert("有効な現在価格（数値）を入力してください。");
+        document.getElementById("newPrice").focus();
+        return;
+      }
+
+      const newStock = {
+        id: "custom_" + Date.now(),
+        code: code,
+        name: name,
+        judgment: judgment,
+        currentPrice: parseFloat(priceStr),
+        purchasePrice: purchasePrice ? parseFloat(purchasePrice) : "",
+        comment: comment
+      };
+
+      // 先頭に追加
+      stockList.unshift(newStock);
+      saveStocks();
+      closeAddModal();
+      render();
+      showToast(`銘柄「${name} (${code})」を追加しました`);
+    }
+
+    // 初期データへのリセット
+    function confirmReset() {
+      if (confirm("初期のスクリーニング銘柄一覧にリセットしますか？\n（手動追加した銘柄や入力した取得価格はクリアされます）")) {
+        stockList = JSON.parse(JSON.stringify(INITIAL_DATA));
+        saveStocks();
+        render();
+        showToast("初期データにリセットしました");
+      }
+    }
+
+    // フィルタ切り替え
+    function setFilter(filter) {
+      currentFilter = filter;
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        if (btn.getAttribute("data-filter") === filter) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+      });
+      render();
+    }
+
+    // 検索処理
+    function handleSearch() {
+      searchQuery = document.getElementById("searchInput").value;
+      render();
+    }
+
+    // キーボードショートカット（ESCでモーダル閉じる）
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape" && document.getElementById("addModal").classList.contains("active")) {
+        closeAddModal();
+      }
+    });
+
+    // 起動時実行
+    window.addEventListener("DOMContentLoaded", loadStocks);
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "PowerShell(cd \"G:\\\\マイドライブ\\\\AI投資チーム\"; foreach\\($f in \"00_投資プロフィール\\\\私の投資プロフィール_v1.txt\",\"01_朝のブリーフィング\\\\統合スクリーニング結果.txt\",\"01_朝のブリーフィング\\\\新規提案_20261028.txt\",\"01_朝のブリーフィング\\\\ファンダスクリーニング結果 \\(1\\).txt\",\"01_朝のブリーフィング\\\\テクニカルスクリーニング結果 \\(1\\).txt\"\\){ \"=== $f\"; Get-Content $f -Encoding UTF8 }; \\(Get-FileHash \"01_朝のブリーフィング\\\\統合スクリーニング結果.txt\"\\).Hash)",
+      "PowerShell($d=\"C:\\\\Users\\\\kazuk\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\G---------AI-----\\\\9386d2ac-5c04-4054-b569-0ac3e3c1db76\\\\scratchpad\"; foreach\\($c in 7269,8113,2670,7735,6806,4684,9759,9697\\){ try{ $r=Invoke-WebRequest -UseBasicParsing \"https://stooq.com/q/d/l/?s=$c.jp&i=d\" -TimeoutSec 30; $r.Content | Out-File \"$d\\\\$c.csv\" -Encoding utf8; \"$c : \"+\\($r.Content.Split\\(\"`n\"\\).Count\\)+\" lines; \"+$r.Content.Substring\\(0,[Math]::Min\\(120,$r.Content.Length\\)\\).Replace\\(\"`n\",\" | \"\\) }catch{ \"$c ERR $_\" } })"
+    ]
+  }
+}
