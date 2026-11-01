@@ -34,6 +34,7 @@ class FakeYahoo:
         "7269": ("スズキ", "Auto Manufacturers"),
         "8306": ("三菱UFJ", "Banks - Diversified"),  # 対象外セクター
         "1111": ("赤字テスト", "Software - Application"),
+        "3197": ("すかいらーく", "Restaurants"),
     }
 
     def __init__(self, *a, **k):
@@ -119,6 +120,7 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual(master.read_bytes(), before, "マスターを書き換えてはいけない")
         md = Path(out.strip()).read_text(encoding="utf-8")
         self.assertIn("| 7974 | 任天堂 | ゲーム", md)
+        self.assertIn("| 3197 | すかいらーく | 外食", md)
         self.assertNotIn("三菱UFJ", md)          # 対象外セクター
         self.assertNotIn("| 1111 | 赤字テスト", md)  # 営業赤字
         self.assertIn("7974 任天堂: 1回連続で提案（20261029）", md)

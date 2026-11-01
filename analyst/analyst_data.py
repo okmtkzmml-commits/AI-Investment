@@ -44,7 +44,8 @@ TECH_HEADER = "銘柄コード / 企業名 / 移動平均 / RSI / 出来高 / �
 NO_PROPOSAL = "本日の新規提案はありません"
 MASTER_OK = "マスター確認：変更なし"
 
-# Yahoo の業種(industry) → プロフィールの5セクター（tools/2_make_candidates.ps1 と同じ）
+# Yahoo の業種(industry) → プロフィールの対象セクター
+# （tools/2_make_candidates.ps1 の5セクターに「外食」を追加）
 SECTOR_MAP = {
     "Semiconductors": "半導体・電子部品",
     "Semiconductor Equipment & Materials": "半導体・電子部品",
@@ -70,6 +71,7 @@ SECTOR_MAP = {
     "Furnishings, Fixtures & Appliances": "消費財・小売",
     "Tobacco": "消費財・小売",
     "Consumer Electronics": "消費財・小売",
+    "Restaurants": "外食",
     "Auto Manufacturers": "自動車",
     "Auto Parts": "自動車",
 }
@@ -580,7 +582,7 @@ def build_markdown(ctx: dict) -> str:
 
     a("## 仕事1 用: 定量フィルター通過銘柄（点数順）")
     a("")
-    a(f"対象 {ctx['n_cands']} 銘柄（5セクター・時価総額500億円以上）→ 通過 {len(ctx['passed'])} 銘柄。"
+    a(f"対象 {ctx['n_cands']} 銘柄（{'・'.join(sorted(set(SECTOR_MAP.values())))}、時価総額500億円以上）→ 通過 {len(ctx['passed'])} 銘柄。"
       f"不通過の内訳: " + ("、".join(f"{k} {v}" for k, v in sorted(ctx['fails'].items(), key=lambda kv: -kv[1])) or "なし"))
     a("")
     a("点数 = 自己資本比率40%・売上成長30%・配当利回り20%・割安度(PER)10% の順位点。ベータ1.5超は -0.1。")
