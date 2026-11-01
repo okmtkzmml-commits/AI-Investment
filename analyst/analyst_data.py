@@ -45,7 +45,7 @@ NO_PROPOSAL = "本日の新規提案はありません"
 MASTER_OK = "マスター確認：変更なし"
 
 # Yahoo の業種(industry) → プロフィールの対象セクター
-# （tools/2_make_candidates.ps1 の5セクターに「外食」を追加）
+# （プロフィール v1 の6セクター。tools/2_make_candidates.ps1 の対応表に「外食」を追加）
 SECTOR_MAP = {
     "Semiconductors": "半導体・電子部品",
     "Semiconductor Equipment & Materials": "半導体・電子部品",
