@@ -90,6 +90,15 @@ class TestJudgement(unittest.TestCase):
         t = ad.judge_technical(8, 11, 9, 50, 0.9)
         self.assertEqual((t["ma"], t["vol"]), ("×", "×"))
 
+    def test_last_close_filled_from_meta(self):
+        ch = fake_chart(1.0, 1.0)
+        ch["indicators"]["quote"][0]["close"][-1] = None
+        ch["meta"] = {"regularMarketPrice": 9999.0, "regularMarketTime": ch["timestamp"][-1] + 3600}
+        t = ad.technical_from_chart(ch)
+        self.assertEqual(t["close"], 9999.0)
+        del ch["meta"]
+        self.assertNotEqual(ad.technical_from_chart(ch)["close"], 9999.0)
+
     def test_rsi_all_up(self):
         self.assertEqual(ad.rsi_wilder([float(i) for i in range(30)]), 100.0)
 

@@ -513,10 +513,18 @@ def overall_verdict(marks: list[str]) -> str:
 def technical_from_chart(ch: dict) -> dict | None:
     ts = ch.get("timestamp") or []
     q = ((ch.get("indicators") or {}).get("quote") or [{}])[0]
+    closes = list(q.get("close") or [None] * len(ts))
+    vols = q.get("volume") or [None] * len(ts)
+    # 最新日の終値だけ空で返ることがある。その日の現在値（meta）があれば補う
+    meta = ch.get("meta") or {}
+    if ts and closes and closes[-1] is None and meta.get("regularMarketPrice") and meta.get("regularMarketTime"):
+        same_day = (dt.datetime.fromtimestamp(meta["regularMarketTime"], JST).date()
+                    == dt.datetime.fromtimestamp(ts[-1], JST).date())
+        if same_day:
+            closes[-1] = meta["regularMarketPrice"]
     cl, vo, days = [], [], []
     for i, t in enumerate(ts):
-        c = (q.get("close") or [None] * len(ts))[i]
-        v = (q.get("volume") or [None] * len(ts))[i]
+        c, v = closes[i], vols[i]
         if c is not None and v is not None:
             cl.append(float(c))
             vo.append(float(v))
