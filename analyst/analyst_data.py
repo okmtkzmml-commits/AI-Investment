@@ -22,7 +22,6 @@ import datetime as dt
 import hashlib
 import http.cookiejar
 import json
-import os
 import re
 import shutil
 import statistics
@@ -196,39 +195,101 @@ def raw(d: dict | None, *keys):
 
 
 # ---------------------------------------------------------------- step 1: universe
-def load_universe(yh: Yahoo, cache: Path, max_age_days: float, start: int, end: int) -> list[dict]:
-    path = cache / "universe.json"
-    if path.exists():
-        age = (time.time() - path.stat().st_mtime) / 86400
-        if age <= max_age_days:
-            log(f"[universe] キャッシュを使用（{age:.1f}日前）: {path}")
-            return json.loads(path.read_text(encoding="utf-8"))
-    log(f"[universe] 銘柄コード {start}〜{end} を全探索します（初回・週1回、15分以上かかります）")
-    rows = []
-    for i, c in enumerate(range(start, end + 1)):
+# 銘柄一覧はリポジトリ内の analyst/data/universe.json に保存し、コミットして使い回す
+# （クラウド実行は毎回まっさらな環境で始まるため）。中身の "updated" で鮮度を判断する。
+DEFAULT_UNIVERSE = Path(__file__).resolve().parent / "data" / "universe.json"
+
+
+def read_universe(path: Path) -> dict | None:
+    if not path.exists():
+        return None
+    d = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(d, list):  # 旧形式（一覧だけ）
+        d = {"updated": dt.datetime.fromtimestamp(path.stat().st_mtime, JST).isoformat(), "rows": d}
+    return d
+
+
+def universe_age_days(d: dict) -> float:
+    return (dt.datetime.now(JST) - dt.datetime.fromisoformat(d["updated"])).total_seconds() / 86400
+
+
+def _write_json(path: Path, obj) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=0), encoding="utf-8")
+    tmp.replace(path)
+
+
+def _probe(yh: Yahoo, code: str) -> dict | None:
+    x = yh.quote_summary(code, "assetProfile,summaryDetail,price")
+    if not x:
+        return None
+    mcap = raw(x, "summaryDetail", "marketCap") or raw(x, "price", "marketCap")
+    if not (mcap and mcap >= CRITERIA["min_mcap"]):
+        return None
+    return {
+        "code": code,
+        "name": raw(x, "price", "shortName") or raw(x, "price", "longName") or "",
+        "yahoo_sector": raw(x, "assetProfile", "sector") or "",
+        "industry": raw(x, "assetProfile", "industry") or "",
+        "mcap": mcap,
+    }
+
+
+def crawl_universe(yh: Yahoo, path: Path, start: int, end: int) -> dict:
+    """銘柄コードを全探索する。途中経過を *.partial.json に保存し、中断しても続きから再開できる。"""
+    partial = path.with_name(path.stem + ".partial.json")
+    st = read_universe(partial) if partial.exists() else None
+    if st and st.get("code_from") == start and st.get("code_to") == end:
+        log(f"[universe] 途中経過から再開します（{st['next']}〜、{len(st['rows'])}件取得済み）")
+    else:
+        st = {"updated": dt.datetime.now(JST).isoformat(), "code_from": start, "code_to": end,
+              "next": start, "rows": [], "failed": []}
+    log(f"[universe] 銘柄コード {st['next']}〜{end} を全探索します（全範囲で約45分）")
+    t0 = time.time()
+    for c in range(st["next"], end + 1):
         code = str(c)
         try:
-            x = yh.quote_summary(code, "assetProfile,summaryDetail,price")
+            row = _probe(yh, code)
+            if row:
+                st["rows"].append(row)
         except Exception as e:
+            st["failed"].append(code)
             log(f"  {code}: {e}")
-            continue
-        if not x:
-            continue
-        mcap = raw(x, "summaryDetail", "marketCap") or raw(x, "price", "marketCap")
-        if mcap and mcap >= CRITERIA["min_mcap"]:
-            rows.append({
-                "code": code,
-                "name": raw(x, "price", "shortName") or raw(x, "price", "longName") or "",
-                "yahoo_sector": raw(x, "assetProfile", "sector") or "",
-                "industry": raw(x, "assetProfile", "industry") or "",
-                "mcap": mcap,
-            })
-        if i % 500 == 0:
-            log(f"  ...{code}（{len(rows)}件）")
-    tmp = path.with_suffix(".tmp")
-    tmp.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
-    tmp.replace(path)
-    return rows
+        st["next"] = c + 1
+        if c % 250 == 0 or c == end:
+            _write_json(partial, st)
+            log(f"  ...{code}（{len(st['rows'])}件、失敗{len(st['failed'])}件、{(time.time() - t0) / 60:.0f}分経過）")
+    if st["failed"]:  # 一時的なエラーの分をもう一度だけ試す
+        log(f"[universe] 失敗した {len(st['failed'])} 件を再試行します")
+        still = []
+        for code in st["failed"]:
+            try:
+                row = _probe(yh, code)
+                if row:
+                    st["rows"].append(row)
+            except Exception:
+                still.append(code)
+        st["failed"] = still
+    st["rows"].sort(key=lambda r: r["code"])
+    out = {"updated": dt.datetime.now(JST).isoformat(timespec="seconds"), "code_from": start, "code_to": end,
+           "count": len(st["rows"]), "failed": st["failed"], "rows": st["rows"]}
+    _write_json(path, out)
+    partial.unlink(missing_ok=True)
+    log(f"[universe] 保存しました: {path}（{out['count']}件、取得失敗{len(out['failed'])}件）")
+    return out
+
+
+def load_universe(yh: Yahoo, path: Path, max_age_days: float, start: int, end: int,
+                  force: bool = False) -> list[dict]:
+    d = None if force else read_universe(path)
+    if d is not None:
+        age = universe_age_days(d)
+        if age <= max_age_days:
+            log(f"[universe] 保存済みの一覧を使用（{age:.1f}日前、{len(d['rows'])}件）: {path}")
+            return d["rows"]
+        log(f"[universe] 保存済みの一覧が {age:.1f} 日前のため作り直します")
+    return crawl_universe(yh, path, start, end)["rows"]
 
 
 def make_candidates(universe: list[dict]) -> list[dict]:
@@ -684,11 +745,6 @@ def build_markdown(ctx: dict) -> str:
 
 
 # ---------------------------------------------------------------- commands
-def default_cache() -> Path:
-    base = os.environ.get("LOCALAPPDATA") or os.environ.get("XDG_CACHE_HOME") or str(Path.home() / ".cache")
-    return Path(base) / "ai-investment-analyst"
-
-
 def cmd_prepare(a) -> int:
     base = Path(a.base).resolve()
     briefing = base / BRIEFING
@@ -699,8 +755,6 @@ def cmd_prepare(a) -> int:
     today = a.date or dt.datetime.now(JST).strftime("%Y%m%d")
     run_dir = base / a.out_dir / today
     run_dir.mkdir(parents=True, exist_ok=True)
-    cache = Path(a.cache) if a.cache else default_cache()
-    cache.mkdir(parents=True, exist_ok=True)
 
     # マスターを最初に記録（読むだけ）
     master_hash = sha256(master_p)
@@ -714,7 +768,7 @@ def cmd_prepare(a) -> int:
     yh = Yahoo(sleep=a.sleep)
     errors: list[str] = []
     try:
-        universe = load_universe(yh, cache, a.universe_max_age, a.code_from, a.code_to)
+        universe = load_universe(yh, Path(a.universe_file), a.universe_max_age, a.code_from, a.code_to)
         cands = make_candidates(universe)
         if a.limit:
             cands = cands[: a.limit]
@@ -892,20 +946,28 @@ def main(argv=None) -> int:
                    help="AI投資チームのフォルダー（既定: このリポジトリ。例: \"G:\\マイドライブ\\AI投資チーム\"）")
     p.add_argument("--date", help="日付 YYYYMMDD（既定: 今日 JST）")
     p.add_argument("--out-dir", default="analyst_runs", help="入力データの保存先（base からの相対）")
+    p.add_argument("--universe-file", default=str(DEFAULT_UNIVERSE),
+                   help="銘柄一覧の保存先（既定: analyst/data/universe.json。リポジトリにコミットして使い回す）")
     sub = p.add_subparsers(dest="cmd", required=True)
+    un = sub.add_parser("universe", help="銘柄一覧だけを作る・更新する（中断しても続きから再開）")
     pr = sub.add_parser("prepare", help="データを集めて AI 用の入力ファイルを作る")
-    pr.add_argument("--cache", help="キャッシュフォルダー（既定: %%LOCALAPPDATA%% または ~/.cache の下）")
-    pr.add_argument("--universe-max-age", type=float, default=7, help="銘柄一覧を作り直す間隔（日）")
-    pr.add_argument("--code-from", type=int, default=1300)
-    pr.add_argument("--code-to", type=int, default=9999)
+    for sp in (un, pr):
+        sp.add_argument("--universe-max-age", type=float, default=7, help="銘柄一覧を作り直す間隔（日）")
+        sp.add_argument("--code-from", type=int, default=1300)
+        sp.add_argument("--code-to", type=int, default=9999)
+        sp.add_argument("--sleep", type=float, default=0.25, help="リクエスト間の待ち秒数")
+    un.add_argument("--force", action="store_true", help="新しくても作り直す")
     pr.add_argument("--top", type=int, default=25, help="入力ファイルに載せる通過銘柄の数")
     pr.add_argument("--limit", type=int, default=0, help="財務取得の銘柄数上限（試験用）")
-    pr.add_argument("--sleep", type=float, default=0.25, help="リクエスト間の待ち秒数")
     sub.add_parser("verify", help="AI が保存したファイルを確認する")
     a = p.parse_args(argv)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
+    if a.cmd == "universe":
+        load_universe(Yahoo(sleep=a.sleep), Path(a.universe_file), a.universe_max_age,
+                      a.code_from, a.code_to, force=a.force)
+        return 0
     return cmd_prepare(a) if a.cmd == "prepare" else cmd_verify(a)
 
 

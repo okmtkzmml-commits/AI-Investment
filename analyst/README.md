@@ -49,11 +49,15 @@ python analyst_data.py --base $base verify
 ログは `analyst_runs\YYYYMMDD\run.log` に出ます。Mac/Linux なら cron に
 `python3 analyst/analyst_data.py --base <フォルダー> prepare` を登録してください。
 
-## 所要時間とキャッシュ
+## 銘柄一覧（analyst/data/universe.json）と所要時間
 
-- 銘柄一覧（コード 1300〜9999 の全探索、約8,700回アクセス）は **初回と7日ごと** にだけ作り直します（15分以上）。
-  キャッシュは `%LOCALAPPDATA%\ai-investment-analyst`（Mac/Linux は `~/.cache/ai-investment-analyst`）。
-- 財務データ（約400銘柄）は毎回取得します（10分程度）。
+- 銘柄一覧（コード 1300〜9999 の全探索、約8,700回アクセス、**約45分**）は `analyst/data/universe.json` に保存し、
+  **リポジトリにコミットして使い回します**。ファイル内の `updated` から7日を過ぎると、次の prepare で作り直します。
+  クラウド実行（毎回まっさらな環境）でも、コミット済みの一覧があれば全探索は走りません。
+- 一覧だけを作り直す: `python analyst_data.py universe --force`
+  途中で止まっても `analyst/data/universe.partial.json` に経過が残り、同じコマンドで続きから再開します。
+- 作り直したら `universe.json` をコミットしてください（`.partial.json` はコミット不要）。
+- 財務データ（約400銘柄）は毎回取得します（数分〜10分程度）。
 - 試すときは `prepare --limit 30` で財務取得を30銘柄に絞れます。
 
 ## 出力（analyst_runs\YYYYMMDD\）

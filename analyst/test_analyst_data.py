@@ -3,6 +3,7 @@
 """
 import contextlib
 import io
+import json
 import math
 import shutil
 import sys
@@ -108,13 +109,14 @@ class TestEndToEnd(unittest.TestCase):
     def run_cmd(self, *args):
         out = io.StringIO()
         with contextlib.redirect_stdout(out), contextlib.redirect_stderr(io.StringIO()):
-            rc = ad.main(["--base", str(self.tmp), "--date", "20261101", *args])
+            rc = ad.main(["--base", str(self.tmp), "--date", "20261101",
+                          "--universe-file", str(self.tmp / "data" / "universe.json"), *args])
         return rc, out.getvalue()
 
     def test_prepare_and_verify(self):
         master = self.tmp / ad.BRIEFING / ad.MASTER
         before = master.read_bytes()
-        rc, out = self.run_cmd("prepare", "--cache", str(self.tmp / "cache"), "--code-from", "1111",
+        rc, out = self.run_cmd("prepare", "--code-from", "1111",
                                "--code-to", "9999", "--sleep", "0")
         self.assertEqual(rc, 0)
         self.assertEqual(master.read_bytes(), before, "マスターを書き換えてはいけない")
@@ -147,6 +149,47 @@ class TestEndToEnd(unittest.TestCase):
         self.assertIn("総合判定", out)
         self.assertIn("カンマ", out)
         self.assertIn("変わっています", out)
+
+
+class TestUniverse(unittest.TestCase):
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.path = self.tmp / "universe.json"
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp)
+
+    def quiet(self, f, *a, **k):
+        with contextlib.redirect_stderr(io.StringIO()):
+            return f(*a, **k)
+
+    def test_resume_and_reuse(self):
+        # 途中経過（7000 まで済み）から再開すると、それ以前のコードは問い合わせない
+        partial = self.tmp / "universe.partial.json"
+        partial.write_text(json.dumps({"updated": "2026-11-01T00:00:00+09:00", "code_from": 6900, "code_to": 9999,
+                                       "next": 7001, "rows": [{"code": "6929", "name": "x", "industry": "Electronic Components", "mcap": 1e12}],
+                                       "failed": []}), encoding="utf-8")
+        calls = []
+
+        class Y(FakeYahoo):
+            def quote_summary(s, code, modules):
+                calls.append(code)
+                return FakeYahoo.quote_summary(s, code, modules)
+
+        rows = self.quiet(ad.load_universe, Y(), self.path, 7, 6900, 9999)
+        self.assertEqual(min(int(c) for c in calls), 7001)
+        self.assertEqual([r["code"] for r in rows], ["6929", "7269", "7974", "8306", "9746"])
+        self.assertFalse(partial.exists())
+        # 保存済みで新しければ問い合わせない
+        calls.clear()
+        self.quiet(ad.load_universe, Y(), self.path, 7, 6900, 9999)
+        self.assertEqual(calls, [])
+        # 古ければ作り直す
+        d = json.loads(self.path.read_text(encoding="utf-8"))
+        d["updated"] = "2026-01-01T00:00:00+09:00"
+        self.path.write_text(json.dumps(d), encoding="utf-8")
+        self.quiet(ad.load_universe, Y(), self.path, 7, 9700, 9800)
+        self.assertTrue(calls)
 
 
 if __name__ == "__main__":
