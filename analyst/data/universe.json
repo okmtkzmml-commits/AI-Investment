@@ -1,0 +1,9242 @@
+{
+"updated": "2026-11-03T01:23:15+09:00",
+"code_from": 1300,
+"code_to": 9999,
+"count": 1319,
+"failed": [],
+"rows": [
+{
+"code": "1301",
+"name": "KYOKUYO CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 54053441536
+},
+{
+"code": "1332",
+"name": "NISSUI CORPORATION",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 336631726080
+},
+{
+"code": "1333",
+"name": "UMIOS CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 181949104128
+},
+{
+"code": "1377",
+"name": "SAKATA SEED CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Farm Products",
+"mcap": 176286613504
+},
+{
+"code": "1379",
+"name": "HOKUTO CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Farm Products",
+"mcap": 65183064064
+},
+{
+"code": "1407",
+"name": "WEST HOLDINGS CORP",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 79595921408
+},
+{
+"code": "1414",
+"name": "SHO-BOND HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 254876876800
+},
+{
+"code": "1417",
+"name": "MIRAIT ONE CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 283983380480
+},
+{
+"code": "1419",
+"name": "TAMA HOME CO LIMITED",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Residential Construction",
+"mcap": 77572308992
+},
+{
+"code": "1515",
+"name": "NITTETSU MINING CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Copper",
+"mcap": 205471006720
+},
+{
+"code": "1518",
+"name": "MITSUI MATSUSHIMA HOLDINGS CO L",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 83164798976
+},
+{
+"code": "1605",
+"name": "INPEX CORPORATION",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas E&P",
+"mcap": 4660405469184
+},
+{
+"code": "1662",
+"name": "JAPAN PETROLEUM EXPLORATION CO ",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas E&P",
+"mcap": 441056591872
+},
+{
+"code": "1663",
+"name": "K&O ENERGY GROUP INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 100753653760
+},
+{
+"code": "1719",
+"name": "HAZAMA ANDO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 273682513920
+},
+{
+"code": "1720",
+"name": "TOKYU CONSTRUCTION CO(NEW)",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 127209021440
+},
+{
+"code": "1721",
+"name": "COMSYS HOLDINGS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 624714842112
+},
+{
+"code": "1723",
+"name": "NIHON DENGI CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 126254702592
+},
+{
+"code": "1762",
+"name": "TAKAMATSU CONSTRUCTION GROUP CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 143103901696
+},
+{
+"code": "1766",
+"name": "TOKEN CORPORATION",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 139538432000
+},
+{
+"code": "1773",
+"name": "YTL CORP",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Diversified",
+"mcap": 962411102208
+},
+{
+"code": "1793",
+"name": "OHMOTO GUMI CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 51275116544
+},
+{
+"code": "1799",
+"name": "DAIICHI KENSETSU CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 59761557504
+},
+{
+"code": "1801",
+"name": "TAISEI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 1808586244096
+},
+{
+"code": "1802",
+"name": "OBAYASHI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 2064326721536
+},
+{
+"code": "1803",
+"name": "SHIMIZU CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 1385894248448
+},
+{
+"code": "1808",
+"name": "HASEKO CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Residential Construction",
+"mcap": 706637201408
+},
+{
+"code": "1811",
+"name": "ZENITAKA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 50488770560
+},
+{
+"code": "1812",
+"name": "KAJIMA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 2174051942400
+},
+{
+"code": "1815",
+"name": "TEKKEN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 58732683264
+},
+{
+"code": "1820",
+"name": "NISHIMATSU CONSTRUCTION CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 209820270592
+},
+{
+"code": "1822",
+"name": "DAIHO CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 65472950272
+},
+{
+"code": "1833",
+"name": "OKUMURA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 188861480960
+},
+{
+"code": "1835",
+"name": "TOTETSU KOGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 138799988736
+},
+{
+"code": "1852",
+"name": "ASANUMA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 68236931072
+},
+{
+"code": "1860",
+"name": "TODA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 427629510656
+},
+{
+"code": "1861",
+"name": "KUMAGAI GUMI CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 210384633856
+},
+{
+"code": "1870",
+"name": "YAHAGI CONSTRUCTION CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 90508836864
+},
+{
+"code": "1871",
+"name": "PS CONSTRUCTION CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 108152897536
+},
+{
+"code": "1878",
+"name": "DAITO TRUST CONSTRUCTION CO",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 1103463841792
+},
+{
+"code": "1879",
+"name": "SHINNIHON CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 124056248320
+},
+{
+"code": "1882",
+"name": "TOA ROAD CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 71021060096
+},
+{
+"code": "1885",
+"name": "TOA CORPORATION (CONST)",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 158527782912
+},
+{
+"code": "1893",
+"name": "PENTA OCEAN CONSTRUCTION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 365215318016
+},
+{
+"code": "1898",
+"name": "SEIKITOKYU KOGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 51944374272
+},
+{
+"code": "1899",
+"name": "FUKUDA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 78515929088
+},
+{
+"code": "1911",
+"name": "SUMITOMO FORESTRY CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Residential Construction",
+"mcap": 767703646208
+},
+{
+"code": "1921",
+"name": "TOMOE CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 66759184384
+},
+{
+"code": "1925",
+"name": "DAIWA HOUSE INDUSTRY CO",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 2849265680384
+},
+{
+"code": "1926",
+"name": "RAITO KOGYO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 153405800448
+},
+{
+"code": "1928",
+"name": "SEKISUI HOUSE",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Residential Construction",
+"mcap": 2257740627968
+},
+{
+"code": "1934",
+"name": "YURTEC CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 169793781760
+},
+{
+"code": "1938",
+"name": "NIPPON RIETEC CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 60687560704
+},
+{
+"code": "1939",
+"name": "YONDENKO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 110052974592
+},
+{
+"code": "1941",
+"name": "CHUDENKO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 274771591168
+},
+{
+"code": "1942",
+"name": "KANDENKO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 914270126080
+},
+{
+"code": "1944",
+"name": "KINDEN CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 985574408192
+},
+{
+"code": "1945",
+"name": "TOKYO ENERGY & SYSTEMS INC",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 64414175232
+},
+{
+"code": "1946",
+"name": "TOENEC CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 166835699712
+},
+{
+"code": "1948",
+"name": "KODENSHA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 99999719424
+},
+{
+"code": "1950",
+"name": "NIPPON DENSETSU KOGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Infrastructure Operations",
+"mcap": 216423383040
+},
+{
+"code": "1951",
+"name": "EXEO GROUP INC",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 502773579776
+},
+{
+"code": "1952",
+"name": "SHIN NIPPON AIR TECHNOLOGIES CO",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 134374195200
+},
+{
+"code": "1959",
+"name": "KRAFTIA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 553500016640
+},
+{
+"code": "1961",
+"name": "SANKI ENGINEERING CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 380753772544
+},
+{
+"code": "1963",
+"name": "JGC HOLDINGS CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 513685192704
+},
+{
+"code": "1965",
+"name": "TECHNO RYOWA LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 120376229888
+},
+{
+"code": "1968",
+"name": "TAIHEI DENGYO KAISHA",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 152649498624
+},
+{
+"code": "1969",
+"name": "TAKASAGO THERMAL ENGINEERING CO",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 514552627200
+},
+{
+"code": "1975",
+"name": "ASAHI KOGYOSHA CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 94963761152
+},
+{
+"code": "1976",
+"name": "MEISEI INDUSTRIAL CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 75922063360
+},
+{
+"code": "1979",
+"name": "TAIKISHA LTD",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 225693614080
+},
+{
+"code": "1980",
+"name": "DAI-DAN CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 362905468928
+},
+{
+"code": "1982",
+"name": "HIBIYA ENGINEERING",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 130191204352
+},
+{
+"code": "2001",
+"name": "NIPPN CORPORATION",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 242041765888
+},
+{
+"code": "2002",
+"name": "NISSHIN SEIFUN GROUP INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 629551661056
+},
+{
+"code": "2003",
+"name": "NITTO FUJI FLOUR MILLING CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Farm Products",
+"mcap": 70143279104
+},
+{
+"code": "2004",
+"name": "SHOWA SANGYO CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 133074558976
+},
+{
+"code": "2053",
+"name": "CHUBU SHIRYO CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 59257802752
+},
+{
+"code": "2060",
+"name": "FEED ONE CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 52199112704
+},
+{
+"code": "2108",
+"name": "NITTEN CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 60387708928
+},
+{
+"code": "2109",
+"name": "MITSUI DM SUGAR CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 109686046720
+},
+{
+"code": "2117",
+"name": "WELLNEO SUGAR CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 89769123840
+},
+{
+"code": "2121",
+"name": "MIXI. INC",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 261237374976
+},
+{
+"code": "2124",
+"name": "JAC RECRUITMENT CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 173590528000
+},
+{
+"code": "2127",
+"name": "NIHON M&A CENTER HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 192834256896
+},
+{
+"code": "2146",
+"name": "UT GROUP CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 137209200640
+},
+{
+"code": "2154",
+"name": "OPEN UP GROUP INC",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 169240674304
+},
+{
+"code": "2157",
+"name": "KOSHIDAKA HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 78875377664
+},
+{
+"code": "2160",
+"name": "GNI GROUP LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Biotechnology",
+"mcap": 162891087872
+},
+{
+"code": "2168",
+"name": "PASONA GROUP INC",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 54273077248
+},
+{
+"code": "2170",
+"name": "LINK AND MOTIVATION INC",
+"yahoo_sector": "Industrials",
+"industry": "Consulting Services",
+"mcap": 59233214464
+},
+{
+"code": "2175",
+"name": "SMS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Health Information Services",
+"mcap": 208402251776
+},
+{
+"code": "2181",
+"name": "PERSOL HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 649565700096
+},
+{
+"code": "2201",
+"name": "MORINAGA & CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 204381077504
+},
+{
+"code": "2206",
+"name": "EZAKI GLICO CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 298602528768
+},
+{
+"code": "2207",
+"name": "MEITO CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 54094954496
+},
+{
+"code": "2208",
+"name": "BOURBON CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 73239552000
+},
+{
+"code": "2211",
+"name": "FUJIYA CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 62892478464
+},
+{
+"code": "2212",
+"name": "YAMAZAKI BAKING LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 785453219840
+},
+{
+"code": "2220",
+"name": "KAMEDA SEIKA CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 82476892160
+},
+{
+"code": "2222",
+"name": "KOTOBUKI SPIRITS",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Confectioners",
+"mcap": 398900527104
+},
+{
+"code": "2226",
+"name": "KOIKE-YA INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 50671943680
+},
+{
+"code": "2229",
+"name": "CALBEE INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 378746175488
+},
+{
+"code": "2264",
+"name": "MORINAGA MILK INDUSTRY CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 355720331264
+},
+{
+"code": "2267",
+"name": "YAKULT HONSHA CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 795864465408
+},
+{
+"code": "2269",
+"name": "MEIJI HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 1164661358592
+},
+{
+"code": "2270",
+"name": "MEGMILK SNOW BRAND CO.LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 210968068096
+},
+{
+"code": "2281",
+"name": "PRIMA MEAT PACKERS",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 115502874624
+},
+{
+"code": "2282",
+"name": "NH FOODS LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 566367944704
+},
+{
+"code": "2292",
+"name": "S FOODS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Farm Products",
+"mcap": 85895946240
+},
+{
+"code": "2296",
+"name": "ITOHAM YONEKYU HOLDINGS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 274956517376
+},
+{
+"code": "2317",
+"name": "SYSTENA CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 146914344960
+},
+{
+"code": "2326",
+"name": "DIGITAL ARTS INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 76117082112
+},
+{
+"code": "2327",
+"name": "NS SOLUTIONS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 749674823680
+},
+{
+"code": "2329",
+"name": "TOHOKUSHINSHA FILM CORPORATION",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 55960686592
+},
+{
+"code": "2331",
+"name": "ALSOK CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Security & Protection Services",
+"mcap": 570184433664
+},
+{
+"code": "2337",
+"name": "ICHIGO INC",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 167770079232
+},
+{
+"code": "2353",
+"name": "NIPPON PARKING DEVELOPMENT CO.L",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 84588494848
+},
+{
+"code": "2371",
+"name": "KAKAKU.COM. INC",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 736346636288
+},
+{
+"code": "2379",
+"name": "DIP CORPORATION",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 77423206400
+},
+{
+"code": "2384",
+"name": "SBS HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 230757908480
+},
+{
+"code": "2393",
+"name": "NIPPON CARE SUPPLY CO",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 67071897600
+},
+{
+"code": "2395",
+"name": "SHIN NIPPON BIOMEDICAL LABORATO",
+"yahoo_sector": "Healthcare",
+"industry": "Diagnostics & Research",
+"mcap": 62697512960
+},
+{
+"code": "2413",
+"name": "M3 INC",
+"yahoo_sector": "Healthcare",
+"industry": "Health Information Services",
+"mcap": 1236013285376
+},
+{
+"code": "2432",
+"name": "DENA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 236647841792
+},
+{
+"code": "2433",
+"name": "HAKUHODO DY HLDGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Advertising Agencies",
+"mcap": 507312275456
+},
+{
+"code": "2492",
+"name": "INFOMART CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 201539092480
+},
+{
+"code": "2501",
+"name": "SAPPORO BREWERIES LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Brewers",
+"mcap": 826937704448
+},
+{
+"code": "2502",
+"name": "ASAHI GROUP HLDGS",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Brewers",
+"mcap": 2444108759040
+},
+{
+"code": "2503",
+"name": "KIRIN HOLDINGS COMPANY LIMITED",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Brewers",
+"mcap": 2321015111680
+},
+{
+"code": "2531",
+"name": "TAKARA HOLDINGS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Brewers",
+"mcap": 599029383168
+},
+{
+"code": "2573",
+"name": "HOKKAIDO COCA-COLA BOTTLING CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 55312576512
+},
+{
+"code": "2579",
+"name": "COCA-COLA BOTTLERS JAPAN HLDGS ",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 698069942272
+},
+{
+"code": "2585",
+"name": "LIFEDRINK CO INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 63927468032
+},
+{
+"code": "2587",
+"name": "SUNTORY BEVERAGE & FOOD LIMITED",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 1482889363456
+},
+{
+"code": "2588",
+"name": "PREMIUM WATER HLDGS INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Water",
+"mcap": 80686489600
+},
+{
+"code": "2590",
+"name": "DYDO GROUP HOLDINGS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 95280242688
+},
+{
+"code": "2593",
+"name": "ITO EN LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Beverages - Non-Alcoholic",
+"mcap": 378301153280
+},
+{
+"code": "2602",
+"name": "NISSHIN OILLIO GROUP LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 187946696704
+},
+{
+"code": "2607",
+"name": "FUJI OIL CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 395519459328
+},
+{
+"code": "2612",
+"name": "KADOYA SESAME MILLS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 84770111488
+},
+{
+"code": "2613",
+"name": "J-OIL MILLS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 75204222976
+},
+{
+"code": "2653",
+"name": "AEON KYUSHU CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 93190643712
+},
+{
+"code": "2659",
+"name": "SAN-A CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 187797438464
+},
+{
+"code": "2664",
+"name": "CAWACHI LIMITED",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 89714409472
+},
+{
+"code": "2670",
+"name": "ABC-MART INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 763402059776
+},
+{
+"code": "2678",
+"name": "ASKUL CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 104127537152
+},
+{
+"code": "2681",
+"name": "2ND RETAILING CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 75071414272
+},
+{
+"code": "2685",
+"name": "AND ST HD CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Manufacturing",
+"mcap": 146893963264
+},
+{
+"code": "2695",
+"name": "KURA SUSHI INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 137431760896
+},
+{
+"code": "2702",
+"name": "MCDONALD'S HOLDINGS COMPANY(JAP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 1158069878784
+},
+{
+"code": "2705",
+"name": "OOTOYA HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 73526509568
+},
+{
+"code": "2726",
+"name": "PAL GROUP HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 253873897472
+},
+{
+"code": "2730",
+"name": "EDION CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 249968672768
+},
+{
+"code": "2733",
+"name": "ARATA CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 88847196160
+},
+{
+"code": "2734",
+"name": "SALA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 73434144768
+},
+{
+"code": "2737",
+"name": "TOMEN DEVICES CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 163900309504
+},
+{
+"code": "2742",
+"name": "HALOWS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 77955170304
+},
+{
+"code": "2749",
+"name": "JP-HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 52410748928
+},
+{
+"code": "2752",
+"name": "FUJIO FOOD GROUP INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 59661090816
+},
+{
+"code": "2760",
+"name": "TOKYO ELECTRON DEVICE",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 125602029568
+},
+{
+"code": "2767",
+"name": "TSUBURAYA FIELDS HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Gambling",
+"mcap": 150339649536
+},
+{
+"code": "2768",
+"name": "SOJITZ CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1069429620736
+},
+{
+"code": "2782",
+"name": "SERIA CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Discount Stores",
+"mcap": 265727311872
+},
+{
+"code": "2784",
+"name": "ALFRESA HOLDINGS CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Distribution",
+"mcap": 428263636992
+},
+{
+"code": "2801",
+"name": "KIKKOMAN CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 1678497677312
+},
+{
+"code": "2802",
+"name": "AJINOMOTO CO INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 4880191717376
+},
+{
+"code": "2805",
+"name": "S & B FOODS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 161736179712
+},
+{
+"code": "2809",
+"name": "KEWPIE CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 616301920256
+},
+{
+"code": "2810",
+"name": "HOUSE FOODS GROUP INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 402815614976
+},
+{
+"code": "2811",
+"name": "KAGOME CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 250836664320
+},
+{
+"code": "2815",
+"name": "ARIAKE JAPAN CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 159922012160
+},
+{
+"code": "2871",
+"name": "NICHIREI CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 539438252032
+},
+{
+"code": "2874",
+"name": "YOKOREI CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Food Distribution",
+"mcap": 101811331072
+},
+{
+"code": "2875",
+"name": "TOYO SUISAN KAISHA",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 1060425302016
+},
+{
+"code": "2897",
+"name": "NISSIN FOODS HOLDINGS CO. LTD.",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 874063134720
+},
+{
+"code": "2914",
+"name": "JAPAN TOBACCO INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Tobacco",
+"mcap": 13074265276416
+},
+{
+"code": "2938",
+"name": "OKAMURA FOODS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Farm Products",
+"mcap": 60537413632
+},
+{
+"code": "2972",
+"name": "SANKEI REAL ESTATE INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 58293956608
+},
+{
+"code": "2979",
+"name": "SOSILA LOGISTICS REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 67803000832
+},
+{
+"code": "2986",
+"name": "LA HOLDINGS CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 60549369856
+},
+{
+"code": "3001",
+"name": "KATAKURA INDUSTRIES CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 116394876928
+},
+{
+"code": "3002",
+"name": "GUNZE LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Manufacturing",
+"mcap": 128357597184
+},
+{
+"code": "3003",
+"name": "HULIC CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 1404741484544
+},
+{
+"code": "3028",
+"name": "ALPEN CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 90187563008
+},
+{
+"code": "3034",
+"name": "QOL HOLDINGS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 89923117056
+},
+{
+"code": "3036",
+"name": "ALCONIX CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Industrial Metals & Mining",
+"mcap": 90483785728
+},
+{
+"code": "3038",
+"name": "KOBE BUSSAN CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 651612520448
+},
+{
+"code": "3040",
+"name": "SOLITON SYSTEMS K.K.",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 54548770816
+},
+{
+"code": "3046",
+"name": "JINS HOLDINGS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 143124070400
+},
+{
+"code": "3048",
+"name": "BIC CAMERA INC.",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 300206030848
+},
+{
+"code": "3050",
+"name": "DCM HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Home Improvement Retail",
+"mcap": 224704806912
+},
+{
+"code": "3064",
+"name": "MONOTARO CO.LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 1090847768576
+},
+{
+"code": "3076",
+"name": "AI HOLDINGS CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 159792513024
+},
+{
+"code": "3086",
+"name": "J FRONT RETAILING CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 738119385088
+},
+{
+"code": "3087",
+"name": "DOUTOR NICHIRES HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 151467884544
+},
+{
+"code": "3088",
+"name": "MATSUKIYOCOCOKARA & CO",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 1031873757184
+},
+{
+"code": "3091",
+"name": "BRONCO BILLY CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 90294714368
+},
+{
+"code": "3092",
+"name": "ZOZO INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 981243920384
+},
+{
+"code": "3097",
+"name": "MONOGATARI CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 230217416704
+},
+{
+"code": "3099",
+"name": "ISETAN MITSUKOSHI HOLDINGS LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 1270671605760
+},
+{
+"code": "3101",
+"name": "TOYOBO CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 136338169856
+},
+{
+"code": "3104",
+"name": "FUJIBO HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Textile Manufacturing",
+"mcap": 110931189760
+},
+{
+"code": "3105",
+"name": "NISSHINBO HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 347532787712
+},
+{
+"code": "3106",
+"name": "KURABO INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 176512827392
+},
+{
+"code": "3107",
+"name": "DAIWABO HOLDINGS CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 320357957632
+},
+{
+"code": "3110",
+"name": "NITTO BOSEKI CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Textile Manufacturing",
+"mcap": 514327543808
+},
+{
+"code": "3116",
+"name": "TOYOTA BOSHOKU CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 357319376896
+},
+{
+"code": "3132",
+"name": "MACNICA HOLDINGS INC",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 661576155136
+},
+{
+"code": "3148",
+"name": "CREATE SD HOLDINGS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 204466159616
+},
+{
+"code": "3150",
+"name": "GREMS INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Electric",
+"mcap": 53648613376
+},
+{
+"code": "3151",
+"name": "VITAL KSK HOLDINGS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Distribution",
+"mcap": 72234401792
+},
+{
+"code": "3153",
+"name": "YASHIMA DENKI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 58913140736
+},
+{
+"code": "3156",
+"name": "RESTAR CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 155209859072
+},
+{
+"code": "3167",
+"name": "TOKAI HLDGS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 155103543296
+},
+{
+"code": "3176",
+"name": "SANYO TRADING CO LIMITED",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 64376025088
+},
+{
+"code": "3182",
+"name": "OISIX INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 57135456256
+},
+{
+"code": "3186",
+"name": "NEXTAGE CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto & Truck Dealerships",
+"mcap": 189708730368
+},
+{
+"code": "3191",
+"name": "JOYFUL HONDA CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Home Improvement Retail",
+"mcap": 138144497664
+},
+{
+"code": "3197",
+"name": "SKYLARK HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 826905788416
+},
+{
+"code": "3201",
+"name": "JAPAN WOOL TEXTILE CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Textile Manufacturing",
+"mcap": 136583372800
+},
+{
+"code": "3222",
+"name": "UNITED SUPER MARKETS HLDGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 157048160256
+},
+{
+"code": "3226",
+"name": "MITSUI FUDOSAN ACCOMMODATIONS F",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Residential",
+"mcap": 270112735232
+},
+{
+"code": "3231",
+"name": "NOMURA REAL ESTATE HOLDINGS INC",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 759904534528
+},
+{
+"code": "3232",
+"name": "MIE KOTSU GROUP HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 56932081664
+},
+{
+"code": "3234",
+"name": "MORI HILLS REIT INVESTMENT CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 217450627072
+},
+{
+"code": "3249",
+"name": "INDUSTRIAL & INFRAST FD INV COR",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 324654399488
+},
+{
+"code": "3252",
+"name": "JINUSHI CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 55116410880
+},
+{
+"code": "3269",
+"name": "ADVANCE RESIDENCE INV CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Residential",
+"mcap": 374222028800
+},
+{
+"code": "3279",
+"name": "ACTIVIA PROPERTIES INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 296089223168
+},
+{
+"code": "3281",
+"name": "GLP J-REIT",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 627063455744
+},
+{
+"code": "3282",
+"name": "COMFORIA RESIDENTIAL REIT.INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Residential",
+"mcap": 211963723776
+},
+{
+"code": "3283",
+"name": "NIPPON PROLOGIS REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 683712249856
+},
+{
+"code": "3287",
+"name": "HOSHINO RESORTS REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Hotel & Motel",
+"mcap": 129645068288
+},
+{
+"code": "3288",
+"name": "OPEN HOUSE GROUP CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 847103524864
+},
+{
+"code": "3289",
+"name": "TOKYU FUDOSAN HOLDINGS CORPORAT",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 880127442944
+},
+{
+"code": "3290",
+"name": "ONE REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 71467376640
+},
+{
+"code": "3291",
+"name": "IIDA GROUP HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Residential Construction",
+"mcap": 582642040832
+},
+{
+"code": "3292",
+"name": "AEON REIT INVESTMENT CORPORATIO",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Retail",
+"mcap": 218246660096
+},
+{
+"code": "3295",
+"name": "HULIC REIT INC.",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 195408003072
+},
+{
+"code": "3296",
+"name": "NIPPON REIT INVESTMENT CORPORAT",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 135993516032
+},
+{
+"code": "3302",
+"name": "TEIKOKU SEN-I CO",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 73852895232
+},
+{
+"code": "3309",
+"name": "SEKISUI HOUSE REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 277606072320
+},
+{
+"code": "3349",
+"name": "COSMOS PHARMACEUTICAL CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 475701870592
+},
+{
+"code": "3350",
+"name": "METAPLANET INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 341063925760
+},
+{
+"code": "3360",
+"name": "SHIP HEALTH CARE HOLDINGS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 221452255232
+},
+{
+"code": "3371",
+"name": "SOFTCREATE HOLDINGS CORP",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 52001730560
+},
+{
+"code": "3382",
+"name": "SEVEN & I HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 4862894931968
+},
+{
+"code": "3387",
+"name": "CREATE RESTAURANTS HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 359508901888
+},
+{
+"code": "3391",
+"name": "TSURUHA HOLDINGS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 1033468182528
+},
+{
+"code": "3395",
+"name": "SAINT MARC HOLDINGS CO.LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 54815944704
+},
+{
+"code": "3397",
+"name": "TORIDOLL HOLDINGS CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 425147170816
+},
+{
+"code": "3399",
+"name": "MARUCHIYO YAMAOKA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 103226408960
+},
+{
+"code": "3401",
+"name": "TEIJIN LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 312583356416
+},
+{
+"code": "3402",
+"name": "TORAY INDUSTRIES INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Textile Manufacturing",
+"mcap": 1723959607296
+},
+{
+"code": "3405",
+"name": "KURARAY CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 564931592192
+},
+{
+"code": "3407",
+"name": "ASAHI KASEI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 2106385760256
+},
+{
+"code": "3433",
+"name": "TOCALO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 157116301312
+},
+{
+"code": "3436",
+"name": "SUMCO CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 794766671872
+},
+{
+"code": "3443",
+"name": "KAWADA TECHNOLOGIES INC",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 66452459520
+},
+{
+"code": "3445",
+"name": "RS TECHNOLOGIES CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 128061710336
+},
+{
+"code": "3449",
+"name": "TECHNOFLEX CORP",
+"yahoo_sector": "Industrials",
+"industry": "Metal Fabrication",
+"mcap": 61847556096
+},
+{
+"code": "3459",
+"name": "SAMTY RESIDENTIAL INVESTMENT CO",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Residential",
+"mcap": 66256809984
+},
+{
+"code": "3462",
+"name": "NOMURA REAL ESTATE MASTER FUND ",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Retail",
+"mcap": 576613777408
+},
+{
+"code": "3465",
+"name": "KI-STAR REAL ESTATE CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 96090030080
+},
+{
+"code": "3466",
+"name": "LASALLE LOGIPORT REIT",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 227132440576
+},
+{
+"code": "3468",
+"name": "STAR ASIA INVESTOMENT CORPORATI",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 140261392384
+},
+{
+"code": "3471",
+"name": "MITSUI FUDOSAN LOGISTICS PARK I",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 314564608000
+},
+{
+"code": "3476",
+"name": "MIRAI CORPORATION",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 69144698880
+},
+{
+"code": "3479",
+"name": "TKP CORPORATION",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 71470137344
+},
+{
+"code": "3480",
+"name": "J S B CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 188578775040
+},
+{
+"code": "3481",
+"name": "MITSUBISHI ESTATE LOGISTICS REI",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 153401638912
+},
+{
+"code": "3487",
+"name": "CRE LOGISTICS REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 75131625472
+},
+{
+"code": "3491",
+"name": "GA TECHNOLOGIES CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 57514500096
+},
+{
+"code": "3492",
+"name": "MIRARTH REAL ESTATE INVESTMENT ",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 74169024512
+},
+{
+"code": "3496",
+"name": "AZOOM CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 59764715520
+},
+{
+"code": "3539",
+"name": "JM HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 77143834624
+},
+{
+"code": "3543",
+"name": "KOMEDA HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 135398391808
+},
+{
+"code": "3549",
+"name": "KUSURI NO AOKI HOLDINGS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 427808587776
+},
+{
+"code": "3563",
+"name": "FOOD & LIFE COMPANIES LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 1319981285376
+},
+{
+"code": "3569",
+"name": "SEIREN CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Textile Manufacturing",
+"mcap": 194946351104
+},
+{
+"code": "3591",
+"name": "WACOAL HOLDINGS CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Manufacturing",
+"mcap": 178517295104
+},
+{
+"code": "3608",
+"name": "TSI HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Manufacturing",
+"mcap": 65048252416
+},
+{
+"code": "3612",
+"name": "WORLD CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 109541236736
+},
+{
+"code": "3626",
+"name": "TISI INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 912542793728
+},
+{
+"code": "3632",
+"name": "GREE HOLDINGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 73547784192
+},
+{
+"code": "3635",
+"name": "KOEI TECMO HOLDINGS CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 577562279936
+},
+{
+"code": "3636",
+"name": "MITSUBISHI RESEARCH INSTITUTE I",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 82106277888
+},
+{
+"code": "3659",
+"name": "NEXON CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 2123649122304
+},
+{
+"code": "3661",
+"name": "M UP HOLDINGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 61271142400
+},
+{
+"code": "3663",
+"name": "CELSYS INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 50258894848
+},
+{
+"code": "3673",
+"name": "BROADLEAF CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 84251516928
+},
+{
+"code": "3687",
+"name": "FIXSTARS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 56498397184
+},
+{
+"code": "3692",
+"name": "FFRI SECURITY INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 60112236544
+},
+{
+"code": "3697",
+"name": "SHIFT INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 279120773120
+},
+{
+"code": "3708",
+"name": "TOKUSHU TOKAI PAPER CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 72019353600
+},
+{
+"code": "3733",
+"name": "SOFTWARE SERVICE INC",
+"yahoo_sector": "Healthcare",
+"industry": "Health Information Services",
+"mcap": 52741361664
+},
+{
+"code": "3762",
+"name": "TECHMATRIX CORP",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 129687764992
+},
+{
+"code": "3763",
+"name": "PRO-SHIP INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 52520984576
+},
+{
+"code": "3765",
+"name": "GUNGHO ONLINE ENTERTAINMENT",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 122538508288
+},
+{
+"code": "3769",
+"name": "GMO PAYMENT GATEWAY INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 642250571776
+},
+{
+"code": "3774",
+"name": "INTERNET INITIATIVE JAPAN INC",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 611965861888
+},
+{
+"code": "3778",
+"name": "SAKURA INTERNET INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 119713759232
+},
+{
+"code": "3817",
+"name": "SRA HOLDINGS INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 63495557120
+},
+{
+"code": "3854",
+"name": "I'LL INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 56899440640
+},
+{
+"code": "3861",
+"name": "OJI HOLDINGS CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 697561055232
+},
+{
+"code": "3863",
+"name": "NIPPON PAPER INDUSTRIES CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 146441797632
+},
+{
+"code": "3864",
+"name": "MITSUBISHI PAPER MILLS",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 53051707392
+},
+{
+"code": "3865",
+"name": "HOKUETSU CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 132649394176
+},
+{
+"code": "3880",
+"name": "DAIO PAPER CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 152989630464
+},
+{
+"code": "3891",
+"name": "NIPPON KODOSHI",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 64861982720
+},
+{
+"code": "3905",
+"name": "DATASECTION INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 80889176064
+},
+{
+"code": "3923",
+"name": "RAKUS CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 388635000832
+},
+{
+"code": "3941",
+"name": "RENGO CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 369134698496
+},
+{
+"code": "3946",
+"name": "TOMOKU CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 69412593664
+},
+{
+"code": "3950",
+"name": "THE PACK CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 79736799232
+},
+{
+"code": "3962",
+"name": "CHANGE HOLDINGS INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 63110221824
+},
+{
+"code": "3964",
+"name": "AUCNET INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 122926465024
+},
+{
+"code": "3993",
+"name": "PKSHA TECHNOLOGY INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 105663815680
+},
+{
+"code": "3994",
+"name": "MONEY FORWARD INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 388255285248
+},
+{
+"code": "4004",
+"name": "RESONAC HOLDINGS CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 2508874842112
+},
+{
+"code": "4005",
+"name": "SUMITOMO CHEMICAL COMPANY",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 844932710400
+},
+{
+"code": "4008",
+"name": "SUMITOMO SEIKA CHEMICALS CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 92627722240
+},
+{
+"code": "4021",
+"name": "NISSAN CHEMICAL CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 1023431213056
+},
+{
+"code": "4022",
+"name": "RASA INDUSTRIES",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 59920101376
+},
+{
+"code": "4023",
+"name": "KUREHA CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 160910639104
+},
+{
+"code": "4028",
+"name": "ISHIHARA SANGYO KAISHA",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 99029450752
+},
+{
+"code": "4041",
+"name": "NIPPON SODA CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 191900631040
+},
+{
+"code": "4042",
+"name": "TOSOH CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 784967008256
+},
+{
+"code": "4043",
+"name": "TOKUYAMA CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 285334503424
+},
+{
+"code": "4044",
+"name": "CENTRAL GLASS CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 109832036352
+},
+{
+"code": "4045",
+"name": "TOAGOSEI CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 190588862464
+},
+{
+"code": "4046",
+"name": "OSAKA SODA CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 227904126976
+},
+{
+"code": "4047",
+"name": "KANTO DENKA KOGYO CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 112126967808
+},
+{
+"code": "4061",
+"name": "DENKA COMPANY LIMITED",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 264115912704
+},
+{
+"code": "4062",
+"name": "IBIDEN CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 4564633780224
+},
+{
+"code": "4063",
+"name": "SHIN-ETSU CHEMICAL CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 10750953259008
+},
+{
+"code": "4071",
+"name": "PLUS ALPHA CONSULTING CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 92976603136
+},
+{
+"code": "4078",
+"name": "SAKAI CHEMICAL INDUSTRY CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 52841676800
+},
+{
+"code": "4088",
+"name": "AIR WATER INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 658675138560
+},
+{
+"code": "4091",
+"name": "NIPPON SANSO HOLDINGS CORPORATI",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 2388051623936
+},
+{
+"code": "4095",
+"name": "NIHON PARKERIZING CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 185370804224
+},
+{
+"code": "4097",
+"name": "KOATSU GAS KOGYO CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 66796068864
+},
+{
+"code": "4099",
+"name": "SHIKOKU KASEI HOLDINGS CORPORAT",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 195695640576
+},
+{
+"code": "4107",
+"name": "ISE CHEMICALS CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 209181638656
+},
+{
+"code": "4109",
+"name": "STELLA CHEMIFA",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 55922388992
+},
+{
+"code": "4114",
+"name": "NIPPON SHOKUBAI CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 379044462592
+},
+{
+"code": "4116",
+"name": "DAINICHISEIKA COLOR & CHEM MFG ",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 86541533184
+},
+{
+"code": "4118",
+"name": "KANEKA CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 373851586560
+},
+{
+"code": "4151",
+"name": "KYOWA KIRIN CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 1299018153984
+},
+{
+"code": "4180",
+"name": "APPIER GROUP INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 144382099456
+},
+{
+"code": "4182",
+"name": "MITSUBISHI GAS CHEMICAL CO INC",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 690185371648
+},
+{
+"code": "4183",
+"name": "MITSUI CHEMICALS INC",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 748562808832
+},
+{
+"code": "4186",
+"name": "TOKYO OHKA KOGYO CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 961486979072
+},
+{
+"code": "4187",
+"name": "OSAKA ORGANIC CHEMICAL INDUSTRY",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 89492676608
+},
+{
+"code": "4188",
+"name": "MITSUBISHI CHEMICAL GROUP CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 1569963900928
+},
+{
+"code": "4189",
+"name": "KH NEOCHEM CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 116084391936
+},
+{
+"code": "4194",
+"name": "VISIONAL INC",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 385777008640
+},
+{
+"code": "4202",
+"name": "DAICEL CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 370492407808
+},
+{
+"code": "4203",
+"name": "SUMITOMO BAKELITE CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 695917346816
+},
+{
+"code": "4204",
+"name": "SEKISUI CHEMICAL CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1071889121280
+},
+{
+"code": "4205",
+"name": "ZEON CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 400199122944
+},
+{
+"code": "4206",
+"name": "AICA KOGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 275692060672
+},
+{
+"code": "4208",
+"name": "UBE CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 315720073216
+},
+{
+"code": "4212",
+"name": "SEKISUI JUSHI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 82159198208
+},
+{
+"code": "4216",
+"name": "ASAHI YUKIZAI CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 116460134400
+},
+{
+"code": "4220",
+"name": "RIKEN TECHNOS CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 108615442432
+},
+{
+"code": "4221",
+"name": "OKURA INDUSTRIAL CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 58333020160
+},
+{
+"code": "4246",
+"name": "DAIKYONISHIKAWA CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 65113812992
+},
+{
+"code": "4258",
+"name": "AMIYA CORP",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 50843033600
+},
+{
+"code": "4259",
+"name": "EXAWIZARDS INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 71663009792
+},
+{
+"code": "4272",
+"name": "NIPPON KAYAKU CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 288458309632
+},
+{
+"code": "4290",
+"name": "PRESTIGE INTERNATIONAL INC",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 82200215552
+},
+{
+"code": "4293",
+"name": "SEPTENI HOLDINGS",
+"yahoo_sector": "Communication Services",
+"industry": "Advertising Agencies",
+"mcap": 95424749568
+},
+{
+"code": "4307",
+"name": "NOMURA RESEARCH INSTITUTE",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 3471506669568
+},
+{
+"code": "4324",
+"name": "DENTSU GROUP INC",
+"yahoo_sector": "Communication Services",
+"industry": "Advertising Agencies",
+"mcap": 990061723648
+},
+{
+"code": "4326",
+"name": "INTAGE HOLDINGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Advertising Agencies",
+"mcap": 71840276480
+},
+{
+"code": "4343",
+"name": "AEON FANTASY CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 54281138176
+},
+{
+"code": "4362",
+"name": "NIPPON FINE CHEMICAL CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 54537736192
+},
+{
+"code": "4365",
+"name": "MATSUMOTO YUSHI SEIYAKU CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 71948271616
+},
+{
+"code": "4368",
+"name": "FUSO CHEMICAL CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Chemicals",
+"mcap": 334845542400
+},
+{
+"code": "4369",
+"name": "TRI CHEMICAL LABORATORIES INC.",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 100089864192
+},
+{
+"code": "4373",
+"name": "SIMPLEX HLDGS INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 257342210048
+},
+{
+"code": "4385",
+"name": "MERCARI INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 570703937536
+},
+{
+"code": "4401",
+"name": "ADEKA CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 438525755392
+},
+{
+"code": "4403",
+"name": "NOF CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 614142902272
+},
+{
+"code": "4413",
+"name": "BAUDROIE INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 91680366592
+},
+{
+"code": "4417",
+"name": "GLOBAL SECURITY EXPERTS INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 126988066816
+},
+{
+"code": "4419",
+"name": "FINATEXT HLDGS LTD",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 67571560448
+},
+{
+"code": "4431",
+"name": "SMAREGI INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 72907792384
+},
+{
+"code": "4432",
+"name": "WINGARC1ST INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 123829747712
+},
+{
+"code": "4443",
+"name": "SANSAN INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 267822383104
+},
+{
+"code": "4452",
+"name": "KAO CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 3407318614016
+},
+{
+"code": "4461",
+"name": "DKS CO. LTD.",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 107169652736
+},
+{
+"code": "4464",
+"name": "SOFT99 CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 87460413440
+},
+{
+"code": "4471",
+"name": "SANYO CHEMICAL INDUSTRIES",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 140439519232
+},
+{
+"code": "4475",
+"name": "HENNGE K K",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 65255133184
+},
+{
+"code": "4478",
+"name": "FREEE K K",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 275360186368
+},
+{
+"code": "4480",
+"name": "MEDLEY INC",
+"yahoo_sector": "Healthcare",
+"industry": "Health Information Services",
+"mcap": 70203113472
+},
+{
+"code": "4481",
+"name": "BASE CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 55809388544
+},
+{
+"code": "4483",
+"name": "JMDC INC",
+"yahoo_sector": "Healthcare",
+"industry": "Health Information Services",
+"mcap": 231668187136
+},
+{
+"code": "4502",
+"name": "TAKEDA PHARMACEUTICAL CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 10618243383296
+},
+{
+"code": "4503",
+"name": "ASTELLAS PHARMA",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 4606252285952
+},
+{
+"code": "4506",
+"name": "SUMITOMO PHARMA CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 884850491392
+},
+{
+"code": "4507",
+"name": "SHIONOGI & CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 2574809825280
+},
+{
+"code": "4516",
+"name": "NIPPON SHINYAKU CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 226332311552
+},
+{
+"code": "4519",
+"name": "CHUGAI PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 11260684926976
+},
+{
+"code": "4521",
+"name": "KAKEN PHARMACEUTICAL",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 143331573760
+},
+{
+"code": "4523",
+"name": "EISAI CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 1415695826944
+},
+{
+"code": "4526",
+"name": "RIKEN VITAMIN CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 98260779008
+},
+{
+"code": "4527",
+"name": "ROHTO PHARMACEUTICAL CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 611685433344
+},
+{
+"code": "4528",
+"name": "ONO PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 1085955768320
+},
+{
+"code": "4534",
+"name": "MOCHIDA PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 114678620160
+},
+{
+"code": "4536",
+"name": "SANTEN PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 576542670848
+},
+{
+"code": "4540",
+"name": "TSUMURA & CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 285210902528
+},
+{
+"code": "4543",
+"name": "TERUMO CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 3527705100288
+},
+{
+"code": "4544",
+"name": "H.U. GROUP HLDGS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Diagnostics & Research",
+"mcap": 212296990720
+},
+{
+"code": "4547",
+"name": "KISSEI PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 156310077440
+},
+{
+"code": "4549",
+"name": "EIKEN CHEMICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 73776947200
+},
+{
+"code": "4552",
+"name": "JCR PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 62716653568
+},
+{
+"code": "4553",
+"name": "TOWA PHARMACEUTICAL CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 174758936576
+},
+{
+"code": "4559",
+"name": "ZERIA PHARMACEUTICAL",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 86792339456
+},
+{
+"code": "4565",
+"name": "NXERA PHARMA CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Biotechnology",
+"mcap": 145393876992
+},
+{
+"code": "4568",
+"name": "DAIICHI SANKYO COMPANY LIMITED",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 5263347154944
+},
+{
+"code": "4569",
+"name": "KYORIN PHARMACEUTICAL CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 63535603712
+},
+{
+"code": "4578",
+"name": "OTSUKA HLDGS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - General",
+"mcap": 6166396010496
+},
+{
+"code": "4587",
+"name": "PEPTIDREAM INC",
+"yahoo_sector": "Healthcare",
+"industry": "Biotechnology",
+"mcap": 143867281408
+},
+{
+"code": "4588",
+"name": "ONCOLYS BIOPHARMA INC",
+"yahoo_sector": "Healthcare",
+"industry": "Biotechnology",
+"mcap": 232876376064
+},
+{
+"code": "4592",
+"name": "SANBIO COMPANY LIMITED",
+"yahoo_sector": "Healthcare",
+"industry": "Biotechnology",
+"mcap": 71033094144
+},
+{
+"code": "4611",
+"name": "DAI NIPPON TORYO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 53642690560
+},
+{
+"code": "4612",
+"name": "NIPPON PAINT HOLDINGS CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 3011819601920
+},
+{
+"code": "4613",
+"name": "KANSAI PAINT CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 514873229312
+},
+{
+"code": "4617",
+"name": "CHUGOKU MARINE PAINTS",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 173545324544
+},
+{
+"code": "4619",
+"name": "NIHON TOKUSHU TORYO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 55891099648
+},
+{
+"code": "4626",
+"name": "TAIYO HLDG CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 523779342336
+},
+{
+"code": "4628",
+"name": "SK KAKEN CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 145288380416
+},
+{
+"code": "4631",
+"name": "DIC CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 465656184832
+},
+{
+"code": "4633",
+"name": "SAKATA INX CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 130263031808
+},
+{
+"code": "4634",
+"name": "ARTIENCE CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 230502154240
+},
+{
+"code": "4641",
+"name": "ALTECH CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 51934134272
+},
+{
+"code": "4661",
+"name": "ORIENTAL LAND CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 5709493174272
+},
+{
+"code": "4665",
+"name": "DUSKIN CO.LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 225224671232
+},
+{
+"code": "4666",
+"name": "PARK 24 CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Infrastructure Operations",
+"mcap": 303901474816
+},
+{
+"code": "4674",
+"name": "CRESCO LTD",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 77351591936
+},
+{
+"code": "4676",
+"name": "FUJI MEDIA HOLDING",
+"yahoo_sector": "Communication Services",
+"industry": "Broadcasting",
+"mcap": 565725757440
+},
+{
+"code": "4680",
+"name": "ROUND ONE CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 333453983744
+},
+{
+"code": "4681",
+"name": "RESORTTRUST INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Resorts & Casinos",
+"mcap": 378407157760
+},
+{
+"code": "4684",
+"name": "OBIC CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 2596768841728
+},
+{
+"code": "4686",
+"name": "JUSTSYSTEMS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 311485333504
+},
+{
+"code": "4687",
+"name": "TDC SOFT INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 53835792384
+},
+{
+"code": "4689",
+"name": "LY CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 3447126753280
+},
+{
+"code": "4694",
+"name": "BML INC",
+"yahoo_sector": "Healthcare",
+"industry": "Diagnostics & Research",
+"mcap": 141688012800
+},
+{
+"code": "4704",
+"name": "TREND MICRO INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 928534364160
+},
+{
+"code": "4714",
+"name": "RISO KYOIKU GROUP CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Education & Training Services",
+"mcap": 50137419776
+},
+{
+"code": "4716",
+"name": "ORACLE CORP JAPAN",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 1270309322752
+},
+{
+"code": "4722",
+"name": "FUTURE CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 215447535616
+},
+{
+"code": "4732",
+"name": "USS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto & Truck Dealerships",
+"mcap": 815229763584
+},
+{
+"code": "4733",
+"name": "OBIC BUSINESS CONSULTANT",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 757781168128
+},
+{
+"code": "4746",
+"name": "TOUKEI COMPUTER",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 135472259072
+},
+{
+"code": "4751",
+"name": "CYBER AGENT",
+"yahoo_sector": "Communication Services",
+"industry": "Advertising Agencies",
+"mcap": 642494496768
+},
+{
+"code": "4755",
+"name": "RAKUTEN GROUP INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 1323810684928
+},
+{
+"code": "4765",
+"name": "SBI GLOBAL ASSET MANAGEMENT CO ",
+"yahoo_sector": "Financial Services",
+"industry": "Asset Management",
+"mcap": 84771971072
+},
+{
+"code": "4768",
+"name": "OTSUKA CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 1451582160896
+},
+{
+"code": "4776",
+"name": "CYBOZU INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 131123077120
+},
+{
+"code": "4784",
+"name": "GMO INTERNET INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 123828543488
+},
+{
+"code": "4812",
+"name": "DENTSU SOKEN INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 560752492544
+},
+{
+"code": "4816",
+"name": "TOEI ANIMATION",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 614982025216
+},
+{
+"code": "4819",
+"name": "DIGITAL GARAGE",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 109424140288
+},
+{
+"code": "4825",
+"name": "WEATHERNEWS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 82387763200
+},
+{
+"code": "4828",
+"name": "BUSINESS ENGINEERING CORPORATIO",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 75572273152
+},
+{
+"code": "4832",
+"name": "JFE SYSTEMS INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 60400807936
+},
+{
+"code": "4848",
+"name": "FULLCAST HOLDINGS",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 63357685760
+},
+{
+"code": "4849",
+"name": "EN INC",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 65928704000
+},
+{
+"code": "4886",
+"name": "ASKA PHARMACEUTICAL HOLDINGS CO",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 55676088320
+},
+{
+"code": "4887",
+"name": "SAWAI GROUP HOLDINGS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Drug Manufacturers - Specialty & Generic",
+"mcap": 193149714432
+},
+{
+"code": "4894",
+"name": "CUORIPS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Biotechnology",
+"mcap": 62059876352
+},
+{
+"code": "4901",
+"name": "FUJIFILM HOLDINGS CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 4150088957952
+},
+{
+"code": "4902",
+"name": "KONICA MINOLTA INC",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 324184506368
+},
+{
+"code": "4911",
+"name": "SHISEIDO COMPANY LIMITED",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 1524167213056
+},
+{
+"code": "4912",
+"name": "LION CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 508575416320
+},
+{
+"code": "4914",
+"name": "TAKASAGO INTERNATIONAL CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 124209963008
+},
+{
+"code": "4919",
+"name": "MILBON CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 104558338048
+},
+{
+"code": "4922",
+"name": "KOSE HLDGS CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 340445921280
+},
+{
+"code": "4927",
+"name": "POLA ORBIS HOLDINGS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 313005146112
+},
+{
+"code": "4928",
+"name": "NOEVIR HLDGS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 154898399232
+},
+{
+"code": "4956",
+"name": "KONISHI CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 95238504448
+},
+{
+"code": "4958",
+"name": "T.HASEGAWA CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 134969106432
+},
+{
+"code": "4966",
+"name": "C. UYEMURA & CO.LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 292947689472
+},
+{
+"code": "4967",
+"name": "KOBAYASHI PHARMACEUTICALS",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 533230944256
+},
+{
+"code": "4970",
+"name": "TOYO GOSEI CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 68017844224
+},
+{
+"code": "4971",
+"name": "MEC COMPANY LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 109923803136
+},
+{
+"code": "4972",
+"name": "SOKEN CHEMICAL & ENGINEERING CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 72271945728
+},
+{
+"code": "4975",
+"name": "JCU CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 135900872704
+},
+{
+"code": "4980",
+"name": "DEXERIALS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 486533201920
+},
+{
+"code": "4985",
+"name": "EARTH CORPORATION",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 106965614592
+},
+{
+"code": "4996",
+"name": "KUMIAI CHEMICAL INDUSTRY CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Agricultural Inputs",
+"mcap": 77463314432
+},
+{
+"code": "4997",
+"name": "NIHON NOHYAKU CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Agricultural Inputs",
+"mcap": 83338305536
+},
+{
+"code": "5011",
+"name": "NICHIREKI GROUP CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 60154761216
+},
+{
+"code": "5016",
+"name": "JX ADVANCED METALS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 2614658334720
+},
+{
+"code": "5019",
+"name": "IDEMITSU KOSAN CO.LTD",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Refining & Marketing",
+"mcap": 1783535239168
+},
+{
+"code": "5020",
+"name": "ENEOS HOLDINGS INC",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Refining & Marketing",
+"mcap": 3728886726656
+},
+{
+"code": "5021",
+"name": "COSMO ENERGY HLDGS CO LTD",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Integrated",
+"mcap": 664692785152
+},
+{
+"code": "5032",
+"name": "ANYCOLOR INC",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 186684669952
+},
+{
+"code": "5036",
+"name": "JAPAN BUSINESS SYSTEMS INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Infrastructure",
+"mcap": 78537777152
+},
+{
+"code": "5076",
+"name": "INFRONEER HLDGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 692676460544
+},
+{
+"code": "5101",
+"name": "YOKOHAMA RUBBER CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 1004062048256
+},
+{
+"code": "5105",
+"name": "TOYO TIRE CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 613122179072
+},
+{
+"code": "5108",
+"name": "BRIDGESTONE CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 4977230086144
+},
+{
+"code": "5110",
+"name": "SUMITOMO RUBBER INDUSTRIES",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 513339031552
+},
+{
+"code": "5121",
+"name": "FUJIKURA COMPOSITES INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 50218901504
+},
+{
+"code": "5122",
+"name": "OKAMOTO INDUSTRIES INC",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 103281016832
+},
+{
+"code": "5161",
+"name": "NISHIKAWA RUBBER CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 137043779584
+},
+{
+"code": "5184",
+"name": "NICHIRIN CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 53873483776
+},
+{
+"code": "5186",
+"name": "NITTA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 185722011648
+},
+{
+"code": "5192",
+"name": "MITSUBOSHI BELTING",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 115235692544
+},
+{
+"code": "5195",
+"name": "BANDO CHEMICAL INDUSTRIES LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 97862082560
+},
+{
+"code": "5201",
+"name": "AGC INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1164130385920
+},
+{
+"code": "5202",
+"name": "NIPPON SHEET GLASS CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 252569649152
+},
+{
+"code": "5208",
+"name": "ARISAWA MFG CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 81776828416
+},
+{
+"code": "5214",
+"name": "NIPPON ELECTRIC GLASS",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 382628954112
+},
+{
+"code": "5232",
+"name": "SUMITOMO OSAKA CEMENT CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 167710162944
+},
+{
+"code": "5233",
+"name": "TAIHEIYO CEMENT CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 466471387136
+},
+{
+"code": "5243",
+"name": "NOTE INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 57023737856
+},
+{
+"code": "5253",
+"name": "COVER CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 95527936000
+},
+{
+"code": "5262",
+"name": "NIPPON HUME CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 52315832320
+},
+{
+"code": "5273",
+"name": "MITANI SEKISAN CO",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 161537015808
+},
+{
+"code": "5288",
+"name": "ASIA PILE HOLDINGS CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 55190605824
+},
+{
+"code": "5290",
+"name": "VERTEX CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 59117191168
+},
+{
+"code": "5301",
+"name": "TOKAI CARBON CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 377457377280
+},
+{
+"code": "5302",
+"name": "NIPPON CARBON CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 51462713344
+},
+{
+"code": "5310",
+"name": "TOYO TANSO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 137367543808
+},
+{
+"code": "5331",
+"name": "NORITAKE COMPANY LIMITED",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 179621593088
+},
+{
+"code": "5332",
+"name": "TOTO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 959909199872
+},
+{
+"code": "5333",
+"name": "NGK CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 1440631357440
+},
+{
+"code": "5334",
+"name": "NITERRA CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 1435348893696
+},
+{
+"code": "5344",
+"name": "MARUWA CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 625753653248
+},
+{
+"code": "5351",
+"name": "SHINAGAWA REFRA CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 87204888576
+},
+{
+"code": "5384",
+"name": "FUJIMI INC",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 232564506624
+},
+{
+"code": "5393",
+"name": "NICHIAS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 621521010688
+},
+{
+"code": "5401",
+"name": "NIPPON STEEL CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 3435242717184
+},
+{
+"code": "5406",
+"name": "KOBE STEEL",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 800594657280
+},
+{
+"code": "5411",
+"name": "JFE HOLDINGS INC",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 1131686526976
+},
+{
+"code": "5423",
+"name": "TOKYO STEEL MANUFACTURING CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 177834622976
+},
+{
+"code": "5440",
+"name": "KYOEI STEEL LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 75661926400
+},
+{
+"code": "5444",
+"name": "YAMATO KOGYO CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 708663574528
+},
+{
+"code": "5449",
+"name": "OSAKA STEEL CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 69829869568
+},
+{
+"code": "5451",
+"name": "YODOKO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 192240877568
+},
+{
+"code": "5461",
+"name": "CHUBU STEEL PLATE CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 57882234880
+},
+{
+"code": "5463",
+"name": "MARUICHI STEEL TUBE",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 365686358016
+},
+{
+"code": "5471",
+"name": "DAIDO STEEL CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 410899415040
+},
+{
+"code": "5480",
+"name": "NIPPON YAKIN KOGYO CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 75918565376
+},
+{
+"code": "5482",
+"name": "AICHI STEEL CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 150594502656
+},
+{
+"code": "5602",
+"name": "KURIMOTO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 96693796864
+},
+{
+"code": "5631",
+"name": "JAPAN STEEL WORKS",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 430991081472
+},
+{
+"code": "5702",
+"name": "DAIKI ALUMINIUM INDUSTRY CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Aluminum",
+"mcap": 61693173760
+},
+{
+"code": "5703",
+"name": "NIPPON LIGHT METAL HLDGS CO LIM",
+"yahoo_sector": "Basic Materials",
+"industry": "Aluminum",
+"mcap": 160876085248
+},
+{
+"code": "5706",
+"name": "MITSUI KINZOKU CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1144278745088
+},
+{
+"code": "5711",
+"name": "MITSUBISHI MATERIALS CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Industrial Metals & Mining",
+"mcap": 555771166720
+},
+{
+"code": "5713",
+"name": "SUMITOMO METAL MINING CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Industrial Metals & Mining",
+"mcap": 2150586515456
+},
+{
+"code": "5714",
+"name": "DOWA HOLDINGS",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Industrial Metals & Mining",
+"mcap": 467034800128
+},
+{
+"code": "5715",
+"name": "FURUKAWA CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Industrial Metals & Mining",
+"mcap": 112625057792
+},
+{
+"code": "5726",
+"name": "OSAKA TITANIUM TECHNOLOGIES",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Industrial Metals & Mining",
+"mcap": 92940189696
+},
+{
+"code": "5741",
+"name": "UACJ CORPORATION",
+"yahoo_sector": "Basic Materials",
+"industry": "Aluminum",
+"mcap": 347109654528
+},
+{
+"code": "5801",
+"name": "FURUKAWA ELECTRIC CO",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 1938132697088
+},
+{
+"code": "5802",
+"name": "SUMITOMO ELECTRIC INDUSTRIES",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 5188024270848
+},
+{
+"code": "5803",
+"name": "FUJIKURA",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 6457232195584
+},
+{
+"code": "5805",
+"name": "SWCC CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 323318775808
+},
+{
+"code": "5830",
+"name": "IYOGIN HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 913306419200
+},
+{
+"code": "5831",
+"name": "SHIZUOKA FINANCIAL GROUP INC.",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1596289843200
+},
+{
+"code": "5832",
+"name": "CHUGIN FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 624670539776
+},
+{
+"code": "5838",
+"name": "RAKUTEN BANK LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 2325783511040
+},
+{
+"code": "5842",
+"name": "INTEGRAL GROUP CORP",
+"yahoo_sector": "Financial Services",
+"industry": "Asset Management",
+"mcap": 89388974080
+},
+{
+"code": "5844",
+"name": "KYOTO FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1124898439168
+},
+{
+"code": "5851",
+"name": "RYOBI LTD",
+"yahoo_sector": "Industrials",
+"industry": "Metal Fabrication",
+"mcap": 80560013312
+},
+{
+"code": "5857",
+"name": "ARE HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Waste Management",
+"mcap": 262560514048
+},
+{
+"code": "5901",
+"name": "TOYO SEIKAN GROUP HOLDINGS LIMI",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 673166524416
+},
+{
+"code": "5911",
+"name": "YOKOGAWA BRIDGE HOLDINGS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 108544614400
+},
+{
+"code": "5929",
+"name": "SANWA HOLDINGS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 799416582144
+},
+{
+"code": "5930",
+"name": "BUNKA SHUTTER CO",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 133010341888
+},
+{
+"code": "5938",
+"name": "LIXIL CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 483731505152
+},
+{
+"code": "5943",
+"name": "NORITZ CORP",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 104851349504
+},
+{
+"code": "5946",
+"name": "CHOFU SEISAKUSHO CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 67730898944
+},
+{
+"code": "5947",
+"name": "RINNAI CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 480758398976
+},
+{
+"code": "5949",
+"name": "UNIPRES CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 54743998464
+},
+{
+"code": "5970",
+"name": "G-TEKT CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 90377371648
+},
+{
+"code": "5975",
+"name": "TOPRE CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 151639179264
+},
+{
+"code": "5982",
+"name": "MARUZEN CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 60949831680
+},
+{
+"code": "5985",
+"name": "SUNCALL CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 55008960512
+},
+{
+"code": "5991",
+"name": "NHK SPRING CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 587526176768
+},
+{
+"code": "5992",
+"name": "CHUO SPRING CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 71812841472
+},
+{
+"code": "6005",
+"name": "MIURA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 351646547968
+},
+{
+"code": "6013",
+"name": "TAKUMA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 212821311488
+},
+{
+"code": "6016",
+"name": "JAPAN ENGINE CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 92638969856
+},
+{
+"code": "6023",
+"name": "DAIHATSU INFINEARTH MFG CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 64850264064
+},
+{
+"code": "6027",
+"name": "BENGO4.COM INC",
+"yahoo_sector": "Industrials",
+"industry": "Consulting Services",
+"mcap": 105773334528
+},
+{
+"code": "6036",
+"name": "KEEPER TECHNICAL LABORATORY CO ",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 99230490624
+},
+{
+"code": "6055",
+"name": "JAPAN MATERIAL CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 205959430144
+},
+{
+"code": "6058",
+"name": "VECTOR INC.",
+"yahoo_sector": "Communication Services",
+"industry": "Advertising Agencies",
+"mcap": 96154099712
+},
+{
+"code": "6080",
+"name": "M&A CAPITAL PARTNERS CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 133311143936
+},
+{
+"code": "6098",
+"name": "RECRUIT HOLDINGS CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Internet Content & Information",
+"mcap": 24957987848192
+},
+{
+"code": "6101",
+"name": "TSUGAMI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 200256929792
+},
+{
+"code": "6103",
+"name": "OKUMA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 267815436288
+},
+{
+"code": "6104",
+"name": "SHIBAURA MACHINE CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 111850364928
+},
+{
+"code": "6113",
+"name": "AMADA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 734205181952
+},
+{
+"code": "6118",
+"name": "AIDA ENGINEERING",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 58033287168
+},
+{
+"code": "6134",
+"name": "FUJI CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 525368524800
+},
+{
+"code": "6135",
+"name": "MAKINO MILLING MACHINE CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 339022774272
+},
+{
+"code": "6136",
+"name": "OSG CORP",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 293853462528
+},
+{
+"code": "6140",
+"name": "ASAHI DIAMOND INDUSTRIAL CO",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 50298265600
+},
+{
+"code": "6141",
+"name": "DMG MORI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 426855923712
+},
+{
+"code": "6143",
+"name": "SODICK CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 71850188800
+},
+{
+"code": "6146",
+"name": "DISCO CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 5451412930560
+},
+{
+"code": "6178",
+"name": "JAPAN POST HLDGS CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 6421721120768
+},
+{
+"code": "6183",
+"name": "BELLSYSTEM24 HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 101030780928
+},
+{
+"code": "6196",
+"name": "STRIKE GP CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 98682994688
+},
+{
+"code": "6200",
+"name": "INSOURCE CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Education & Training Services",
+"mcap": 55223500800
+},
+{
+"code": "6209",
+"name": "NPR-RIKEN CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 100490043392
+},
+{
+"code": "6226",
+"name": "MORIYA TPT ENG & MFG CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 73490259968
+},
+{
+"code": "6227",
+"name": "AIMECHATEC LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 102335340544
+},
+{
+"code": "6235",
+"name": "OPTORUN CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 88842797056
+},
+{
+"code": "6237",
+"name": "IWAKI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 87789682688
+},
+{
+"code": "6250",
+"name": "YAMABIKO CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 173740556288
+},
+{
+"code": "6254",
+"name": "NOMURA MICRO SCIENCE CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 101428453376
+},
+{
+"code": "6258",
+"name": "HIRATA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 104127283200
+},
+{
+"code": "6268",
+"name": "NABTESCO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 494057193472
+},
+{
+"code": "6269",
+"name": "MODEC INC(JAPAN)",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Equipment & Services",
+"mcap": 548804362240
+},
+{
+"code": "6273",
+"name": "SMC CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 3914241146880
+},
+{
+"code": "6277",
+"name": "HOSOKAWA MICRON CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 95610093568
+},
+{
+"code": "6278",
+"name": "UNION TOOL CO",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 241982193664
+},
+{
+"code": "6282",
+"name": "OILES CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 76144869376
+},
+{
+"code": "6284",
+"name": "NISSEI ASB MACHINE CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 119328825344
+},
+{
+"code": "6287",
+"name": "SATO CORPORATION (JAPAN)",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 84510261248
+},
+{
+"code": "6301",
+"name": "KOMATSU",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 5506068905984
+},
+{
+"code": "6302",
+"name": "SUMITOMO HEAVY INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 654225702912
+},
+{
+"code": "6305",
+"name": "HITACHI CONSTRUCTION MACHINERY",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 1061957599232
+},
+{
+"code": "6309",
+"name": "TOMOE ENGINEERING CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 54579953664
+},
+{
+"code": "6315",
+"name": "TOWA CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 160042532864
+},
+{
+"code": "6323",
+"name": "RORZE CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 641003749376
+},
+{
+"code": "6324",
+"name": "HARMONIC DRIVE SYSTEMS",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 492645974016
+},
+{
+"code": "6326",
+"name": "KUBOTA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 2975365595136
+},
+{
+"code": "6328",
+"name": "EBARA JITSUGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 57938112512
+},
+{
+"code": "6330",
+"name": "TOYO ENGINEERING CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 130613665792
+},
+{
+"code": "6331",
+"name": "MITSUBISHI KAKOKI KAISHA",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 62010257408
+},
+{
+"code": "6332",
+"name": "TSUKISHIMA HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 92706463744
+},
+{
+"code": "6333",
+"name": "TEIKOKU CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 50349912064
+},
+{
+"code": "6339",
+"name": "SINTOKOGIO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 55037501440
+},
+{
+"code": "6340",
+"name": "SHIBUYA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 144971268096
+},
+{
+"code": "6345",
+"name": "AICHI CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 82635948032
+},
+{
+"code": "6349",
+"name": "KOMORI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 90092822528
+},
+{
+"code": "6351",
+"name": "TSURUMI MANUFACTURING CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 123155398656
+},
+{
+"code": "6361",
+"name": "EBARA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 1703642005504
+},
+{
+"code": "6363",
+"name": "TORISHIMA PUMP MANUFACTURING",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 70238928896
+},
+{
+"code": "6364",
+"name": "AIRMAN CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 61547687936
+},
+{
+"code": "6366",
+"name": "CHIYODA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 156287631360
+},
+{
+"code": "6367",
+"name": "DAIKIN INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 5846450307072
+},
+{
+"code": "6368",
+"name": "ORGANO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 512473268224
+},
+{
+"code": "6370",
+"name": "KURITA WATER INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 489863577600
+},
+{
+"code": "6371",
+"name": "TSUBAKIMOTO CHAIN CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 261334646784
+},
+{
+"code": "6376",
+"name": "NIKKISO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 194229665792
+},
+{
+"code": "6379",
+"name": "RAIZNEXT CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 163408805888
+},
+{
+"code": "6381",
+"name": "ANEST IWATA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 65660166144
+},
+{
+"code": "6383",
+"name": "DAIFUKU CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 1940723597312
+},
+{
+"code": "6387",
+"name": "SAMCO INC",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 57591648256
+},
+{
+"code": "6395",
+"name": "TADANO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 160396820480
+},
+{
+"code": "6407",
+"name": "CKD CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 312114642944
+},
+{
+"code": "6412",
+"name": "HEIWA HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 205242630144
+},
+{
+"code": "6413",
+"name": "RISO KAGAKU CORP",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 65274073088
+},
+{
+"code": "6417",
+"name": "SANKYO CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Gambling",
+"mcap": 427913478144
+},
+{
+"code": "6419",
+"name": "MARS GROUP HOLDINGS CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 56875827200
+},
+{
+"code": "6420",
+"name": "GALILEI HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 140910903296
+},
+{
+"code": "6425",
+"name": "UNIVERSAL ENTERTAINMENT CORPORA",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 50059100160
+},
+{
+"code": "6432",
+"name": "TAKEUCHI MFG CO",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 350760435712
+},
+{
+"code": "6436",
+"name": "AMANO CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 247399383040
+},
+{
+"code": "6448",
+"name": "BROTHER INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 1113914605568
+},
+{
+"code": "6454",
+"name": "MAX CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 300143149056
+},
+{
+"code": "6455",
+"name": "MORITA HOLDINGS",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 99770621952
+},
+{
+"code": "6457",
+"name": "GLORY LTD",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 248822988800
+},
+{
+"code": "6458",
+"name": "SINKO INDUSTRIES LTD",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 78492131328
+},
+{
+"code": "6459",
+"name": "DAIWA LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 79458902016
+},
+{
+"code": "6460",
+"name": "SEGA SAMMY HLDGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 673364836352
+},
+{
+"code": "6463",
+"name": "TPR CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 95270715392
+},
+{
+"code": "6465",
+"name": "HOSHIZAKI CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 749569310720
+},
+{
+"code": "6471",
+"name": "NSK",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 489272082432
+},
+{
+"code": "6472",
+"name": "NTN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 208433905664
+},
+{
+"code": "6473",
+"name": "JTEKT CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 625681235968
+},
+{
+"code": "6474",
+"name": "NACHI-FUJIKOSHI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 115084124160
+},
+{
+"code": "6479",
+"name": "MINEBEA MITSUMI INC",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 1263017918464
+},
+{
+"code": "6480",
+"name": "NIPPON THOMPSON CO",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 103174897664
+},
+{
+"code": "6481",
+"name": "THK CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 640613875712
+},
+{
+"code": "6486",
+"name": "EAGLE INDUSTRY CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 137327861760
+},
+{
+"code": "6490",
+"name": "PILLAR CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 227697688576
+},
+{
+"code": "6498",
+"name": "KITZ CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 164182933504
+},
+{
+"code": "6501",
+"name": "HITACHI",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 22151721648128
+},
+{
+"code": "6503",
+"name": "MITSUBISHI ELECTRIC CORP",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 9732848877568
+},
+{
+"code": "6504",
+"name": "FUJI ELECTRIC CO. LTD.",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 1763570614272
+},
+{
+"code": "6506",
+"name": "YASKAWA ELECTRIC CORP",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 1016223891456
+},
+{
+"code": "6507",
+"name": "SINFONIA TECHNOLOGY CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 314322681856
+},
+{
+"code": "6508",
+"name": "MEIDENSHA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 393623011328
+},
+{
+"code": "6516",
+"name": "SANYO DENKI CO",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 169761898496
+},
+{
+"code": "6517",
+"name": "DENYO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 73972547584
+},
+{
+"code": "6523",
+"name": "PHC HLDGS CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 178587992064
+},
+{
+"code": "6524",
+"name": "KOHOKU KOGYO CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 118142844928
+},
+{
+"code": "6525",
+"name": "KOKUSAI ELECTRIC CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 1581875724288
+},
+{
+"code": "6526",
+"name": "SOCIONEXT INC",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 318325063680
+},
+{
+"code": "6532",
+"name": "BAYCURRENT INC",
+"yahoo_sector": "Industrials",
+"industry": "Consulting Services",
+"mcap": 1709424246784
+},
+{
+"code": "6544",
+"name": "JAPAN ELEVATOR SERVICE HLDGS CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 276279623680
+},
+{
+"code": "6564",
+"name": "MIDAC HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Waste Management",
+"mcap": 51348676608
+},
+{
+"code": "6574",
+"name": "CONVANO INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Personal Services",
+"mcap": 60434673664
+},
+{
+"code": "6586",
+"name": "MAKITA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 1358876770304
+},
+{
+"code": "6588",
+"name": "TOSHIBA TEC CORP",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 151650516992
+},
+{
+"code": "6590",
+"name": "SHIBAURA MECHATRONICS CO",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 204465389568
+},
+{
+"code": "6592",
+"name": "MABUCHI MOTOR CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 404100808704
+},
+{
+"code": "6594",
+"name": "NIDEC CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 2022737707008
+},
+{
+"code": "6613",
+"name": "QD LASER INC",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 97696514048
+},
+{
+"code": "6617",
+"name": "TAKAOKA TOKO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 82313740288
+},
+{
+"code": "6622",
+"name": "DAIHEN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 279268622336
+},
+{
+"code": "6627",
+"name": "TERA PROBE INC",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 81190977536
+},
+{
+"code": "6632",
+"name": "JVCKENWOOD CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 122161979392
+},
+{
+"code": "6638",
+"name": "MIMAKI ENGINEERING CO.LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 65020551168
+},
+{
+"code": "6644",
+"name": "OSAKI ELECTRIC CO",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 55917989888
+},
+{
+"code": "6645",
+"name": "OMRON CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 1029158207488
+},
+{
+"code": "6651",
+"name": "NITTO KOGYO CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 156869951488
+},
+{
+"code": "6652",
+"name": "IDEC CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 98701410304
+},
+{
+"code": "6674",
+"name": "GS YUASA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 465080483840
+},
+{
+"code": "6676",
+"name": "BUFFALO INC",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 79021924352
+},
+{
+"code": "6701",
+"name": "NEC CORP",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 6440710307840
+},
+{
+"code": "6702",
+"name": "FUJITSU",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 6067335987200
+},
+{
+"code": "6703",
+"name": "OKI ELECTRIC INDUSTRY CO",
+"yahoo_sector": "Technology",
+"industry": "Communication Equipment",
+"mcap": 206281555968
+},
+{
+"code": "6707",
+"name": "SANKEN ELECTRIC CO",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 124601458688
+},
+{
+"code": "6723",
+"name": "RENESAS ELECTRONICS CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 5226619207680
+},
+{
+"code": "6724",
+"name": "SEIKO EPSON CORP",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 986231406592
+},
+{
+"code": "6727",
+"name": "WACOM CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 103553294336
+},
+{
+"code": "6728",
+"name": "ULVAC INC",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 376622153728
+},
+{
+"code": "6736",
+"name": "SUNCORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 207316254720
+},
+{
+"code": "6737",
+"name": "EIZO CORP",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 111370657792
+},
+{
+"code": "6740",
+"name": "JAPAN DISPLAY INC",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 115172220928
+},
+{
+"code": "6741",
+"name": "NIPPON SIGNAL CO",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 109149159424
+},
+{
+"code": "6742",
+"name": "KYOSAN ELECTRIC MANUFACTURING C",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 63141986304
+},
+{
+"code": "6744",
+"name": "NOHMI BOSAI",
+"yahoo_sector": "Industrials",
+"industry": "Security & Protection Services",
+"mcap": 261939838976
+},
+{
+"code": "6745",
+"name": "HOCHIKI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 153462849536
+},
+{
+"code": "6750",
+"name": "ELECOM CO",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 154311983104
+},
+{
+"code": "6752",
+"name": "PANASONIC HOLDINGS CORP",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 8733278601216
+},
+{
+"code": "6753",
+"name": "SHARP CORP",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 350625497088
+},
+{
+"code": "6754",
+"name": "ANRITSU CORP",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 343017390080
+},
+{
+"code": "6758",
+"name": "SONY GROUP CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 23160829247488
+},
+{
+"code": "6762",
+"name": "TDK CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 4773857722368
+},
+{
+"code": "6768",
+"name": "TAMURA CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 63104610304
+},
+{
+"code": "6770",
+"name": "ALPS ALPINE CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 355635527680
+},
+{
+"code": "6777",
+"name": "SANTEC HOLDINGS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 202631348224
+},
+{
+"code": "6779",
+"name": "NIHON DEMPA KOGYO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 56338460672
+},
+{
+"code": "6787",
+"name": "MEIKO ELECTRONICS CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 426067427328
+},
+{
+"code": "6794",
+"name": "FOSTER ELECTRIC CO",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 72571011072
+},
+{
+"code": "6800",
+"name": "YOKOWO CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 77411958784
+},
+{
+"code": "6804",
+"name": "HOSIDEN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 112595124224
+},
+{
+"code": "6806",
+"name": "HIROSE ELECTRIC CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 761326075904
+},
+{
+"code": "6807",
+"name": "JAPAN AVIATION ELECTRONICS INDU",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 165738627072
+},
+{
+"code": "6809",
+"name": "TOA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Security & Protection Services",
+"mcap": 57803309056
+},
+{
+"code": "6810",
+"name": "MAXELL LTD",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 84006748160
+},
+{
+"code": "6814",
+"name": "FURUNO ELECTRIC CO",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 250054901760
+},
+{
+"code": "6820",
+"name": "ICOM INCORPORATED",
+"yahoo_sector": "Technology",
+"industry": "Communication Equipment",
+"mcap": 52385714176
+},
+{
+"code": "6834",
+"name": "SEIKOH GIKEN CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 281140068352
+},
+{
+"code": "6841",
+"name": "YOKOGAWA ELECTRIC CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 1133883817984
+},
+{
+"code": "6845",
+"name": "AZBIL CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 734811979776
+},
+{
+"code": "6849",
+"name": "NIHON KOHDEN CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 254276124672
+},
+{
+"code": "6855",
+"name": "JAPAN ELECTRONIC MATERIALS CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 89056657408
+},
+{
+"code": "6856",
+"name": "HORIBA LTD",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 909976797184
+},
+{
+"code": "6857",
+"name": "ADVANTEST CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 25828226236416
+},
+{
+"code": "6859",
+"name": "ESPEC CORP",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 86716915712
+},
+{
+"code": "6861",
+"name": "KEYENCE CORP",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 18162707857408
+},
+{
+"code": "6866",
+"name": "HIOKI E.E. CORP",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 120112578560
+},
+{
+"code": "6869",
+"name": "SYSMEX CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 1170971295744
+},
+{
+"code": "6871",
+"name": "MICRONICS JAPAN CO",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 438499934208
+},
+{
+"code": "6875",
+"name": "MEGACHIPS CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 128521625600
+},
+{
+"code": "6877",
+"name": "OBARA GROUP INC.",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 97726832640
+},
+{
+"code": "6890",
+"name": "FERROTEC CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 410576519168
+},
+{
+"code": "6902",
+"name": "DENSO CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 4664535285760
+},
+{
+"code": "6905",
+"name": "COSEL CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 51499966464
+},
+{
+"code": "6908",
+"name": "IRISO ELECTRONICS CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 56984371200
+},
+{
+"code": "6914",
+"name": "OPTEX GROUP COMPANY LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 108877291520
+},
+{
+"code": "6920",
+"name": "LASERTEC CORP",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 3652853432320
+},
+{
+"code": "6923",
+"name": "STANLEY ELECTRIC CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 389767233536
+},
+{
+"code": "6925",
+"name": "USHIO INC",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 257339621376
+},
+{
+"code": "6929",
+"name": "NIPPON CERAMIC CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 71830020096
+},
+{
+"code": "6941",
+"name": "YAMAICHI ELECTRONICS",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 132889821184
+},
+{
+"code": "6946",
+"name": "NIPPON AVIONICS CO",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 90211762176
+},
+{
+"code": "6947",
+"name": "ZUKEN INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 113598324736
+},
+{
+"code": "6951",
+"name": "JEOL LTD",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 333895696384
+},
+{
+"code": "6952",
+"name": "CASIO COMPUTER CO",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 475233615872
+},
+{
+"code": "6954",
+"name": "FANUC CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 5223911784448
+},
+{
+"code": "6958",
+"name": "CMK CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 52115058688
+},
+{
+"code": "6960",
+"name": "FUKUDA DENSHI CO",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 263134707712
+},
+{
+"code": "6961",
+"name": "ENPLAS CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 78846844928
+},
+{
+"code": "6963",
+"name": "ROHM CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 1371968634880
+},
+{
+"code": "6965",
+"name": "HAMAMATSU PHOTONICS",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 610118664192
+},
+{
+"code": "6966",
+"name": "MITSUI HIGH TEC INC",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 154240417792
+},
+{
+"code": "6971",
+"name": "KYOCERA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 4145873944576
+},
+{
+"code": "6976",
+"name": "TAIYO YUDEN CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 1098889953280
+},
+{
+"code": "6981",
+"name": "MURATA MANUFACTURING CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 11474825117696
+},
+{
+"code": "6988",
+"name": "NITTO DENKO CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 2130602098688
+},
+{
+"code": "6993",
+"name": "DAIKOKUYA HOLDINGS CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 55645782016
+},
+{
+"code": "6995",
+"name": "TOKAI RIKA CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 244084408320
+},
+{
+"code": "6996",
+"name": "NICHICON CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 136538603520
+},
+{
+"code": "6999",
+"name": "KOA CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 74348863488
+},
+{
+"code": "7003",
+"name": "MITSUI E&S CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Aerospace & Defense",
+"mcap": 353818083328
+},
+{
+"code": "7004",
+"name": "KANADEVIA CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 173129809920
+},
+{
+"code": "7011",
+"name": "MITSUBISHI HEAVY INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 11300384014336
+},
+{
+"code": "7012",
+"name": "KAWASAKI HEAVY INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1831094845440
+},
+{
+"code": "7013",
+"name": "IHI CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 2444733448192
+},
+{
+"code": "7014",
+"name": "NAMURA SHIPBUILDING CO",
+"yahoo_sector": "Industrials",
+"industry": "Aerospace & Defense",
+"mcap": 280266506240
+},
+{
+"code": "7085",
+"name": "CURVES HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 93992681472
+},
+{
+"code": "7128",
+"name": "UNISOL HLDGS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 70126469120
+},
+{
+"code": "7130",
+"name": "YAMAE GRP HLDGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 74773291008
+},
+{
+"code": "7148",
+"name": "FINANCIAL PARTNERS GROUP CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 118487810048
+},
+{
+"code": "7157",
+"name": "LIFENET INSURANCE COMPANY",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Life",
+"mcap": 118742990848
+},
+{
+"code": "7164",
+"name": "ZENKOKU HOSHO CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 403233964032
+},
+{
+"code": "7167",
+"name": "MEBUKI FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1366063054848
+},
+{
+"code": "7172",
+"name": "JAPAN INVESTMENT ADVISER CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 130719612928
+},
+{
+"code": "7173",
+"name": "TOKYO KIRABOSHI FINANCIAL GP IN",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 403047284736
+},
+{
+"code": "7177",
+"name": "GMO FINANCIAL HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 120113209344
+},
+{
+"code": "7180",
+"name": "KYUSHU FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 629624209408
+},
+{
+"code": "7181",
+"name": "JAPAN POST INSURANCE CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Life",
+"mcap": 1880172134400
+},
+{
+"code": "7182",
+"name": "JAPAN POST BANK CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 10650337148928
+},
+{
+"code": "7184",
+"name": "THE FIRST BANK OF TOYAMA LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 190157668352
+},
+{
+"code": "7186",
+"name": "YOKOHAMA FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1829573099520
+},
+{
+"code": "7189",
+"name": "NISHI-NIPPON FINANCIAL HLDGS IN",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 608385826816
+},
+{
+"code": "7199",
+"name": "PREMIUM GROUP CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 85879324672
+},
+{
+"code": "7201",
+"name": "NISSAN MOTOR CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 918150053888
+},
+{
+"code": "7202",
+"name": "ISUZU MOTORS",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 1400245583872
+},
+{
+"code": "7203",
+"name": "TOYOTA MOTOR CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 35934875680768
+},
+{
+"code": "7211",
+"name": "MITSUBISHI MOTOR CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 449418788864
+},
+{
+"code": "7220",
+"name": "MUSASHI SEIMITSU IND",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 159395397632
+},
+{
+"code": "7222",
+"name": "NISSAN SHATAI CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 114457509888
+},
+{
+"code": "7224",
+"name": "SHINMAYWA INDUSTRIES",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 119785594880
+},
+{
+"code": "7226",
+"name": "KYOKUTO KAIHATSU KOGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 80093339648
+},
+{
+"code": "7231",
+"name": "TOPY INDUSTRIES",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 63586598912
+},
+{
+"code": "7236",
+"name": "T.RAD CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 71725481984
+},
+{
+"code": "7239",
+"name": "TACHI-S CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 75196276736
+},
+{
+"code": "7240",
+"name": "NOK CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 476054749184
+},
+{
+"code": "7241",
+"name": "FUTABA INDUSTRIAL CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 82516008960
+},
+{
+"code": "7242",
+"name": "KYB CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 181037957120
+},
+{
+"code": "7246",
+"name": "PRESS KOGYO CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 88578072576
+},
+{
+"code": "7259",
+"name": "AISIN CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 1458444959744
+},
+{
+"code": "7261",
+"name": "MAZDA MOTOR CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 681763340288
+},
+{
+"code": "7267",
+"name": "HONDA MOTOR CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 7003536621568
+},
+{
+"code": "7269",
+"name": "SUZUKI MOTOR CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 4043758108672
+},
+{
+"code": "7270",
+"name": "SUBARU CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 1824134922240
+},
+{
+"code": "7272",
+"name": "YAMAHA MOTOR CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Manufacturers",
+"mcap": 1672375828480
+},
+{
+"code": "7276",
+"name": "KOITO MANUFACTURING CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 598905847808
+},
+{
+"code": "7278",
+"name": "EXEDY CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 183942119424
+},
+{
+"code": "7279",
+"name": "HI-LEX CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 78984085504
+},
+{
+"code": "7280",
+"name": "MITSUBA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 55640174592
+},
+{
+"code": "7282",
+"name": "TOYODA GOSEI",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 581380407296
+},
+{
+"code": "7283",
+"name": "AISAN INDUSTRY CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 118615343104
+},
+{
+"code": "7287",
+"name": "NIPPON SEIKI CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 125430177792
+},
+{
+"code": "7292",
+"name": "MURAKAMI CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 78430806016
+},
+{
+"code": "7296",
+"name": "F.C.C. CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 187177402368
+},
+{
+"code": "7309",
+"name": "SHIMANO INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 1745493819392
+},
+{
+"code": "7313",
+"name": "TS TECH CO.LTD.",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 197962874880
+},
+{
+"code": "7322",
+"name": "SAN JU SAN FINL GP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 187518746624
+},
+{
+"code": "7326",
+"name": "SBI INSURANCE GP CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Diversified",
+"mcap": 52644044800
+},
+{
+"code": "7327",
+"name": "DAISHI HOKUETSU FINANCIAL GROUP",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 602575536128
+},
+{
+"code": "7337",
+"name": "HIROGIN HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 634948419584
+},
+{
+"code": "7350",
+"name": "OKINAWA FINANCIAL GRP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 147291815936
+},
+{
+"code": "7366",
+"name": "LITALICO INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Education & Training Services",
+"mcap": 65519894528
+},
+{
+"code": "7380",
+"name": "JUROKU FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 407873126400
+},
+{
+"code": "7381",
+"name": "CCI GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 236359385088
+},
+{
+"code": "7384",
+"name": "PROCREA HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 109721354240
+},
+{
+"code": "7388",
+"name": "FP PARTNER INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance Brokers",
+"mcap": 51891527680
+},
+{
+"code": "7389",
+"name": "AICHI FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 401916035072
+},
+{
+"code": "7412",
+"name": "ATOM CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 57940881408
+},
+{
+"code": "7419",
+"name": "NOJIMA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 392005287936
+},
+{
+"code": "7421",
+"name": "KAPPA CREATE CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 78223441920
+},
+{
+"code": "7433",
+"name": "HAKUTO CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 95958106112
+},
+{
+"code": "7453",
+"name": "RYOHIN KEIKAKU CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 2510287011840
+},
+{
+"code": "7456",
+"name": "MATSUDA SANGYO",
+"yahoo_sector": "Basic Materials",
+"industry": "Other Precious Metals & Mining",
+"mcap": 151691984896
+},
+{
+"code": "7458",
+"name": "DAIICHIKOSHO CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 178842025984
+},
+{
+"code": "7459",
+"name": "MEDIPAL HOLDINGS CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Distribution",
+"mcap": 692700184576
+},
+{
+"code": "7476",
+"name": "AS ONE CORPORATION",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Distribution",
+"mcap": 175522611200
+},
+{
+"code": "7483",
+"name": "DOSHISHA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 105310437376
+},
+{
+"code": "7504",
+"name": "KOHSOKU CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 93192347648
+},
+{
+"code": "7508",
+"name": "G-7 HOLDINGS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 62608392192
+},
+{
+"code": "7512",
+"name": "AEON HOKKAIDO CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 112288055296
+},
+{
+"code": "7513",
+"name": "KOJIMA CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 104915001344
+},
+{
+"code": "7516",
+"name": "KOHNAN SHOJI",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Home Improvement Retail",
+"mcap": 135069933568
+},
+{
+"code": "7532",
+"name": "PAN PACIFIC INTL HLDGS CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Discount Stores",
+"mcap": 2228776075264
+},
+{
+"code": "7537",
+"name": "MARUBUN CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 57209614336
+},
+{
+"code": "7545",
+"name": "NISHIMATSUYA CHAIN CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 112324575232
+},
+{
+"code": "7550",
+"name": "ZENSHO HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 1931526012928
+},
+{
+"code": "7552",
+"name": "HAPPINET CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 260741775360
+},
+{
+"code": "7564",
+"name": "WORKMAN CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 403984973824
+},
+{
+"code": "7575",
+"name": "JAPAN LIFELINE CO",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 109300678656
+},
+{
+"code": "7581",
+"name": "SAIZERIYA COMPANY",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 400889315328
+},
+{
+"code": "7593",
+"name": "VT HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto & Truck Dealerships",
+"mcap": 56048410624
+},
+{
+"code": "7595",
+"name": "ARGO GRAPHICS",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 85203615744
+},
+{
+"code": "7599",
+"name": "IDOM INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto & Truck Dealerships",
+"mcap": 96491347968
+},
+{
+"code": "7606",
+"name": "TABAYA HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 67020394496
+},
+{
+"code": "7609",
+"name": "DAITRON CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 81328160768
+},
+{
+"code": "7611",
+"name": "HIDAY HIDAKA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 113090150400
+},
+{
+"code": "7613",
+"name": "SIIX CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 76193415168
+},
+{
+"code": "7616",
+"name": "COLOWIDE CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 239613247488
+},
+{
+"code": "7630",
+"name": "ICHIBANYA CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 169048162304
+},
+{
+"code": "7649",
+"name": "SUGI HOLDINGS CO.LTD.",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 488483487744
+},
+{
+"code": "7685",
+"name": "BUYSELL TECHNOLOGIES CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 154692993024
+},
+{
+"code": "7701",
+"name": "SHIMADZU CORP",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 1267291389952
+},
+{
+"code": "7715",
+"name": "NAGANO KEIKI CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 68997922816
+},
+{
+"code": "7716",
+"name": "NAKANISHI INC",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 225788379136
+},
+{
+"code": "7721",
+"name": "TOKYO KEIKI INC",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 91367399424
+},
+{
+"code": "7729",
+"name": "TOKYO SEIMITSU CO",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 625893113856
+},
+{
+"code": "7730",
+"name": "MANI INC",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 146768871424
+},
+{
+"code": "7731",
+"name": "NIKON CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 558032027648
+},
+{
+"code": "7733",
+"name": "OLYMPUS CORPORATION",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Devices",
+"mcap": 1845112078336
+},
+{
+"code": "7734",
+"name": "RIKEN KEIKI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Security & Protection Services",
+"mcap": 157731569664
+},
+{
+"code": "7735",
+"name": "SCREEN HOLDINGS CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 1743011577856
+},
+{
+"code": "7740",
+"name": "TAMRON CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 219445493760
+},
+{
+"code": "7741",
+"name": "HOYA CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 8238704099328
+},
+{
+"code": "7744",
+"name": "NORITSU KOKI CO",
+"yahoo_sector": "Technology",
+"industry": "Consumer Electronics",
+"mcap": 211909296128
+},
+{
+"code": "7745",
+"name": "A&D HOLON HOLDINGS COMPANY LTD",
+"yahoo_sector": "Technology",
+"industry": "Scientific & Technical Instruments",
+"mcap": 79094579200
+},
+{
+"code": "7747",
+"name": "ASAHI INTECC CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 936064188416
+},
+{
+"code": "7751",
+"name": "CANON INC",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 3893289287680
+},
+{
+"code": "7752",
+"name": "RICOH CO",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 994941796352
+},
+{
+"code": "7762",
+"name": "CITIZEN WATCH CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Footwear & Accessories",
+"mcap": 520926167040
+},
+{
+"code": "7780",
+"name": "MENICON CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 133437972480
+},
+{
+"code": "7803",
+"name": "BUSHIROAD INC",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 69596848128
+},
+{
+"code": "7806",
+"name": "MTG CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 355583688704
+},
+{
+"code": "7818",
+"name": "TRANSACTION CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 70509355008
+},
+{
+"code": "7821",
+"name": "MAEDA KOSEN CO.LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Building Materials",
+"mcap": 142107901952
+},
+{
+"code": "7826",
+"name": "FURUYA METAL CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 231479443456
+},
+{
+"code": "7832",
+"name": "BANDAI NAMCO HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 3981599834112
+},
+{
+"code": "7846",
+"name": "PILOT CORP(NEW).PORSCHE INN.LEA",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 224720601088
+},
+{
+"code": "7860",
+"name": "AVEX INC",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 52283944960
+},
+{
+"code": "7864",
+"name": "FUJI SEAL INTERNATIONAL INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 186170081280
+},
+{
+"code": "7867",
+"name": "TOMY COMPANY LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 415097946112
+},
+{
+"code": "7868",
+"name": "KOSAIDO HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 74532651008
+},
+{
+"code": "7906",
+"name": "YONEX CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 203872206848
+},
+{
+"code": "7911",
+"name": "TOPPAN HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1187585196032
+},
+{
+"code": "7912",
+"name": "DAI NIPPON PRINTING CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1200399187968
+},
+{
+"code": "7915",
+"name": "NISSHA CO LTD",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 51620446208
+},
+{
+"code": "7917",
+"name": "ZACROS CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 87574470656
+},
+{
+"code": "7921",
+"name": "TAKARA & CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 54276898816
+},
+{
+"code": "7931",
+"name": "MIRAI INDUSTRY CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Electrical Equipment & Parts",
+"mcap": 58263220224
+},
+{
+"code": "7936",
+"name": "ASICS CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Footwear & Accessories",
+"mcap": 3380584906752
+},
+{
+"code": "7942",
+"name": "JSP CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 79538405376
+},
+{
+"code": "7943",
+"name": "NICHIHA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Building Products & Equipment",
+"mcap": 92031295488
+},
+{
+"code": "7944",
+"name": "ROLAND CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 96786415616
+},
+{
+"code": "7947",
+"name": "FP CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Packaging & Containers",
+"mcap": 245461008384
+},
+{
+"code": "7951",
+"name": "YAMAHA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 537334120448
+},
+{
+"code": "7956",
+"name": "PIGEON CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 249715146752
+},
+{
+"code": "7965",
+"name": "ZOJIRUSHI CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 92385673216
+},
+{
+"code": "7966",
+"name": "LINTEC CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 303171764224
+},
+{
+"code": "7970",
+"name": "SHIN-ETSU POLYMER CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 201408118784
+},
+{
+"code": "7972",
+"name": "ITOKI CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 117785534464
+},
+{
+"code": "7974",
+"name": "NINTENDO CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 9394763857920
+},
+{
+"code": "7976",
+"name": "MITSUBISHI PENCIL CO",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 182533718016
+},
+{
+"code": "7979",
+"name": "SHOFU INC",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 78616805376
+},
+{
+"code": "7981",
+"name": "TAKARA STANDARD CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 192001507328
+},
+{
+"code": "7984",
+"name": "KOKUYO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 354013806592
+},
+{
+"code": "7988",
+"name": "NIFCO INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 419611017216
+},
+{
+"code": "7989",
+"name": "TACHIKAWA CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 51337801728
+},
+{
+"code": "7990",
+"name": "GLOBERIDE INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 53422690304
+},
+{
+"code": "7994",
+"name": "OKAMURA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 206955118592
+},
+{
+"code": "7995",
+"name": "VALQUA LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 109860241408
+},
+{
+"code": "8001",
+"name": "ITOCHU CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 15682884337664
+},
+{
+"code": "8002",
+"name": "MARUBENI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 7818517676032
+},
+{
+"code": "8005",
+"name": "SCROLL CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Internet Retail",
+"mcap": 56151474176
+},
+{
+"code": "8012",
+"name": "NAGASE & CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 513301348352
+},
+{
+"code": "8014",
+"name": "CHORI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 104496824320
+},
+{
+"code": "8015",
+"name": "TOYOTA TSUSHO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 6205569761280
+},
+{
+"code": "8016",
+"name": "ONWARD HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Manufacturing",
+"mcap": 104663203840
+},
+{
+"code": "8020",
+"name": "KANEMATSU CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 374174613504
+},
+{
+"code": "8022",
+"name": "MIZUNO CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 327809597440
+},
+{
+"code": "8031",
+"name": "MITSUI & CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 13945258639360
+},
+{
+"code": "8032",
+"name": "JAPAN PULP & PAPER CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 146170068992
+},
+{
+"code": "8035",
+"name": "TOKYO ELECTRON",
+"yahoo_sector": "Technology",
+"industry": "Semiconductor Equipment & Materials",
+"mcap": 22646804709376
+},
+{
+"code": "8037",
+"name": "KAMEI CORP",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Refining & Marketing",
+"mcap": 148574224384
+},
+{
+"code": "8043",
+"name": "STARZEN CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 87637401600
+},
+{
+"code": "8050",
+"name": "SEIKO GROUP CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Footwear & Accessories",
+"mcap": 833096056832
+},
+{
+"code": "8051",
+"name": "YAMAZEN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 159549095936
+},
+{
+"code": "8052",
+"name": "TSUBAKIMOTO KOGYO",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 55560327168
+},
+{
+"code": "8053",
+"name": "SUMITOMO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 7865676333056
+},
+{
+"code": "8056",
+"name": "BIPROGY INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 470422487040
+},
+{
+"code": "8057",
+"name": "UCHIDA YOKO CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 118064873472
+},
+{
+"code": "8058",
+"name": "MITSUBISHI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 17478376751104
+},
+{
+"code": "8059",
+"name": "DAIICHI JITSUGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 105206407168
+},
+{
+"code": "8060",
+"name": "CANON MARKETING JAPAN INC",
+"yahoo_sector": "Industrials",
+"industry": "Business Equipment & Supplies",
+"mcap": 816180166656
+},
+{
+"code": "8061",
+"name": "SEIKA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 101538914304
+},
+{
+"code": "8065",
+"name": "SATO SHOJI CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 55313846272
+},
+{
+"code": "8066",
+"name": "MITANI CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 231835172864
+},
+{
+"code": "8074",
+"name": "YUASA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Industrial Machinery",
+"mcap": 127189762048
+},
+{
+"code": "8075",
+"name": "SHINSHO CORP",
+"yahoo_sector": "Basic Materials",
+"industry": "Steel",
+"mcap": 78210179072
+},
+{
+"code": "8078",
+"name": "HANWA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 345809027072
+},
+{
+"code": "8079",
+"name": "SHOEI FOODS CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Packaged Foods",
+"mcap": 68633149440
+},
+{
+"code": "8081",
+"name": "KANADEN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 55382417408
+},
+{
+"code": "8084",
+"name": "RYODEN CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Semiconductors",
+"mcap": 94269440000
+},
+{
+"code": "8086",
+"name": "NIPRO CORP",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Instruments & Supplies",
+"mcap": 222870372352
+},
+{
+"code": "8088",
+"name": "IWATANI CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 450337898496
+},
+{
+"code": "8097",
+"name": "SAN-AI OBBLI CO LTD",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Refining & Marketing",
+"mcap": 148929904640
+},
+{
+"code": "8098",
+"name": "INABATA & CO",
+"yahoo_sector": "Basic Materials",
+"industry": "Specialty Chemicals",
+"mcap": 232211316736
+},
+{
+"code": "8111",
+"name": "GOLDWIN INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Manufacturing",
+"mcap": 289351303168
+},
+{
+"code": "8113",
+"name": "UNICHARM CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 1767261863936
+},
+{
+"code": "8117",
+"name": "CENTRAL AUTOMOTIVE PRODUCTS",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 113672830976
+},
+{
+"code": "8125",
+"name": "WAKITA & CO",
+"yahoo_sector": "Industrials",
+"industry": "Farm & Heavy Construction Machinery",
+"mcap": 93677232128
+},
+{
+"code": "8129",
+"name": "TOHO HOLDINGS CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Distribution",
+"mcap": 258224177152
+},
+{
+"code": "8130",
+"name": "SANGETSU CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 185193185280
+},
+{
+"code": "8131",
+"name": "MITSUUROKO GROUP HOLDINGS CO LT",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Refining & Marketing",
+"mcap": 140389515264
+},
+{
+"code": "8132",
+"name": "SHINANEN HOLDINGS CO LTD",
+"yahoo_sector": "Energy",
+"industry": "Oil & Gas Refining & Marketing",
+"mcap": 76631810048
+},
+{
+"code": "8133",
+"name": "ITOCHU ENEX CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 241748557824
+},
+{
+"code": "8136",
+"name": "SANRIO CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 1484620824576
+},
+{
+"code": "8137",
+"name": "SUN-WA TECHNOS CORP",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 62746816512
+},
+{
+"code": "8153",
+"name": "MOS FOOD SERVICES INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 132032610304
+},
+{
+"code": "8154",
+"name": "KAGA ELECTRONICS CO",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 246873784320
+},
+{
+"code": "8157",
+"name": "TSUZUKI DENKI CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 73230639104
+},
+{
+"code": "8159",
+"name": "TACHIBANA ELETECH CO LTD.",
+"yahoo_sector": "Technology",
+"industry": "Electronic Components",
+"mcap": 100653654016
+},
+{
+"code": "8160",
+"name": "KISOJI CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 69385748480
+},
+{
+"code": "8163",
+"name": "SRS HLDS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 74479681536
+},
+{
+"code": "8167",
+"name": "RETAIL PARTNERS CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 56904638464
+},
+{
+"code": "8173",
+"name": "JOSHIN CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 108435841024
+},
+{
+"code": "8174",
+"name": "NIPPON GAS CO LTD",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 268245925888
+},
+{
+"code": "8179",
+"name": "ROYAL HOLDINGS CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 139328995328
+},
+{
+"code": "8194",
+"name": "LIFE CORPORATION",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 217504677888
+},
+{
+"code": "8198",
+"name": "MAXVALU TOKAI CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 99018686464
+},
+{
+"code": "8200",
+"name": "RINGER HUT CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 62170259456
+},
+{
+"code": "8214",
+"name": "AOKI HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 145962729472
+},
+{
+"code": "8218",
+"name": "KOMERI CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Home Improvement Retail",
+"mcap": 180593426432
+},
+{
+"code": "8219",
+"name": "AOYAMA TRADING CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 105615040512
+},
+{
+"code": "8227",
+"name": "SHIMAMURA CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 695170564096
+},
+{
+"code": "8233",
+"name": "TAKASHIMAYA CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 653589479424
+},
+{
+"code": "8237",
+"name": "MATSUYA CO (TOKYO)",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 137628942336
+},
+{
+"code": "8242",
+"name": "H2O RETAILING CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 320107937792
+},
+{
+"code": "8244",
+"name": "KINTETSU DEPARTMENT STORE",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 78450917376
+},
+{
+"code": "8252",
+"name": "MARUI GROUP CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 484078387200
+},
+{
+"code": "8253",
+"name": "CREDIT SAISON CO",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 588918358016
+},
+{
+"code": "8255",
+"name": "AXIAL RETAILING INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 117409931264
+},
+{
+"code": "8267",
+"name": "AEON CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 3334182010880
+},
+{
+"code": "8273",
+"name": "IZUMI CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 200744796160
+},
+{
+"code": "8276",
+"name": "HEIWADO CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 129379106816
+},
+{
+"code": "8278",
+"name": "FUJI CO(TOKYO)",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 173883654144
+},
+{
+"code": "8282",
+"name": "K'S HOLDINGS CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 266453303296
+},
+{
+"code": "8283",
+"name": "PALTAC CORP",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Household & Personal Products",
+"mcap": 401983012864
+},
+{
+"code": "8303",
+"name": "SBI SHINSEI BANK LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1418756489216
+},
+{
+"code": "8304",
+"name": "AOZORA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 412737044480
+},
+{
+"code": "8306",
+"name": "MITSUBISHI UFJ FINANCIAL GROUP ",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Diversified",
+"mcap": 38078253105152
+},
+{
+"code": "8308",
+"name": "RESONA HOLDINGS",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 4950452600832
+},
+{
+"code": "8309",
+"name": "SUMITOMO MITSUI TRUST GP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 4480671678464
+},
+{
+"code": "8316",
+"name": "SUMITOMO MITSUI FINANCIAL GROUP",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Diversified",
+"mcap": 23746660270080
+},
+{
+"code": "8331",
+"name": "CHIBA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1707165483008
+},
+{
+"code": "8334",
+"name": "GUNMA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 959496585216
+},
+{
+"code": "8336",
+"name": "MUSASHINO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 243774324736
+},
+{
+"code": "8337",
+"name": "CHIBA KOGYO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 139080597504
+},
+{
+"code": "8338",
+"name": "TSUKUBA BANK LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 51341643776
+},
+{
+"code": "8341",
+"name": "77TH BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 781513261056
+},
+{
+"code": "8343",
+"name": "AKITA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 130333220864
+},
+{
+"code": "8344",
+"name": "YAMAGATA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 134095429632
+},
+{
+"code": "8345",
+"name": "BANK OF IWATE LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 144001925120
+},
+{
+"code": "8346",
+"name": "TOHO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 232895053824
+},
+{
+"code": "8354",
+"name": "FUKUOKA FINANCIAL GROUP INC.",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1297355636736
+},
+{
+"code": "8358",
+"name": "SURUGA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 461305315328
+},
+{
+"code": "8359",
+"name": "HACHIJUNI NAGANO BK LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1089912045568
+},
+{
+"code": "8360",
+"name": "YAMANASHI CHUO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 194233204736
+},
+{
+"code": "8361",
+"name": "OGAKI KYORITSU BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 305454350336
+},
+{
+"code": "8362",
+"name": "FUKUI BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 159205769216
+},
+{
+"code": "8366",
+"name": "SHIGA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 561710235648
+},
+{
+"code": "8367",
+"name": "NANTO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 269832880128
+},
+{
+"code": "8368",
+"name": "HYAKUGO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 497141612544
+},
+{
+"code": "8370",
+"name": "KIYO BANK LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 297589309440
+},
+{
+"code": "8377",
+"name": "HOKUHOKU FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 871334739968
+},
+{
+"code": "8381",
+"name": "SAN-IN GODO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 305266196480
+},
+{
+"code": "8386",
+"name": "HYAKUJUSHI BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 306583175168
+},
+{
+"code": "8387",
+"name": "SHIKOKU BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 151619960832
+},
+{
+"code": "8388",
+"name": "AWA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 371659505664
+},
+{
+"code": "8392",
+"name": "OITA BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 205115949056
+},
+{
+"code": "8393",
+"name": "MIYAZAKI BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 197449220096
+},
+{
+"code": "8395",
+"name": "BANK OF SAGA",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 103433887744
+},
+{
+"code": "8399",
+"name": "BANK OF RYUKYUS",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 109200105472
+},
+{
+"code": "8410",
+"name": "SEVEN BANK LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 391629668352
+},
+{
+"code": "8411",
+"name": "MIZUHO FINANCIAL GROUP",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 18318658371584
+},
+{
+"code": "8418",
+"name": "YAMAGUCHI FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 616082374656
+},
+{
+"code": "8421",
+"name": "SHINKIN CENTRAL BANK NON-CUM PR",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 1632791560192
+},
+{
+"code": "8424",
+"name": "FUYO GENERAL LEASE CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 382724866048
+},
+{
+"code": "8425",
+"name": "MIZUHO LEASING COMPANY LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 354436317184
+},
+{
+"code": "8439",
+"name": "TOKYO CENTURY CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 1228991627264
+},
+{
+"code": "8473",
+"name": "SBI HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Financial Conglomerates",
+"mcap": 1821854924800
+},
+{
+"code": "8508",
+"name": "J TRUST CO. LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Financial Conglomerates",
+"mcap": 95645802496
+},
+{
+"code": "8511",
+"name": "JAPAN SECURITIES FINANCE CO",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 166088753152
+},
+{
+"code": "8522",
+"name": "BANK OF NAGOYA",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 288785956864
+},
+{
+"code": "8524",
+"name": "NORTH PACIFIC BANK LIMITED",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 442580500480
+},
+{
+"code": "8541",
+"name": "EHIME BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 131490070528
+},
+{
+"code": "8544",
+"name": "KEIYO BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 279937810432
+},
+{
+"code": "8550",
+"name": "TOCHIGI BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 94760640512
+},
+{
+"code": "8551",
+"name": "KITA-NIPPON BANK",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 55383584768
+},
+{
+"code": "8566",
+"name": "RICOH LEASING CO",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 192344506368
+},
+{
+"code": "8570",
+"name": "AEON FINANCIAL SERVICE CO LIMIT",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 308829519872
+},
+{
+"code": "8572",
+"name": "ACOM CO",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 685706903552
+},
+{
+"code": "8584",
+"name": "JACCS CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 149782626304
+},
+{
+"code": "8585",
+"name": "ORIENT CORP",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 133867339776
+},
+{
+"code": "8591",
+"name": "ORIX CORPORATION",
+"yahoo_sector": "Financial Services",
+"industry": "Financial Conglomerates",
+"mcap": 6186685956096
+},
+{
+"code": "8593",
+"name": "MITSUBISHI HC CAPITAL INC",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 1875410026496
+},
+{
+"code": "8595",
+"name": "JAFCO CO LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Asset Management",
+"mcap": 113323409408
+},
+{
+"code": "8600",
+"name": "TOMONY HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 195676028928
+},
+{
+"code": "8601",
+"name": "DAIWA SECURITIES GROUP",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 2357789720576
+},
+{
+"code": "8604",
+"name": "NOMURA HOLDINGS INC.",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 4386241380352
+},
+{
+"code": "8609",
+"name": "OKASAN SECURITIES GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 200997470208
+},
+{
+"code": "8613",
+"name": "MARUSAN SECURITIES",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 77583310848
+},
+{
+"code": "8616",
+"name": "TOKAI TOKYO FINANCIAL HLDG INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 193408253952
+},
+{
+"code": "8628",
+"name": "MATSUI SECURITIES CO",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 258625175552
+},
+{
+"code": "8630",
+"name": "SOMPO HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Property & Casualty",
+"mcap": 6260074741760
+},
+{
+"code": "8697",
+"name": "JAPAN EXCHANGE GROUP",
+"yahoo_sector": "Financial Services",
+"industry": "Financial Data & Stock Exchanges",
+"mcap": 2140238381056
+},
+{
+"code": "8698",
+"name": "MONEX GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 157102292992
+},
+{
+"code": "8707",
+"name": "IWAICOSMO HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 87378051072
+},
+{
+"code": "8714",
+"name": "SENSHU IKEDA HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Banks - Regional",
+"mcap": 244196081664
+},
+{
+"code": "8715",
+"name": "ANICOM HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Property & Casualty",
+"mcap": 79302303744
+},
+{
+"code": "8725",
+"name": "MS&AD INS GP HLDGS",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Property & Casualty",
+"mcap": 7397217665024
+},
+{
+"code": "8729",
+"name": "SONY FINANCIAL GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Life",
+"mcap": 964674519040
+},
+{
+"code": "8739",
+"name": "SPARX GROUP CO.LTD",
+"yahoo_sector": "Financial Services",
+"industry": "Asset Management",
+"mcap": 90906984448
+},
+{
+"code": "8750",
+"name": "DAIICHI LIFE GROUP INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Life",
+"mcap": 6455127179264
+},
+{
+"code": "8766",
+"name": "TOKIO MARINE HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Property & Casualty",
+"mcap": 16241342283776
+},
+{
+"code": "8771",
+"name": "EGUARANTEE INC.",
+"yahoo_sector": "Financial Services",
+"industry": "Credit Services",
+"mcap": 76476022784
+},
+{
+"code": "8793",
+"name": "NEC CAPITAL SOLUTIONS LIMITED",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 86394773504
+},
+{
+"code": "8795",
+"name": "T&D HOLDINGS INC",
+"yahoo_sector": "Financial Services",
+"industry": "Insurance - Life",
+"mcap": 2283780702208
+},
+{
+"code": "8801",
+"name": "MITSUI FUDOSAN",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 4278097281024
+},
+{
+"code": "8802",
+"name": "MITSUBISHI ESTATE CO",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 4562155995136
+},
+{
+"code": "8803",
+"name": "HEIWA REAL ESTATE CO",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 149384855552
+},
+{
+"code": "8804",
+"name": "TOKYO TATEMONO CO",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 682730258432
+},
+{
+"code": "8818",
+"name": "KEIHANSHIN BUILDING CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 89069199360
+},
+{
+"code": "8830",
+"name": "SUMITOMO REALTY & DEVELOPMENT C",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 2987898699776
+},
+{
+"code": "8841",
+"name": "TOC CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 83365519360
+},
+{
+"code": "8848",
+"name": "LEOPALACE 21 CORP",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 314565591040
+},
+{
+"code": "8850",
+"name": "STARTS CORPORATION",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 213078032384
+},
+{
+"code": "8871",
+"name": "GOLDCREST CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 81326178304
+},
+{
+"code": "8876",
+"name": "RELO GROUP INC",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 365552402432
+},
+{
+"code": "8877",
+"name": "ESLEAD CORPORATION",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 77146628096
+},
+{
+"code": "8892",
+"name": "ES-CON JAPAN LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 101080850432
+},
+{
+"code": "8897",
+"name": "MIRARTH HOLDINGS INC",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 53714714624
+},
+{
+"code": "8919",
+"name": "KATITAS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Residential Construction",
+"mcap": 260611080192
+},
+{
+"code": "8923",
+"name": "TOSEI CORPORATION",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 180140326912
+},
+{
+"code": "8934",
+"name": "SUN FRONTIER FUDOSAN CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 127977807872
+},
+{
+"code": "8935",
+"name": "FJ NEXT HOLDINGS CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 61737865216
+},
+{
+"code": "8951",
+"name": "NIPPON BUILDING FUND INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 1053392502784
+},
+{
+"code": "8952",
+"name": "JAPAN REAL ESTATE INVESTMENT CO",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 787355009024
+},
+{
+"code": "8953",
+"name": "JAPAN METROPOLITAN FUND INV COR",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Retail",
+"mcap": 760279924736
+},
+{
+"code": "8954",
+"name": "ORIX JREIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 477479993344
+},
+{
+"code": "8955",
+"name": "JAPAN PRIME REALTY INVESTMENT C",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 372034732032
+},
+{
+"code": "8956",
+"name": "NTT UD REIT INVESTMENT CORPORAT",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 172517605376
+},
+{
+"code": "8957",
+"name": "TOKYU REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 174681112576
+},
+{
+"code": "8958",
+"name": "GLOBAL ONE REAL ESTATE INVESTME",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 112846766080
+},
+{
+"code": "8960",
+"name": "UNITED URBAN INVESTMENT CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 479359991808
+},
+{
+"code": "8961",
+"name": "MORI TRUST REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 235316002816
+},
+{
+"code": "8963",
+"name": "INVINCIBLE INVESTMENT CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Hotel & Motel",
+"mcap": 470256844800
+},
+{
+"code": "8964",
+"name": "MITSUI FUDOSAN RETL FD INV CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Retail",
+"mcap": 194759999488
+},
+{
+"code": "8966",
+"name": "HEIWA REAL ESTATE REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 166060670976
+},
+{
+"code": "8967",
+"name": "JAPAN LOGISTICS FUND INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Industrial",
+"mcap": 239282323456
+},
+{
+"code": "8968",
+"name": "FUKUOKA REIT CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 146569936896
+},
+{
+"code": "8972",
+"name": "KDX REALTY INVESTMENT CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 547311321088
+},
+{
+"code": "8975",
+"name": "ICHIGO OFFICE REITINVESTMENT CO",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 126188265472
+},
+{
+"code": "8976",
+"name": "DAIWA OFFICE INVESTMENT CORP",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 273973755904
+},
+{
+"code": "8977",
+"name": "HANKYU HANSHIN REIT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 84675362816
+},
+{
+"code": "8984",
+"name": "DAIWA HOUSE REIT INVESTMENT COR",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Diversified",
+"mcap": 491665227776
+},
+{
+"code": "8985",
+"name": "JAPAN HOTEL REIT INVESTMENT COR",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Hotel & Motel",
+"mcap": 503021305856
+},
+{
+"code": "8986",
+"name": "DAIWA SECS LIVING INVESTMENT CO",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Residential",
+"mcap": 193030799360
+},
+{
+"code": "8987",
+"name": "JAPAN EXCELLENT INC",
+"yahoo_sector": "Real Estate",
+"industry": "REIT - Office",
+"mcap": 159504187392
+},
+{
+"code": "9001",
+"name": "TOBU RAILWAY CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 579652681728
+},
+{
+"code": "9003",
+"name": "SOTETSU HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 247840129024
+},
+{
+"code": "9005",
+"name": "TOKYU CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 900884070400
+},
+{
+"code": "9006",
+"name": "KEIKYU CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 413785522176
+},
+{
+"code": "9007",
+"name": "ODAKYU ELECTRIC RAILWAY CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 599450779648
+},
+{
+"code": "9008",
+"name": "KEIO CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 448113410048
+},
+{
+"code": "9009",
+"name": "KEISEI ELECTRIC RAILWAY CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 692254408704
+},
+{
+"code": "9010",
+"name": "FUJI KYUKO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 140363759616
+},
+{
+"code": "9020",
+"name": "EAST JAPAN RAILWAY CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 4170779197440
+},
+{
+"code": "9021",
+"name": "WEST JAPAN RAILWAY CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 1415765688320
+},
+{
+"code": "9022",
+"name": "CENTRAL JAPAN RAILWAY CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 3773785964544
+},
+{
+"code": "9023",
+"name": "TOKYO METRO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 841284845568
+},
+{
+"code": "9024",
+"name": "SEIBU HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 957996072960
+},
+{
+"code": "9025",
+"name": "KONOIKE TRANSPORT CO LIMITED",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 156165963776
+},
+{
+"code": "9028",
+"name": "ZERO CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto & Truck Dealerships",
+"mcap": 50577817600
+},
+{
+"code": "9031",
+"name": "NISHI-NIPPON RAILROAD CO",
+"yahoo_sector": "Industrials",
+"industry": "Railroads",
+"mcap": 220049981440
+},
+{
+"code": "9037",
+"name": "HAMAKYOREX CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 128762724352
+},
+{
+"code": "9039",
+"name": "SAKAI MOVING SERVICE",
+"yahoo_sector": "Industrials",
+"industry": "Trucking",
+"mcap": 120658403328
+},
+{
+"code": "9041",
+"name": "KINTETSU GROUP HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 671413764096
+},
+{
+"code": "9042",
+"name": "HANKYU HANSHIN HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1083410022400
+},
+{
+"code": "9044",
+"name": "NANKAI CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Development",
+"mcap": 319243157504
+},
+{
+"code": "9045",
+"name": "KEIHAN HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 341850652672
+},
+{
+"code": "9048",
+"name": "NAGOYA RAILROAD CO",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 371666878464
+},
+{
+"code": "9064",
+"name": "YAMATO HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Trucking",
+"mcap": 623061172224
+},
+{
+"code": "9065",
+"name": "SANKYU INC",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 426231234560
+},
+{
+"code": "9068",
+"name": "MARUZEN SHOWA UNYU CO",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 137457303552
+},
+{
+"code": "9069",
+"name": "SENKO GROUP HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 403646251008
+},
+{
+"code": "9072",
+"name": "NIKKON HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 509773447168
+},
+{
+"code": "9075",
+"name": "FUKUYAMA TRANSPORTING CO",
+"yahoo_sector": "Industrials",
+"industry": "Trucking",
+"mcap": 227183935488
+},
+{
+"code": "9076",
+"name": "SEINO HOLDINGS",
+"yahoo_sector": "Industrials",
+"industry": "Trucking",
+"mcap": 426856972288
+},
+{
+"code": "9090",
+"name": "AZ-COM MARUWA HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 120541503488
+},
+{
+"code": "9101",
+"name": "NIPPON YUSEN KABUSHIKI KAISHA",
+"yahoo_sector": "Industrials",
+"industry": "Marine Shipping",
+"mcap": 2974612193280
+},
+{
+"code": "9104",
+"name": "MITSUI O.S.K. LINES LTD",
+"yahoo_sector": "Industrials",
+"industry": "Marine Shipping",
+"mcap": 2604297093120
+},
+{
+"code": "9107",
+"name": "KAWASAKI KISEN KAISHA",
+"yahoo_sector": "Industrials",
+"industry": "Marine Shipping",
+"mcap": 2050184314880
+},
+{
+"code": "9110",
+"name": "NS UNITED KAIUN KA",
+"yahoo_sector": "Industrials",
+"industry": "Marine Shipping",
+"mcap": 248615895040
+},
+{
+"code": "9119",
+"name": "IINO KAIUN KAISHA",
+"yahoo_sector": "Industrials",
+"industry": "Marine Shipping",
+"mcap": 173093388288
+},
+{
+"code": "9142",
+"name": "KYUSHU RAILWAY COMPANY",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 537803227136
+},
+{
+"code": "9143",
+"name": "SG HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 873623781376
+},
+{
+"code": "9147",
+"name": "NIPPON EXPRESS HLDGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 1373235576832
+},
+{
+"code": "9166",
+"name": "GENDA INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Leisure",
+"mcap": 110771888128
+},
+{
+"code": "9201",
+"name": "JAPAN AIRLINES CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Airlines",
+"mcap": 1303667408896
+},
+{
+"code": "9202",
+"name": "ANA HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Airlines",
+"mcap": 1310343692288
+},
+{
+"code": "9247",
+"name": "TRE HLDGS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Waste Management",
+"mcap": 78154465280
+},
+{
+"code": "9267",
+"name": "GENKY DRUGSTORES CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 110912937984
+},
+{
+"code": "9274",
+"name": "KPP GROUP HOLDINGS CO LTD",
+"yahoo_sector": "Basic Materials",
+"industry": "Paper & Paper Products",
+"mcap": 68987355136
+},
+{
+"code": "9279",
+"name": "GIFT HOLDINGS INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 98124226560
+},
+{
+"code": "9301",
+"name": "MITSUBISHI LOGISTICS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 436790329344
+},
+{
+"code": "9302",
+"name": "MITSUI-SOKO HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 237952434176
+},
+{
+"code": "9303",
+"name": "SUMITOMO WAREHOUSE CO",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 307597934592
+},
+{
+"code": "9304",
+"name": "SHIBUSAWA LOGISTICS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 107273207808
+},
+{
+"code": "9308",
+"name": "INUI GLOBAL LOGISTICS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Marine Shipping",
+"mcap": 56859754496
+},
+{
+"code": "9310",
+"name": "JAPAN TRANSCITY CORP",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 83378733056
+},
+{
+"code": "9324",
+"name": "YASUDA LOGISTICS CORP",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 73474039808
+},
+{
+"code": "9336",
+"name": "DAIEI KANKYO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Waste Management",
+"mcap": 399005515776
+},
+{
+"code": "9347",
+"name": "NIPPON KANZAI HOLDINGS CO LTD",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate Services",
+"mcap": 108962840576
+},
+{
+"code": "9348",
+"name": "ISPACE INC",
+"yahoo_sector": "Technology",
+"industry": "Computer Hardware",
+"mcap": 52379508736
+},
+{
+"code": "9364",
+"name": "KAMIGUMI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 462158987264
+},
+{
+"code": "9369",
+"name": "K.R.S.CORP",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 71313309696
+},
+{
+"code": "9381",
+"name": "AIT CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Integrated Freight & Logistics",
+"mcap": 51685904384
+},
+{
+"code": "9401",
+"name": "TBS HOLDINGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Broadcasting",
+"mcap": 928803782656
+},
+{
+"code": "9404",
+"name": "NIPPON TELEVISION HOLDINGS INC",
+"yahoo_sector": "Communication Services",
+"industry": "Broadcasting",
+"mcap": 746512777216
+},
+{
+"code": "9409",
+"name": "TV ASAHI HOLDINGS CORP",
+"yahoo_sector": "Communication Services",
+"industry": "Broadcasting",
+"mcap": 341833646080
+},
+{
+"code": "9412",
+"name": "SKY PERFECT JSAT CORPORATION",
+"yahoo_sector": "Communication Services",
+"industry": "Broadcasting",
+"mcap": 505744261120
+},
+{
+"code": "9413",
+"name": "TV TOKYO HLDG CORP",
+"yahoo_sector": "Communication Services",
+"industry": "Broadcasting",
+"mcap": 88303951872
+},
+{
+"code": "9418",
+"name": "U-NEXT HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 323592585216
+},
+{
+"code": "9432",
+"name": "NTT INC",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 14122810867712
+},
+{
+"code": "9433",
+"name": "KDDI CORPORATION",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 10492479275008
+},
+{
+"code": "9434",
+"name": "SOFTBANK CORP.",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 11236139859968
+},
+{
+"code": "9435",
+"name": "HIKARI TSUSHIN INC",
+"yahoo_sector": "Industrials",
+"industry": "Conglomerates",
+"mcap": 1610623483904
+},
+{
+"code": "9436",
+"name": "OKINAWA CELLULAR",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 301169311744
+},
+{
+"code": "9449",
+"name": "GMO INTERNET GROUP INC",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 299266572288
+},
+{
+"code": "9468",
+"name": "KADOKAWA CORPORATION",
+"yahoo_sector": "Communication Services",
+"industry": "Publishing",
+"mcap": 529958240256
+},
+{
+"code": "9501",
+"name": "TOKYO ELEC POWER CO HLDGS INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 726017572864
+},
+{
+"code": "9502",
+"name": "CHUBU ELECTRIC POWER CO INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Diversified",
+"mcap": 1875629178880
+},
+{
+"code": "9503",
+"name": "KANSAI ELECTRIC POWER CO INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Electric",
+"mcap": 2957263503360
+},
+{
+"code": "9504",
+"name": "CHUGOKU ELECTRIC POWER CO INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 404882980864
+},
+{
+"code": "9505",
+"name": "HOKURIKU ELECTRIC POWER CO",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Electric",
+"mcap": 223215239168
+},
+{
+"code": "9506",
+"name": "TOHOKU ELECTRIC POWER CO INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Electric",
+"mcap": 630000713728
+},
+{
+"code": "9507",
+"name": "SHIKOKU ELECTRIC POWER CO INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Electric",
+"mcap": 411854700544
+},
+{
+"code": "9508",
+"name": "KYUSHU ELECTRIC POWER CO INC",
+"yahoo_sector": "",
+"industry": "",
+"mcap": 991888539648
+},
+{
+"code": "9509",
+"name": "HOKKAIDO ELECTRIC POWER CO INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 223523667968
+},
+{
+"code": "9511",
+"name": "OKINAWA ELECTRIC POWER COMPANY ",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 60181090304
+},
+{
+"code": "9513",
+"name": "ELECTRIC POWER DEVELOPMENT",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 716705759232
+},
+{
+"code": "9517",
+"name": "EREX CO LTD",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 59340689408
+},
+{
+"code": "9519",
+"name": "RENOVA INC",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Renewable",
+"mcap": 63909265408
+},
+{
+"code": "9531",
+"name": "TOKYO GAS CO",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 2163449659392
+},
+{
+"code": "9532",
+"name": "OSAKA GAS CO",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 2240351043584
+},
+{
+"code": "9533",
+"name": "TOHO GAS CO",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 452593844224
+},
+{
+"code": "9534",
+"name": "HOKKAIDO GAS CO",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 75855872000
+},
+{
+"code": "9536",
+"name": "SAIBU GAS HOLDINGS CO LTD",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 100344365056
+},
+{
+"code": "9543",
+"name": "SHIZUOKA GAS CO LTD",
+"yahoo_sector": "Utilities",
+"industry": "Utilities - Regulated Gas",
+"mcap": 103230988288
+},
+{
+"code": "9551",
+"name": "METAWATER CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Pollution & Treatment Controls",
+"mcap": 159891226624
+},
+{
+"code": "9552",
+"name": "QUANTS RESEARCH INSTITUTE HOLDI",
+"yahoo_sector": "Financial Services",
+"industry": "Capital Markets",
+"mcap": 52469764096
+},
+{
+"code": "9601",
+"name": "SHOCHIKU CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 158876991488
+},
+{
+"code": "9602",
+"name": "TOHO CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 1402625327104
+},
+{
+"code": "9603",
+"name": "H.I.S. CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Travel Services",
+"mcap": 74368516096
+},
+{
+"code": "9605",
+"name": "TOEI CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Entertainment",
+"mcap": 373671854080
+},
+{
+"code": "9616",
+"name": "KYORITSU MAINTENANCE",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Lodging",
+"mcap": 322101411840
+},
+{
+"code": "9619",
+"name": "ICHINEN HOLDINGS",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 64781115392
+},
+{
+"code": "9621",
+"name": "CTI ENGINEERING CO",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 96652754944
+},
+{
+"code": "9627",
+"name": "AIN HOLDINGS INC",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 193844117504
+},
+{
+"code": "9632",
+"name": "SUBARU ENTERPRISE CO",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 70329212928
+},
+{
+"code": "9639",
+"name": "SANKYO FRONTIER CO",
+"yahoo_sector": "Real Estate",
+"industry": "Real Estate - Diversified",
+"mcap": 51517669376
+},
+{
+"code": "9663",
+"name": "NAGAWA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 74780852224
+},
+{
+"code": "9672",
+"name": "TOKYOTOKEIBA CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Gambling",
+"mcap": 126819278848
+},
+{
+"code": "9678",
+"name": "KANAMOTO CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 191056723968
+},
+{
+"code": "9682",
+"name": "DTS CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 175492448256
+},
+{
+"code": "9684",
+"name": "SQUARE ENIX HOLDINGS CO.LTD.",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 1082387267584
+},
+{
+"code": "9692",
+"name": "COMPUTER ENGINEERING & CONSULTI",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 65351516160
+},
+{
+"code": "9697",
+"name": "CAPCOM CO LTD",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 1622328737792
+},
+{
+"code": "9699",
+"name": "NISHIO HOLDINGS CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 116009803776
+},
+{
+"code": "9706",
+"name": "JAPAN AIRPORT TERMINAL CO",
+"yahoo_sector": "Industrials",
+"industry": "Airports & Air Services",
+"mcap": 538843774976
+},
+{
+"code": "9708",
+"name": "IMPERIAL HOTEL LIMITED",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Lodging",
+"mcap": 105193562112
+},
+{
+"code": "9715",
+"name": "TRANSCOSMOS INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 124596756480
+},
+{
+"code": "9716",
+"name": "NOMURA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 143819800576
+},
+{
+"code": "9722",
+"name": "FUJITA KANKO INC",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Lodging",
+"mcap": 176638181376
+},
+{
+"code": "9726",
+"name": "KNT-CT HOLDINGS LIMITED",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Travel Services",
+"mcap": 52643860480
+},
+{
+"code": "9729",
+"name": "TOKAI CORP(GIFU)",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Care Facilities",
+"mcap": 85612314624
+},
+{
+"code": "9733",
+"name": "NAGASE BROTHERS INC",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Education & Training Services",
+"mcap": 53058220032
+},
+{
+"code": "9735",
+"name": "SECOM CO",
+"yahoo_sector": "Industrials",
+"industry": "Security & Protection Services",
+"mcap": 2686712545280
+},
+{
+"code": "9742",
+"name": "INES CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 50473615360
+},
+{
+"code": "9743",
+"name": "TANSEISHA CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Specialty Business Services",
+"mcap": 67096363008
+},
+{
+"code": "9744",
+"name": "MEITEC GROUP HOLDINGS INC",
+"yahoo_sector": "Industrials",
+"industry": "Staffing & Employment Services",
+"mcap": 248760025088
+},
+{
+"code": "9746",
+"name": "TKC CORPORATION",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 208753115136
+},
+{
+"code": "9755",
+"name": "OYO CORP",
+"yahoo_sector": "Industrials",
+"industry": "Engineering & Construction",
+"mcap": 58757648384
+},
+{
+"code": "9757",
+"name": "FUNAI SOKEN HOLDINGS INCORPORAT",
+"yahoo_sector": "Industrials",
+"industry": "Consulting Services",
+"mcap": 112416866304
+},
+{
+"code": "9759",
+"name": "NSD CO.LTD",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 230250381312
+},
+{
+"code": "9766",
+"name": "KONAMI GROUP CORPORATION",
+"yahoo_sector": "Communication Services",
+"industry": "Electronic Gaming & Multimedia",
+"mcap": 3538702041088
+},
+{
+"code": "9790",
+"name": "FUKUI COMPUTER HOLDINGS INC",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 63369449472
+},
+{
+"code": "9793",
+"name": "DAISEKI CO LTD",
+"yahoo_sector": "Industrials",
+"industry": "Waste Management",
+"mcap": 160797458432
+},
+{
+"code": "9824",
+"name": "SENSHU ELECTRIC CO",
+"yahoo_sector": "Technology",
+"industry": "Electronics & Computer Distribution",
+"mcap": 135702355968
+},
+{
+"code": "9828",
+"name": "GENKI GLOBAL DINING CONCEPTS CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 52784324608
+},
+{
+"code": "9830",
+"name": "TRUSCO NAKAYAMA CORP",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 154745274368
+},
+{
+"code": "9831",
+"name": "YAMADA HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 491017863168
+},
+{
+"code": "9832",
+"name": "AUTOBACS SEVEN CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto Parts",
+"mcap": 123446255616
+},
+{
+"code": "9842",
+"name": "ARCLANDS CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 119174586368
+},
+{
+"code": "9843",
+"name": "NITORI HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Furnishings, Fixtures & Appliances",
+"mcap": 1925151195136
+},
+{
+"code": "9861",
+"name": "YOSHINOYA HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 292585865216
+},
+{
+"code": "9869",
+"name": "KATO SANGYO CO",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Food Distribution",
+"mcap": 205842006016
+},
+{
+"code": "9882",
+"name": "YELLOW HAT LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Auto & Truck Dealerships",
+"mcap": 140238372864
+},
+{
+"code": "9887",
+"name": "MATSUYA FOODS HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 116772151296
+},
+{
+"code": "9889",
+"name": "JBCC HOLDINGS INC",
+"yahoo_sector": "Technology",
+"industry": "Information Technology Services",
+"mcap": 121562447872
+},
+{
+"code": "9900",
+"name": "SAGAMI HOLDINGS CORPORATION",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 75251122176
+},
+{
+"code": "9902",
+"name": "NICHIDEN CORP",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 88735203328
+},
+{
+"code": "9928",
+"name": "MIROKU JYOHO SERVICE CO",
+"yahoo_sector": "Technology",
+"industry": "Software - Application",
+"mcap": 65247772672
+},
+{
+"code": "9934",
+"name": "INABA DENKISANGYO CO",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 317062545408
+},
+{
+"code": "9936",
+"name": "OHSHO FOOD SERVICE CORP",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Restaurants",
+"mcap": 152865964032
+},
+{
+"code": "9946",
+"name": "MINISTOP CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 51198521344
+},
+{
+"code": "9948",
+"name": "ARCS COMPANY LIMITED",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 188345155584
+},
+{
+"code": "9956",
+"name": "VALOR HOLDINGS CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Department Stores",
+"mcap": 197561876480
+},
+{
+"code": "9960",
+"name": "TOTECH CORP",
+"yahoo_sector": "Industrials",
+"industry": "Industrial Distribution",
+"mcap": 174481408000
+},
+{
+"code": "9962",
+"name": "MISUMI GROUP INC",
+"yahoo_sector": "Industrials",
+"industry": "Tools & Accessories",
+"mcap": 1062090440704
+},
+{
+"code": "9974",
+"name": "BELC CO LTD",
+"yahoo_sector": "Consumer Defensive",
+"industry": "Grocery Stores",
+"mcap": 135817445376
+},
+{
+"code": "9983",
+"name": "FAST RETAILING CO LTD",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Apparel Retail",
+"mcap": 23124936491008
+},
+{
+"code": "9984",
+"name": "SOFTBANK GROUP CORP",
+"yahoo_sector": "Communication Services",
+"industry": "Telecom Services",
+"mcap": 25132808536064
+},
+{
+"code": "9987",
+"name": "SUZUKEN CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Medical Distribution",
+"mcap": 388235001856
+},
+{
+"code": "9989",
+"name": "SUNDRUG CO LTD",
+"yahoo_sector": "Healthcare",
+"industry": "Pharmaceutical Retailers",
+"mcap": 423127121920
+},
+{
+"code": "9991",
+"name": "GECOSS CORPORATION",
+"yahoo_sector": "Industrials",
+"industry": "Rental & Leasing Services",
+"mcap": 58948239360
+},
+{
+"code": "9997",
+"name": "BELLUNA CO",
+"yahoo_sector": "Consumer Cyclical",
+"industry": "Specialty Retail",
+"mcap": 97232519168
+}
+]
+}
