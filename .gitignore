@@ -1,0 +1,4 @@
+__pycache__/
+analyst_runs/*/fundamentals_raw.json
+analyst/data/*.partial.json
+analyst/data/*.tmp
