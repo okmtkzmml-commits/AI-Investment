@@ -537,8 +537,10 @@ def technical_from_chart(ch: dict) -> dict | None:
     v25 = sum(vo[-25:]) / 25
     vratio = (sum(vo[-5:]) / 5) / v25 if v25 else 0.0
     j = judge_technical(cl[-1], ma25, ma75, rsi, vratio)
-    return {"last_date": days[-1], "close": cl[-1], "ma25": ma25, "ma75": ma75,
-            "rsi": rsi, "vratio": vratio, **j}
+    prev = cl[-2]
+    return {"last_date": days[-1], "close": cl[-1], "prev_close": prev,
+            "change_pct": (cl[-1] / prev - 1) * 100 if prev else None,
+            "ma25": ma25, "ma75": ma75, "rsi": rsi, "vratio": vratio, **j}
 
 
 def fetch_technicals(yh: Yahoo, codes: list[str]) -> dict[str, dict]:
@@ -753,6 +755,55 @@ def build_markdown(ctx: dict) -> str:
 
 
 # ---------------------------------------------------------------- commands
+LOT_LIMIT_YEN = 1_500_000  # timing_keeper.md のハードルール: 1銘柄150万円
+
+
+def build_tech_markdown(today: str, rows: list[dict], tech: dict) -> str:
+    L = [f"# 監視銘柄の株価とテクニカル {today}", "",
+         f"- 作成: {dt.datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')}（analyst/analyst_data.py tech）",
+         "- 判定基準は prompts/timing_keeper.md・analyst_team.md と同じ（機械計算済み。そのまま使う）",
+         f"- 出来高の「ほぼ同水準」は 5日平均/25日平均 が {VOL_FLAT_LOW}〜{VOL_FLAT_HIGH}",
+         "- 株価は最終日の終値（取引時間中に実行した場合はその時点の値）", "",
+         "| コード | 企業名 | 統合判定 | 株価 | 前日比% | 25日線 | 75日線 | 移動平均 | RSI | 出来高5/25 | 出来高 | 総合判定 | 100株の金額(万円) | 最終日 |",
+         "|" + "---|" * 14]
+    warns = []
+    for r in rows:
+        t = tech.get(r["code"], {})
+        if "error" in t or not t:
+            L.append(f"| {r['code']} | {r['name']} | {r['verdict']} | 取得失敗: {t.get('error', '-')} |" + " |" * 10)
+            continue
+        lot = t["close"] * 100 / 10000
+        L.append(f"| {r['code']} | {r['name']} | {r['verdict']} | {fmt(t['close'])} | {fmt(t['change_pct'], 2)} "
+                 f"| {fmt(t['ma25'])} | {fmt(t['ma75'])} | {t['ma']} | {t['rsi']:.0f} | {t['vratio']:.3f} | {t['vol']} "
+                 f"| {t['verdict']} | {lot:,.0f} | {t['last_date']} |")
+        if t["rsi"] >= 70:
+            warns.append(f"警告：{r['name']}が過熱圏です（RSI：{t['rsi']:.0f}）。高値づかみに注意")
+        if t["verdict"] == "買いタイミング良好" and t["close"] * 100 > LOT_LIMIT_YEN:
+            warns.append(f"注意：{r['name']}は最低単元で約{lot:,.0f}万円。一銘柄150万円の上限を超えます")
+    L += ["", "## ハードルール該当（機械判定）", ""]
+    L += [f"- {w}" for w in warns] or ["- なし"]
+    return "\n".join(L) + "\n"
+
+
+def cmd_tech(a) -> int:
+    base = Path(a.base).resolve()
+    master = parse_master(base / BRIEFING / MASTER)
+    if a.codes:
+        names = {m["code"]: m for m in master}
+        rows = [names.get(c, {"code": c, "name": "", "verdict": "-"}) for c in a.codes.split(",")]
+    else:
+        rows = [m for m in master if m["verdict"] in ("最優先", "監視")]
+    tech = fetch_technicals(Yahoo(sleep=0.2), [r["code"] for r in rows])
+    today = a.date or dt.datetime.now(JST).strftime("%Y%m%d")
+    md = build_tech_markdown(today, rows, tech)
+    out = base / a.out_dir / today / f"tech_{dt.datetime.now(JST).strftime('%H%M')}.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(md, encoding="utf-8")
+    print(md)
+    log(f"保存: {out}")
+    return 0
+
+
 def cmd_prepare(a) -> int:
     base = Path(a.base).resolve()
     briefing = base / BRIEFING
@@ -968,10 +1019,14 @@ def main(argv=None) -> int:
     pr.add_argument("--top", type=int, default=25, help="入力ファイルに載せる通過銘柄の数")
     pr.add_argument("--limit", type=int, default=0, help="財務取得の銘柄数上限（試験用）")
     sub.add_parser("verify", help="AI が保存したファイルを確認する")
+    te = sub.add_parser("tech", help="監視銘柄（最優先・監視）の株価とテクニカルだけを取得する（1分程度）")
+    te.add_argument("--codes", help="銘柄コードをカンマ区切りで指定（既定: 統合スクリーニング結果の最優先・監視）")
     a = p.parse_args(argv)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
+    if a.cmd == "tech":
+        return cmd_tech(a)
     if a.cmd == "universe":
         load_universe(Yahoo(sleep=a.sleep), Path(a.universe_file), a.universe_max_age,
                       a.code_from, a.code_to, force=a.force)

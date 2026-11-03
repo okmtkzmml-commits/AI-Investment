@@ -99,6 +99,16 @@ class TestJudgement(unittest.TestCase):
         del ch["meta"]
         self.assertNotEqual(ad.technical_from_chart(ch)["close"], 9999.0)
 
+    def test_tech_markdown_hard_rules(self):
+        rows = [{"code": "1", "name": "過熱", "verdict": "監視"}, {"code": "2", "name": "高額", "verdict": "最優先"}]
+        base = {"close": 100.0, "change_pct": 1.0, "ma25": 90, "ma75": 80, "ma": "◎", "vratio": 1.2, "vol": "◎",
+                "last_date": "2026-11-02"}
+        tech = {"1": {**base, "rsi": 72.0, "verdict": "要観察"},
+                "2": {**base, "close": 20000.0, "rsi": 50.0, "verdict": "買いタイミング良好"}}
+        md = ad.build_tech_markdown("20261103", rows, tech)
+        self.assertIn("警告：過熱が過熱圏です（RSI：72）", md)
+        self.assertIn("注意：高額は最低単元で約200万円", md)
+
     def test_rsi_all_up(self):
         self.assertEqual(ad.rsi_wilder([float(i) for i in range(30)]), 100.0)
 

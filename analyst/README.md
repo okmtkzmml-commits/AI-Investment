@@ -49,6 +49,16 @@ python analyst_data.py --base $base verify
 ログは `analyst_runs\YYYYMMDD\run.log` に出ます。Mac/Linux なら cron に
 `python3 analyst/analyst_data.py --base <フォルダー> prepare` を登録してください。
 
+## 監視銘柄の株価だけ取る（timing_keeper / dashboard_update 用）
+
+```
+python analyst_data.py tech            # 統合スクリーニング結果の最優先・監視の銘柄
+python analyst_data.py tech --codes 7974,9746
+```
+
+株価・前日比・移動平均・RSI・出来高・総合判定・100株の金額と、ハードルール該当（RSI70以上、
+買いタイミング良好で100株150万円超）を表で出します（数秒）。`analyst_runs/<日付>/tech_<時刻>.md` にも保存します。
+
 ## 銘柄一覧（analyst/data/universe.json）と所要時間
 
 - 銘柄一覧（コード 1300〜9999 の全探索、約8,700回アクセス、**約45分**）は `analyst/data/universe.json` に保存し、
