@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI投資チーム ポータル</title>
+  <style>
+    /* -------------------------------------------------------------
+       Design System & Variables
+       背景: 生成りの紙色 (#f7f5f0)
+       カード: 白 (#ffffff), 細い枠線 (#ddd8d0)
+       アクセント: 琥珀色 (#b87800)
+       上げ: 緑 (#166534), 下げ: 赤 (#991b1b)
+       リンク・銘柄コード: 青 (#1d4ed8)
+       フォント: Noto Sans JP または システムフォント
+       ------------------------------------------------------------- */
+    :root {
+      --bg-page: #f7f5f0;
+      --bg-card: #ffffff;
+      --bg-card-alt: #fbfaf7;
+      --border-color: #ddd8d0;
+      --border-subtle: #eae5dc;
+      
+      --text-main: #231f1c;
+      --text-sub: #5f5953;
+      --text-muted: #8c847d;
+      
+      --accent-amber: #b87800;
+      --accent-amber-light: #fef7e6;
+      --accent-amber-border: #f0c978;
+      
+      --color-green: #166534;
+      --color-green-light: #f0fdf4;
+      --color-green-border: #bbf7d0;
+      
+      --color-red: #991b1b;
+      --color-red-light: #fef2f2;
+      --color-red-border: #fecaca;
+      
+      --color-blue: #1d4ed8;
+      --color-blue-light: #eff6ff;
+      --color-blue-border: #bfdbfe;
+      
+      --color-gray-tag: #4b5563;
+      --color-gray-bg: #f3f4f6;
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --radius-xl: 16px;
+      
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+      
+      --font-stack: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 60px;
+    }
+
+    a {
+      color: var(--color-blue);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* -------------------------------------------------------------
+       非表示のタブ用ラジオボタン
+       ------------------------------------------------------------- */
+    .tab-radio {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+
+    /* -------------------------------------------------------------
+       1. 警戒帯 (VIX >= 30) および 注意帯 (ハードルール警告あり)
+       ------------------------------------------------------------- */
+    .alert-zone {
+      width: 100%;
+    }
+    .alert-banner {
+      background-color: var(--color-red-light);
+      border-bottom: 2px solid var(--color-red);
+      color: var(--color-red);
+      padding: 14px 20px;
+      box-shadow: 0 2px 8px rgba(153, 27, 27, 0.1);
+    }
+    .alert-banner-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .alert-icon-box {
+      font-size: 24px;
+      line-height: 1;
+      padding-top: 2px;
+    }
+    .alert-header-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+    .alert-title {
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+    .alert-badge {
+      background: var(--color-red);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+    }
+    .alert-summary-list {
+      list-style-type: disc;
+      list-style-position: inside;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #7f1d1d;
+    }
+
+    /* ハードルール警告時の細い琥珀色の注意帯 */
+    .notice-banner {
+      background-color: var(--accent-amber-light);
+      border-bottom: 2px solid var(--accent-amber);
+      color: var(--text-main);
+      padding: 10px 20px;
+      font-size: 13.5px;
+      box-shadow: 0 1px 4px rgba(184, 120, 0, 0.08);
+    }
+    .notice-banner-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .notice-badge {
+      background: var(--accent-amber);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+    }
+    .notice-text {
+      font-weight: 600;
+      color: #78350f;
+    }
+
+    /* -------------------------------------------------------------
+       2. ヘッダー
+       ------------------------------------------------------------- */
+    .portal-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 28px 0 22px;
+      box-shadow: var(--shadow-sm);
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .header-main {
+      flex: 1;
+      min-width: 280px;
+    }
+    .portal-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--accent-amber);
+      background: var(--accent-amber-light);
+      border: 1px solid var(--accent-amber-border);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+    .portal-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .portal-tagline {
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+    .header-meta-card {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      font-size: 12px;
+      min-width: 260px;
+    }
+    .meta-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 3px 0;
+    }
+    .meta-line:not(:last-child) {
+      border-bottom: 1px dashed var(--border-subtle);
+    }
+    .meta-label {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .meta-value {
+      color: var(--text-main);
+      font-weight: 700;
+      text-align: right;
+    }
+    .meta-note {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: normal;
+      display: block;
+    }
+
+    /* -------------------------------------------------------------
+       3. タブ切り替えレイアウト (Pure CSS)
+       ------------------------------------------------------------- */
+    .timeline-section {
+      padding: 24px 0 20px;
+    }
+
+    .timeline-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 32px;
+      margin-top: 8px;
+      align-items: start;
+    }
+
+    /* 左列: タブメニュー (PC) */
+    .timeline-nav-col {
+      position: sticky;
+      top: 24px;
+    }
+    .timeline-nav-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .timeline-nav-header {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .timeline-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .tab-nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-sub);
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease-in-out;
+      user-select: none;
+    }
+    .tab-nav-item:hover {
+      background: var(--bg-card-alt);
+      color: var(--accent-amber);
+    }
+    .nav-time-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-amber);
+      background: var(--accent-amber-light);
+      padding: 1px 6px;
+      border-radius: var(--radius-sm);
+      min-width: 44px;
+      text-align: center;
+    }
+    .nav-title-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 選択中タブのスタイル強調 (PC) */
+    body:has(#tab-0800:checked) .item-0800,
+    body:has(#tab-0900:checked) .item-0900,
+    body:has(#tab-anytime:checked) .item-anytime,
+    body:has(#tab-pretrade:checked) .item-pretrade,
+    body:has(#tab-weekly:checked) .item-weekly,
+    body:has(#tab-2100:checked) .item-2100,
+    #tab-0800:checked ~ main .item-0800,
+    #tab-0900:checked ~ main .item-0900,
+    #tab-anytime:checked ~ main .item-anytime,
+    #tab-pretrade:checked ~ main .item-pretrade,
+    #tab-weekly:checked ~ main .item-weekly,
+    #tab-2100:checked ~ main .item-2100 {
+      background: var(--accent-amber-light);
+      color: var(--accent-amber);
+      border-color: var(--accent-amber-border);
+      font-weight: 700;
+      box-shadow: 0 1px 3px rgba(184, 120, 0, 0.08);
+    }
+
+    /* 右列: タブコンテンツ切り替え */
+    .timeline-content-col {
+      min-height: 480px;
+    }
+
+    /* デフォルトですべてのタブパネルを非表示 */
+    .timeline-block {
+      display: none;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* checked のセクションだけを表示 */
+    body:has(#tab-0800:checked) #sec-0800,
+    body:has(#tab-0900:checked) #sec-0900,
+    body:has(#tab-anytime:checked) #sec-anytime,
+    body:has(#tab-pretrade:checked) #sec-pretrade,
+    body:has(#tab-weekly:checked) #sec-weekly,
+    body:has(#tab-2100:checked) #sec-2100,
+    #tab-0800:checked ~ main #sec-0800,
+    #tab-0900:checked ~ main #sec-0900,
+    #tab-anytime:checked ~ main #sec-anytime,
+    #tab-pretrade:checked ~ main #sec-pretrade,
+    #tab-weekly:checked ~ main #sec-weekly,
+    #tab-2100:checked ~ main #sec-2100 {
+      display: block;
+    }
+
+    .block-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .block-time {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-amber);
+      background: var(--accent-amber-light);
+      border: 1px solid var(--accent-amber-border);
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+    .block-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* 08:00 朝のブリーフィング */
+    .mood-box {
+      background: var(--bg-card-alt);
+      border-left: 3px solid var(--accent-amber);
+      padding: 10px 14px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 13.5px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mood-badge {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--accent-amber);
+      color: #ffffff;
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+    }
+    .mood-text {
+      color: var(--text-main);
+    }
+    .mood-vix {
+      font-weight: 700;
+      color: var(--accent-amber);
+    }
+
+    .sub-section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 18px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sub-section-title::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 14px;
+      background: var(--accent-amber);
+      border-radius: 2px;
+    }
+
+    /* 監視銘柄テーブル */
+    .stocks-table-container {
+      overflow-x: auto;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+    }
+    .stocks-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+    .stocks-table th {
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      font-weight: 600;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+    .stocks-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .stocks-table tr:last-child td {
+      border-bottom: none;
+    }
+    .stocks-table tr:hover td {
+      background: #faf8f5;
+    }
+
+    .stock-code {
+      font-weight: 700;
+      color: var(--color-blue);
+      font-family: monospace, monospace;
+      font-size: 13px;
+    }
+    .stock-name {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    .stock-price {
+      font-family: monospace, monospace;
+      font-weight: 700;
+      color: var(--text-main);
+      text-align: right;
+    }
+
+    /* CSS横棒グラフ (前日比) */
+    .change-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 150px;
+    }
+    .bar-container {
+      flex: 1;
+      height: 10px;
+      background: #eeebe6;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+    .bar-midline {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #cbc5bc;
+      z-index: 2;
+    }
+    .bar-fill {
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+    .bar-positive {
+      left: 50%;
+      background: var(--color-green);
+    }
+    .bar-negative {
+      right: 50%;
+      background: var(--color-red);
+    }
+    .change-val {
+      font-size: 12px;
+      font-weight: 700;
+      width: 52px;
+      text-align: right;
+      font-family: monospace, monospace;
+    }
+    .val-positive { color: var(--color-green); }
+    .val-negative { color: var(--color-red); }
+
+    /* タイミング判定バッジ */
+    .timing-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+    }
+    .timing-buy {
+      background: var(--accent-amber-light);
+      color: var(--accent-amber);
+      border: 1px solid var(--accent-amber-border);
+    }
+    .timing-watch {
+      background: var(--color-gray-bg);
+      color: var(--color-gray-tag);
+      border: 1px solid #d1d5db;
+    }
+    .timing-skip {
+      background: #fdf2f8;
+      color: #9d174d;
+      border: 1px solid #fbcfe8;
+    }
+
+    /* 新規提案カード */
+    .proposal-card {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+    }
+    .proposal-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+    .proposal-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .proposal-days {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent-amber);
+      background: var(--accent-amber-light);
+      padding: 1px 6px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--accent-amber-border);
+    }
+    .proposal-reason {
+      font-size: 13px;
+      color: var(--text-sub);
+      line-height: 1.5;
+    }
+
+    /* 09:00 ハードルール警告 */
+    .rules-card-normal {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-sub);
+      font-size: 13.5px;
+    }
+    .rules-icon-normal {
+      color: var(--color-green);
+      font-size: 18px;
+    }
+    .rules-card-alert {
+      background: var(--color-red-light);
+      border: 1.5px solid var(--color-red);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      color: var(--color-red);
+    }
+
+    /* 随時・取引前 導線カード */
+    .action-guidance-card {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+    }
+    .action-instruction {
+      font-size: 14px;
+      color: var(--text-main);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .action-keyword {
+      font-weight: 700;
+      color: var(--accent-amber);
+      background: var(--accent-amber-light);
+      padding: 2px 6px;
+      border-radius: var(--radius-sm);
+    }
+    .action-sub-text {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* 日曜 20:00 週次レビュー アコーディオン */
+    .weekly-accordion {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: var(--bg-card);
+      transition: border-color 0.2s;
+    }
+    .weekly-accordion[open] {
+      border-color: var(--accent-amber-border);
+      box-shadow: 0 2px 6px rgba(184, 120, 0, 0.06);
+    }
+    .weekly-summary {
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      background: var(--bg-card-alt);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      user-select: none;
+      list-style: none;
+    }
+    .weekly-summary::-webkit-details-marker {
+      display: none;
+    }
+    .weekly-summary::after {
+      content: "▼";
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-left: auto;
+      transition: transform 0.2s;
+    }
+    .weekly-accordion[open] .weekly-summary::after {
+      transform: rotate(180deg);
+      color: var(--accent-amber);
+    }
+    .summary-badge {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--accent-amber-light);
+      color: var(--accent-amber);
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--accent-amber-border);
+    }
+    .weekly-body {
+      padding: 16px;
+      font-size: 13.5px;
+      color: var(--text-sub);
+      line-height: 1.65;
+      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-card);
+    }
+    .weekly-body p {
+      margin-bottom: 8px;
+    }
+    .weekly-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 21:00 夜の振り返り（判断ログ一覧） */
+    .logs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .log-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      font-size: 13px;
+      flex-wrap: wrap;
+    }
+    .log-date {
+      font-family: monospace, monospace;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 12px;
+      min-width: 80px;
+    }
+    .log-stock {
+      font-weight: 700;
+      color: var(--color-blue);
+      min-width: 130px;
+    }
+    .log-decision {
+      color: var(--text-main);
+      font-weight: 500;
+      flex: 1;
+    }
+    .logs-empty {
+      padding: 16px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      background: var(--bg-card-alt);
+      border: 1px dashed var(--border-color);
+      border-radius: var(--radius-md);
+    }
+
+    /* -------------------------------------------------------------
+       4. フッター
+       ------------------------------------------------------------- */
+    .portal-footer {
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+      padding: 28px 0;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .footer-motto {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .footer-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* -------------------------------------------------------------
+       レスポンシブデザイン (スマホ対応: 上部固定横スクロールタブ)
+       ------------------------------------------------------------- */
+    @media (max-width: 860px) {
+      .portal-header {
+        padding: 20px 0 16px;
+      }
+      .header-content {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .header-meta-card {
+        width: 100%;
+      }
+      .timeline-section {
+        padding: 12px 0 16px;
+      }
+      .timeline-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 0;
+      }
+      /* スマホではタブを上部に固定し、横スクロール可能に */
+      .timeline-nav-col {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        margin: 0 -20px 12px -20px;
+        background: var(--bg-page);
+      }
+      .timeline-nav-card {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 10px 16px;
+        background: var(--bg-card);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+      .timeline-nav-header {
+        display: none;
+      }
+      .timeline-nav-list {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 8px;
+        padding-bottom: 2px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+      }
+      .timeline-nav-list::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+      }
+      .tab-nav-item {
+        flex-shrink: 0;
+        padding: 7px 12px;
+        border-radius: 20px;
+        font-size: 12.5px;
+        border: 1px solid var(--border-color);
+        background: var(--bg-card-alt);
+      }
+      .nav-time-tag {
+        min-width: auto;
+        padding: 1px 5px;
+      }
+
+      /* スマホ選択中タブの強調 */
+      body:has(#tab-0800:checked) .item-0800,
+      body:has(#tab-0900:checked) .item-0900,
+      body:has(#tab-anytime:checked) .item-anytime,
+      body:has(#tab-pretrade:checked) .item-pretrade,
+      body:has(#tab-weekly:checked) .item-weekly,
+      body:has(#tab-2100:checked) .item-2100,
+      #tab-0800:checked ~ main .item-0800,
+      #tab-0900:checked ~ main .item-0900,
+      #tab-anytime:checked ~ main .item-anytime,
+      #tab-pretrade:checked ~ main .item-pretrade,
+      #tab-weekly:checked ~ main .item-weekly,
+      #tab-2100:checked ~ main .item-2100 {
+        background: var(--accent-amber-light);
+        color: var(--accent-amber);
+        border-color: var(--accent-amber);
+        box-shadow: 0 0 0 1px var(--accent-amber);
+      }
+
+      .timeline-block {
+        padding: 18px 16px;
+      }
+      .portal-title {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================================
+       隠しラジオボタン (Pure CSS タブ切り替え制御用)
+       初期状態: 朝のブリーフィング (#tab-0800) を checked
+       ============================================================= -->
+  <input type="radio" name="portal-tab" id="tab-0800" class="tab-radio" checked>
+  <input type="radio" name="portal-tab" id="tab-0900" class="tab-radio">
+  <input type="radio" name="portal-tab" id="tab-anytime" class="tab-radio">
+  <input type="radio" name="portal-tab" id="tab-pretrade" class="tab-radio">
+  <input type="radio" name="portal-tab" id="tab-weekly" class="tab-radio">
+  <input type="radio" name="portal-tab" id="tab-2100" class="tab-radio">
+
+  <!-- =============================================================
+       1. 警戒帯 (VIX >= 30) および 注意帯 (ハードルール警告あり)
+       ============================================================= -->
+  <div class="alert-zone">
+<!-- ==DATA:ALERT START== -->
+<!-- 【ALERT区間の更新見本】
+     本日はVIX 30未満かつハードルール警告なしのため空（非表示）です。
+     警告や注意が発生した日は、以下の対応する見本コメントを解除して配置してください。
+
+  [見本1: VIX 30以上の警戒帯（ページ最上部に赤系帯で表示）]
+  <div class="alert-banner">
+    <div class="alert-banner-inner">
+      <div class="alert-icon-box">⚠️</div>
+      <div class="alert-body">
+        <div class="alert-header-row">
+          <span class="alert-badge">警戒警報</span>
+          <span class="alert-title">市場警戒シグナル発令中（VIX: 32.5）</span>
+        </div>
+        <ul class="alert-summary-list">
+          <li>市場全体の急激な変動リスクが高まっており、全面安の波及に警戒が必要です。</li>
+          <li>新規買い付けは原則として一時見送り、押し目の底固めを確認してください。</li>
+          <li>保有銘柄については逆指値および損切りルール（-10〜-15%）の再点検を徹底してください。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  [見本2: ハードルール警告の注意帯（ヘッダー直下に細い琥珀色の注意帯で一行表示）]
+  <div class="notice-banner">
+    <div class="notice-banner-inner">
+      <span class="notice-badge">注意</span>
+      <span class="notice-text">警告あり：エレコムが過熱圏です（RSI:71）。詳しくはマーケットオープンへ</span>
+    </div>
+  </div>
+-->
+<div class="notice-banner">
+  <div class="notice-banner-inner">
+    <span class="notice-badge">注意</span>
+    <span class="notice-text">警告あり：オービックが過熱圏です（RSI:77）。詳しくはマーケットオープンへ</span>
+  </div>
+</div>
+<!-- ==DATA:ALERT END== -->
+  </div>
+
+  <!-- =============================================================
+       2. ヘッダー
+       ============================================================= -->
+  <header class="portal-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-main">
+          <span class="portal-badge">PORTAL</span>
+          <h1 class="portal-title">AI投資チーム ポータル</h1>
+          <p class="portal-tagline">日次ブリーフィング、市場状況、投資委員会の判断ログを一望する統合司令塔</p>
+        </div>
+        <!-- ==DATA:META START== -->
+        <div class="header-meta-card">
+          <div class="meta-line">
+            <span class="meta-label">最終更新日時</span>
+            <span class="meta-value">2026年10月29日 23:41</span>
+          </div>
+          <div class="meta-line">
+            <span class="meta-label">価格取得日時</span>
+            <span class="meta-value">2026年10月29日 23:40 <span class="meta-note">（直近取引日 10月29日 大引け終値）</span></span>
+          </div>
+        </div>
+        <!-- ==DATA:META END== -->
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- =============================================================
+         3. 一日のタイムライン（Pure CSS タブ切り替え）
+         ============================================================= -->
+    <section class="timeline-section">
+      <div class="timeline-layout">
+
+        <!-- 左列 (スマホでは上部固定横スクロール): タブメニュー -->
+        <aside class="timeline-nav-col">
+          <nav class="timeline-nav-card">
+            <div class="timeline-nav-header">タイムラインメニュー</div>
+            <div class="timeline-nav-list">
+              <label for="tab-0800" class="tab-nav-item item-0800">
+                <span class="nav-time-tag">08:00</span>
+                <span class="nav-title-text">朝のブリーフィング</span>
+              </label>
+              <label for="tab-0900" class="tab-nav-item item-0900">
+                <span class="nav-time-tag">09:00</span>
+                <span class="nav-title-text">マーケットオープン</span>
+              </label>
+              <label for="tab-anytime" class="tab-nav-item item-anytime">
+                <span class="nav-time-tag">随時</span>
+                <span class="nav-title-text">気になったら相談</span>
+              </label>
+              <label for="tab-pretrade" class="tab-nav-item item-pretrade">
+                <span class="nav-time-tag">取引前</span>
+                <span class="nav-title-text">委員会に諮る</span>
+              </label>
+              <label for="tab-weekly" class="tab-nav-item item-weekly">
+                <span class="nav-time-tag">日曜</span>
+                <span class="nav-title-text">週次レビュー</span>
+              </label>
+              <label for="tab-2100" class="tab-nav-item item-2100">
+                <span class="nav-time-tag">21:00</span>
+                <span class="nav-title-text">夜の振り返り</span>
+              </label>
+            </div>
+          </nav>
+        </aside>
+
+        <!-- 右列: 選ばれたタブのセクション本文のみ表示 -->
+        <div class="timeline-content-col">
+
+          <!-- ① 08:00 朝のブリーフィング -->
+          <article id="sec-0800" class="timeline-block">
+            <div class="block-header">
+              <span class="block-time">08:00</span>
+              <h3 class="block-title">朝のブリーフィング</h3>
+            </div>
+<!-- ==DATA:MORNING START== -->
+            <!-- マーケットムード -->
+            <div class="mood-box">
+              <span class="mood-badge">ムード</span>
+              <span class="mood-text">本日のマーケットムード：平穏（<span class="mood-vix">VIX: 16.91</span> / 警戒水準30未満）。FOMCは政策金利を据え置き（10対2）で無難に通過し、米国株は小幅高。NSD決算・カプコン新作配信（10/29）、SCREEN決算（10/30）を控え、個別材料を見極める地合いです。</span>
+            </div>
+
+            <!-- 監視銘柄一覧 -->
+            <h4 class="sub-section-title">監視銘柄の一覧（8銘柄）</h4>
+            <div class="stocks-table-container">
+              <table class="stocks-table">
+                <thead>
+                  <tr>
+                    <th>コード</th>
+                    <th>銘柄名</th>
+                    <th style="text-align: right;">現在価格</th>
+                    <th>前日比</th>
+                    <th>タイミング判定</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="stock-code">7269</span></td>
+                    <td><span class="stock-name">スズキ</span></td>
+                    <td class="stock-price">¥2,085.5</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-negative" style="width: 4%;"></div>
+                        </div>
+                        <span class="change-val val-negative">-0.2%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-buy">買いタイミング良好</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">8113</span></td>
+                    <td><span class="stock-name">ユニ・チャーム</span></td>
+                    <td class="stock-price">¥989.3</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-negative" style="width: 16%;"></div>
+                        </div>
+                        <span class="change-val val-negative">-0.8%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-buy">買いタイミング良好</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">2670</span></td>
+                    <td><span class="stock-name">エービーシー・マート</span></td>
+                    <td class="stock-price">¥2,968.5</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-positive" style="width: 22%;"></div>
+                        </div>
+                        <span class="change-val val-positive">+1.1%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-buy">買いタイミング良好</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">7735</span></td>
+                    <td><span class="stock-name">SCREENホールディングス</span></td>
+                    <td class="stock-price">¥12,075</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-positive" style="width: 8%;"></div>
+                        </div>
+                        <span class="change-val val-positive">+0.4%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-watch">要観察</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">6806</span></td>
+                    <td><span class="stock-name">ヒロセ電機</span></td>
+                    <td class="stock-price">¥24,415</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-negative" style="width: 12%;"></div>
+                        </div>
+                        <span class="change-val val-negative">-0.6%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-watch">要観察</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">4684</span></td>
+                    <td><span class="stock-name">オービック</span></td>
+                    <td class="stock-price">¥6,000</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-negative" style="width: 14%;"></div>
+                        </div>
+                        <span class="change-val val-negative">-0.7%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-watch">要観察</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">9759</span></td>
+                    <td><span class="stock-name">NSD</span></td>
+                    <td class="stock-price">¥3,099</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-negative" style="width: 52%;"></div>
+                        </div>
+                        <span class="change-val val-negative">-2.6%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-watch">要観察</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="stock-code">9697</span></td>
+                    <td><span class="stock-name">カプコン</span></td>
+                    <td class="stock-price">¥3,745</td>
+                    <td>
+                      <div class="change-cell">
+                        <div class="bar-container">
+                          <div class="bar-midline"></div>
+                          <div class="bar-fill bar-negative" style="width: 46%;"></div>
+                        </div>
+                        <span class="change-val val-negative">-2.3%</span>
+                      </div>
+                    </td>
+                    <td><span class="timing-badge timing-skip">見送り</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 今日の新規提案 -->
+            <h4 class="sub-section-title">今日の新規提案</h4>
+            <div class="proposal-card">
+              <div class="proposal-header">
+                <span class="proposal-name">任天堂（7974）</span>
+                <span class="timing-badge timing-buy">買いタイミング良好</span>
+                <span class="proposal-days">連続 1日目</span>
+              </div>
+              <p class="proposal-reason">新型機で売上倍増の高収益株、両移動平均線上で底堅く、11月5日決算。ファンダ順位2位（PER20.6・ROE14.9%・営業利益率27.5%）。</p>
+            </div>
+            <div class="proposal-card" style="margin-top: 10px;">
+              <div class="proposal-header">
+                <span class="proposal-name">TKC（9746）</span>
+                <span class="timing-badge timing-buy">買いタイミング良好</span>
+                <span class="proposal-days">連続 1日目</span>
+              </div>
+              <p class="proposal-reason">自己資本比率85%と連続増配のIT株、出来高増で上昇基調、11月11日決算。ファンダ順位4位（PER15.4・ROE13.2%・営業利益率26.1%）。</p>
+            </div>
+<!-- ==DATA:MORNING END== -->
+          </article>
+
+          <!-- ② 09:00 マーケットオープン -->
+          <article id="sec-0900" class="timeline-block">
+            <div class="block-header">
+              <span class="block-time">09:00</span>
+              <h3 class="block-title">マーケットオープン</h3>
+            </div>
+<!-- ==DATA:RULES START== -->
+            <div class="rules-card-alert">
+              <strong>ハードルール警告：オービック（4684）が過熱圏です（RSI：77）。高値づかみに注意してください。</strong>
+            </div>
+<!-- ==DATA:RULES END== -->
+          </article>
+
+          <!-- ③ 随時 気になったら相談（静的） -->
+          <article id="sec-anytime" class="timeline-block">
+            <div class="block-header">
+              <span class="block-time">随時</span>
+              <h3 class="block-title">気になったら相談</h3>
+            </div>
+            <div class="action-guidance-card">
+              <p class="action-instruction">
+                日中の値動きや突発的なニュース、チャートの形状で気になることがあれば、<span class="action-keyword">Claude Cowork</span> を開いて話しかけるだけ。
+              </p>
+              <p class="action-sub-text">
+                「この銘柄の押し目はどう見る？」「この急落ニュースの影響度は？」など、迷いや疑問をいつでも即座に壁打ち・相談できます。
+              </p>
+            </div>
+          </article>
+
+          <!-- ④ 取引前 委員会に諮る（静的） -->
+          <article id="sec-pretrade" class="timeline-block">
+            <div class="block-header">
+              <span class="block-time">取引前</span>
+              <h3 class="block-title">委員会に諮る</h3>
+            </div>
+            <div class="action-guidance-card">
+              <p class="action-instruction">
+                気になる銘柄が出たら、Claude Coworkの <span class="action-keyword">投資委員会プロジェクト</span> を開いて、銘柄名とともに「委員会にかけてください」と一言。
+              </p>
+              <p class="action-sub-text">
+                事前の多角的な審議、投資の決断、そして根拠の記録まで、すべてCowork上で行われます。感情に流されない規律あるエントリーを実現します。
+              </p>
+            </div>
+          </article>
+
+          <!-- ⑤ 日曜 20:00 週次レビュー -->
+          <article id="sec-weekly" class="timeline-block">
+            <div class="block-header">
+              <span class="block-time">日曜 20:00</span>
+              <h3 class="block-title">週次レビュー</h3>
+            </div>
+<!-- ==DATA:WEEKLY START== -->
+            <details class="weekly-accordion" open>
+              <summary class="weekly-summary">
+                <span class="summary-badge">第一部</span>
+                <span>一週間の振り返り</span>
+              </summary>
+              <div class="weekly-body">
+                <p>週次レビューはまだ作成されていません。（日曜 20:00 に最初のレビューが作成されると、ここに表示されます）</p>
+              </div>
+            </details>
+
+            <details class="weekly-accordion">
+              <summary class="weekly-summary">
+                <span class="summary-badge">第二部</span>
+                <span>判断ログの答え合わせ</span>
+              </summary>
+              <div class="weekly-body">
+                <p>週次レビューはまだ作成されていません。（日曜 20:00 に最初のレビューが作成されると、ここに表示されます）</p>
+              </div>
+            </details>
+
+            <details class="weekly-accordion">
+              <summary class="weekly-summary">
+                <span class="summary-badge">第三部</span>
+                <span>今週の展望</span>
+              </summary>
+              <div class="weekly-body">
+                <p>週次レビューはまだ作成されていません。（日曜 20:00 に最初のレビューが作成されると、ここに表示されます）</p>
+              </div>
+            </details>
+
+<!-- ==DATA:WEEKLY END== -->
+          </article>
+
+          <!-- ⑥ 21:00 夜の振り返り -->
+          <article id="sec-2100" class="timeline-block">
+            <div class="block-header">
+              <span class="block-time">21:00</span>
+              <h3 class="block-title">夜の振り返り</h3>
+            </div>
+<!-- ==DATA:LOGS START== -->
+            <div class="logs-empty">
+              現在記録されている判断ログはありません。（投資委員会で審議が行われると、ここに最新の審議日・銘柄・私の決定一覧が並びます）
+            </div>
+<!-- ==DATA:LOGS END== -->
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================================
+       4. フッター
+       ============================================================= -->
+  <footer class="portal-footer">
+    <div class="container">
+      <div class="footer-motto">見るのはポータル、話すのはCowork、走るのはAntigravity</div>
+      <div class="footer-sub">AI Investment Team Operations &bull; Display Only</div>
+    </div>
+  </footer>
+
+</body>
+</html>
